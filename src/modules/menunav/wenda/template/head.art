@@ -1,0 +1,7 @@
+<div class='wenda-head'>
+<div class='choose clearfix' id='wenda-head' data-box-types="wenda-head">
+<a href='javascript:void(0)' class='choose-i  clearfix' data-click-types='getWendaQuestion'>我的提问</a>
+<a href='javascript:void(0)' class='choose-i  clearfix' data-click-types='getWendaAnswer'>我的回答</a>
+<a href='javascript:void(0)' class='choose-i  clearfix' data-click-types='getWendaMessage'>问答消息</a>
+</div>
+</div>

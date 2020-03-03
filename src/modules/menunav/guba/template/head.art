@@ -1,0 +1,10 @@
+<div class="guba_head">
+<div class="choose clearfix" id="guba-head" data-box-types="guba-head">
+<a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getGubaPosting">我的帖子</a>
+<a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getGubaReply">我的回复</a>
+<a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getGubaReplyMe">回复我的</a>
+<a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getGubaZan">称赞我的</a>
+<a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getGubaInv">提到我的</a>
+<a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getWenDongMi">问董秘</a>
+</div>
+</div>

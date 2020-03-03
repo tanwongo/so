@@ -1,0 +1,5 @@
+<a href="javascript:void(0)" class="rp active" data-click-types="notice_reply" title="回复我的"></a>
+<a href="javascript:void(0)" class="zan" data-click-types="notice_good" title="赞我的"></a>
+<a href="javascript:void(0)" class="at" data-click-types="notice_at" title="提到我的"></a>
+<a href="javascript:void(0)" class="fans" data-click-types="notice_fans" title="新粉丝"></a>
+<a href="javascript:void(0)" class="sys" data-click-types="notice_sys" title="消息通知"></a>

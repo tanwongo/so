@@ -1,0 +1,36 @@
+ <div class="message">
+            <h1>-设置你想接收的信息提醒-</h1>
+            <div class='setting-list-item'>
+               <div class="clearfix mb15">
+                <p class="p1 fl">评论：</p>
+                <P class="fl">
+                    <span class='sp1 active' data-click-types="disc"></span>
+                    <span class='sp2'>接收所有</span>
+                    <span class='sp1' data-click-types="disc"></span>
+                    <span class='sp2'>仅我关注的人</span>
+                    <span class='sp1' data-click-types="disc"></span>
+                    <span class='sp2'>不接收</span>
+                </P>
+               </div>
+               <div class="clearfix mb15">
+                <p class="p1 fl">@提到我：</p>
+                <P class="fl">
+                    <span class='sp1 active' data-click-types="at"></span>
+                    <span class='sp2'>接收所有</span>
+                    <span class='sp1' data-click-types="at"></span>
+                    <span class='sp2'>仅我关注的人</span>
+                    <span class='sp1' data-click-types="at"></span>
+                    <span class='sp2'>不接收</span>
+                </P>
+               </div>
+               <div class="clearfix mb15">
+                <p class="p1 fl">新粉丝：</p>
+                <P class="fl">
+                    <span class='sp1 active' data-click-types="newfans"></span>
+                    <span class='sp2'>接收所有</span>
+                    <span class='sp1' data-click-types="newfans"></span>
+                    <span class='sp2'>不接收</span>
+                </P>
+               </div>
+            </div>
+</div>

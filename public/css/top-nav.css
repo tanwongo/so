@@ -1,0 +1,53 @@
+.search-box{
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  width: 100%;
+  padding-bottom: 15px;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5);
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.search-box .search-head{
+  position: relative;
+}
+
+.search-head .eastlogo,.search-head .search-form{
+  float: left;
+}
+
+.search-head .eastlogo{
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+.search-head .search-form .input-box{
+  width: 500px;
+  height: 40px;
+  padding-left:10px;
+  font-size: 16px;
+  color:#222;
+  position: relative;
+  display: block;
+  float: left;
+  border: 2px solid #ec5200;
+}
+
+.search-head .search-form .search-submit{
+  width: 100px;
+  height: 44px;
+  display: block;
+  float: left;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 44px;
+  letter-spacing: 5px;
+  background: #ec5200;
+}
+
+.search-form .search-submit:hover{
+  background: #da4d02
+}

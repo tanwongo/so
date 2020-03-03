@@ -1,0 +1,181 @@
+.main{
+    width: 100%;
+    margin-top: 110px;
+    position: relative;
+    z-index: 7;
+}
+
+.nav-div{
+    background: #f7f7f7
+}
+
+.nav-div ul{
+    padding-left: 133px;
+}
+
+.nav-div li {
+    float: left;
+    padding:10px 15px;
+}
+
+.nav-div li a:hover{
+    color:#ec5200;
+}
+
+.nav-div li.active{
+    background: #ec5200;
+}
+
+.nav-div li a{
+    font-size: 14px;
+}
+
+.nav-div li.active a{
+    color:#fff;
+}
+
+
+.cont-div{
+    width: 100%;
+    margin-top:10px;
+    position: relative;
+}
+
+.search-result-sum{
+    font-size: 15px;
+    margin-left: 132px;
+    position: relative;
+}
+
+.search-result-sum span{
+    vertical-align: middle
+}
+
+.search-result-sum span em{
+    color: #ec5200;
+    margin-right: 7px;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.search-result-list{
+    position: relative;
+    width: 935px;
+    margin: 10px auto 0px auto;
+}
+
+.search-result-module-qh{
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 35px;
+}
+
+.module-qh-item{
+    width: 260px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    /* border: 2px solid #0063ca; */
+}
+
+.module-qh-item .qh-head{
+    width: 100%;
+    position: relative;
+}
+
+.module-qh-item .qh-head h1{
+    padding: 8px;
+    background: #0063ca;
+    border-bottom: 2px solid #ec5200;
+    /* box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.3); */
+    /* -webkit-shadow: 0px 1px 3px 1px rgba(0,0,0,0.3); */
+    position: relative;
+    /* z-index: 3; */
+    /* line-height: 50px; */
+    /* padding-top: 10px; */
+    /* padding-left: 35px; */
+    text-align: left;
+}
+
+.module-qh-item .qh-head .bq{
+    display: block;
+    position: absolute;
+    top: -22px;
+    left: 0px;
+    color: #fff;
+    z-index: 3;
+    font-size: 12px;
+    font-style: normal;
+    background: #0063ca;
+    padding: 3px 5px;
+}
+
+.module-qh-item .qh-head h1 span{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+.module-qh-item .qh-head .qh-more{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 25px;
+    height: 100%;
+    background: url(../images/ico/qh-more.png) no-repeat -2px 7px;
+}
+
+.module-qh-item .qh-list{
+    position: relative;
+    background: #fff7dc;
+}
+
+.module-qh-item .qh-list .qh-list-cont{
+    text-align: center;
+}
+
+
+.qh-list p{
+    padding: 5px;
+    font-size: 14px;
+}
+
+.qh-list p.qred{
+    color: #f00;
+    font-size: 26px;
+    font-weight: bold;
+    display: block;
+}
+
+.qh-list p.qgreen{
+    color: green;
+    font-size: 26px;
+    font-weight: bold;
+    display: block;
+}
+
+.qh-list p.up{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 32px;
+    height: 32px;
+    background: url(../images/ico/qh-red.png) no-repeat center top;
+}
+
+.qh-list p.down{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 32px;
+    height: 32px;
+    background: url(../images/ico/qh-down.png) no-repeat center top;
+}
+
+.search-result-module-gp{
+    margin-top: 10px;
+    position: relative;
+}

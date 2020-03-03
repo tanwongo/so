@@ -1,0 +1,93 @@
+
+{{each result value i}}
+  <div class="newspush {{if value.zd}}zd{{/if}} clearfix" data-newspush-object="{id:{{i}},name:{{value.username}},from:{{value.frome}}}" data-newscont-id="cont-{{i}}" style="*z-index:{{999-i}}">
+       <!--反馈-->
+       <div class="feedback">
+            <a href="javascript:void(0)" class="feedbackfk" data-click-types="feedback" data-feedback-box="{{i}}" title="反馈"></a>
+       </div>
+       <!--是否为置顶文章-->
+       {{if value.zd}}<div class="zdtxt">置顶</div>{{/if}}
+       <div class="clearfix">
+            <a href="javascript:void(0)" target="_blank" class="newscont-user-tx">
+                   <!--认证判断(个人，机构，个性)start-->
+                   {{if value.vip}}
+                   <em class="newscont-vip"></em>
+                   {{/if}}
+                   <!--认证判断(个人，机构，个性)end-->
+                   <img src="{{value.usertx}}">
+            </a>
+            <div class="newscont">
+                 <!--用户名称，发布时间-->
+                 <div class="newscont-times">
+                 <a href="javascript:void(0)" class="newscont-user-name">{{value.username}}</a>
+                    <i class="ml5 mr5">●</i>
+                    <span class="newscont-send-time">{{value.time}}</span>
+                    <i class="ml5 mr5">●</i>
+                    <a href="javascript:void(0)" class="fz12 hf">{{value.frome}}</a>
+                 </div>
+                 <div class="newscont-title">
+                    <!--文章标题，内容-->
+                    <a href="javascript:void(0)" class="newscont-action">{{value.title}}</a>
+                    <div class="newscont-words">{{value.cont}}</div>
+                    <!--是否传图start-->
+                    {{if value.upimg}}
+                    <div class="newscont-user-uploadimg clearfix">
+                        {{each value.upimglist action j}}
+                        <a href="{{action}}" target="_blank"><img src="{{action}}"></a>
+                        {{/each}}
+                    </div>
+                    {{/if}}
+                    <!--是否传图end-->
+                    <!--阅读量，点赞，评论，收藏，举报-->
+                    <div class="newscont-info clearfix">
+                        <a href="javascript:void(0)" title="阅读量" class="newscont-info-read"><span>{{value.iconslist.yuedu}}</span></a>
+                        <!--悬赏问答不显示赞start-->
+                        {{if value.frome!="悬赏问答"}}<a href="javascript:void(0)" title="赞" data-click-types="good"  data-box-good="{{value.iconslist.good}}"  class="newscont-info-good"><span>{{value.iconslist.good}}</span></a>{{/if}}
+                        <!--悬赏问答不显示赞end-->
+                        <a href="javascript:void(0)" title="评论" data-click-types="discuss" data-discuss-id="discuss-{{i}}" class="newscont-info-discu" target="_self"><span>{{value.iconslist.discu}}</span></a>
+                        <a href="javascript:void(0)" title="收藏" data-click-types="collection" class="newscont-info-sc" target="_self"><span>{{value.iconslist.shouc}}</span></a>
+                        <a href="javascript:void(0)" title="举报" class="newscont-info-report"><span>举报</span></a>
+                    </div>
+                 </div>
+            </div>
+       </div>
+       <!--评论容器-->
+       <div class="discuss" data-box-types="discuss-{{i}}"></div>
+       <!--反馈容器-->
+       <div class="feedbackbox" data-feedbackbox-id="feedbackbox-{{i}}">
+            <a href="javascript:void(0)" class="feedbackbox-submit" data-click-types="feedbacksubmit" target="_self">提交</a>
+            <div class="dv1">
+               <div class="report">
+                   <span class="sp1">不感兴趣</span>
+                   <!--<span class="sp2">-我们将减少对应的内容推送-</span>-->
+               </div>
+               <div class="stu">来源：</div>
+               <ul class="clearfix">
+                  <li data-report-user="{{value.username}}">
+                     <a href="javascript:void(0)" target="_self">{{value.username}}</a>
+                  </li>
+                  <li data-report-channel="{{value.frome}}">
+                     <a href="javascript:void(0)" target="_self">{{value.frome}}</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="dv1">
+            <div class="stu">标签：</div>
+               <ul class="clearfix">
+                  <li data-report-status="1">
+                     <a href="javascript:void(0)">外汇</a>
+                  </li>
+                  <li data-report-status="4">
+                     <a href="javascript:void(0)">港股</a>
+                  </li>
+                  <li data-report-status="4">
+                     <a href="javascript:void(0)">美股</a>
+                  </li>
+                  <li data-report-status="4">
+                     <a href="javascript:void(0)">黄金</a>
+                  </li>
+               </ul>
+            </div>
+       </div>
+   </div>
+{{/each}}

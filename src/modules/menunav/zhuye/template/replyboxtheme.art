@@ -1,0 +1,10 @@
+<div class='myrp clearfix'>
+<div class='l'>
+<!-- <div class="replybox-textrea-placeholder">理性发言，文明上网。</div> -->
+<div class='textarea' contenteditable='true'></div>
+</div>
+<div class='r'>
+<a href='javascript:void(0)' class='rpemoji'>插入表情</span>
+<a href='javascript:void(0)' class='rpsubmit rptheme'>发表</a>
+</div>
+</div>

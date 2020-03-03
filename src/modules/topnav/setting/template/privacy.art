@@ -1,0 +1,15 @@
+<div class="privacy hd">
+            <h1>-设置谁可以看到我的自选股和自选组合-</h1>
+            <div class='setting-list-item'>
+               <div class="clearfix mb15">
+                <P class="fl">
+                    <span class='sp1 active' data-click-types="comb"></span>
+                    <span class='sp2'>允许所有人查看</span>
+                    <span class='sp1' data-click-types="comb"></span>
+                    <span class='sp2'>允许我关注的人查看</span>
+                    <span class='sp1' data-click-types="comb"></span>
+                    <span class='sp2'>禁止任何人查看</span>
+                </P>
+               </div>
+            </div>
+</div>

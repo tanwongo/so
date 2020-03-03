@@ -1,0 +1,14 @@
+<div class='setting-list scbar' id="setting-list" data-box-types="setting-list">
+     <div class="setting-list-head">
+         <ul>
+             <li class="tabs">消息设置</li>
+             <li>隐私设置</li>
+             <li>黑名单</li>
+         </ul>
+     </div>
+     <div data-box-types="setting-list-cont">
+     <%include("./message.art")%>
+     <%include("./privacy.art")%>
+     <%include("./blacklist.art")%>
+     </div>
+</div>

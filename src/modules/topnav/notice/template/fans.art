@@ -1,0 +1,33 @@
+<div class="list-box">
+        <p class="thr">
+                <span class="sp1 clearfix">
+                    <i>「</i>
+                    <a href="javascript:void(0)">全晴天天空</a>
+                    <i>」</i>
+                    <span>关注了我</span>
+                    <a href="javascript:void(0)" class="watch" data-click-types="add_watch">关注他</a>
+                </span>    
+        </p>
+</div>
+<div class="list-box">
+        <p class="thr">
+                <span class="sp1 clearfix">
+                    <i>「</i>
+                    <a href="javascript:void(0)">财迷123</a>
+                    <i>」</i>
+                    <span>关注了我</span>
+                    <a href="javascript:void(0)" class="watch" data-click-types="add_watch">关注他</a>
+                </span>
+        </p>
+</div>
+<div class="list-box">
+        <p class="thr">
+                <span class="sp1 clearfix">
+                    <i>「</i>
+                    <a href="javascript:void(0)">收割萌妹</a>
+                    <i>」</i>
+                    <span>关注了我</span>
+                    <a href="javascript:void(0)" class="watch" data-click-types="add_watch">关注他</a>
+                </span>
+        </p>
+</div>

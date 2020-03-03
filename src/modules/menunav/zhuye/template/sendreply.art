@@ -1,0 +1,19 @@
+<div class="rplist clearfix">
+        <div class="clearfix">
+        <div class="l">
+             <a href="#">
+                <img src="images/3.jpg">
+             </a>
+        </div>
+        <div class="r">
+            <a href="#"></a>
+            <span class="txtsp"></span>
+            <div class="rplist-info clearfix">
+             <a href="javascript:void(0)" title="赞" class="rp-info-good" data-box-good="123"><span>0</span></a>
+             <span class="rptime">2019-09-20  15:30:30</span>
+             <a href="javascript:void(0)" title="评论" class="rp-info-discu"><span>回复(0)</span></a>
+         </div>
+        </div>
+        </div>
+        <div></div>
+    </div>

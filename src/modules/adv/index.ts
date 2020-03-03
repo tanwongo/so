@@ -1,0 +1,5 @@
+let adv ={
+    init: function(){
+     
+    }
+}

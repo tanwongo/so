@@ -1,0 +1,45 @@
+<div data-box-types="fans">
+     <div class="faw-tit clearfix">
+         <div class="fl">我的粉丝({{result.tolfans}})</div>
+         <div class="fr">
+             <span>共-{{result.tolpage}}-页</span>
+             <a href="javascript:void(0)" class="{{if result.tolpage>1 }}f{{/if}}" data-click-types="fans-prev">上一页</a>
+             <a href="javascript:void(0)" class="next" data-click-types="fans-next">下一页</a>
+             <input type="text" class="sp1" maxlength="3">
+             <a href="javascript:void(0)" class="actions" data-click-types="fans-action">跳转</a>
+         </div>
+     </div>
+     <div class="faw-scroll scbar2">
+     <div class="fs">
+     {{each result.list value i}}
+          <div class="fslist clearfix">
+               <div class="tx">
+                    <a href="javascript:void(0)" target="_blank"><img src="{{value.usertx}}"></a>
+                    <a href="#" class="a1"  target="_blank">{{value.username}}</a>
+                    {{if value.vip}}<a href="#" class="is isvip"></a>{{/if}}
+                    <a href="javascript:void(0)" class="esc">取关</a>
+               </div>
+               <div class="yx">
+                    <div class="kx clearfix">
+                       <p>
+                          <span>{{value.fans}}</span>
+                          <span>粉丝</span>
+                       </p>
+                       <p>
+                          <span>{{value.watched}}</span>
+                          <span>关注</span>
+                       </p>
+                       <p>
+                          <span>{{value.stock}}</span>
+                          <span>自选股</span>
+                       </p>
+                       <p>
+                          <span>{{value.posts}}</span>
+                          <span>帖子</span>
+                       </p>
+                    </div>
+                    <div class="bx">{{value.content}}</div>
+                </div>
+          </div>
+    {{/each}}
+</div>

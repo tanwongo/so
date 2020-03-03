@@ -1,0 +1,4 @@
+<div class="new-notice-box" id="new-notice-box" data-box-types="new-notice-box">
+    <div class="notice-box-choose clearfix" id="notice-box-choose"><%include("./head.art")%></div>
+    <div class="notice-box-cont" data-box-types="notice-box-cont"></div>
+</div>

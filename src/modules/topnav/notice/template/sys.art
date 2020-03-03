@@ -1,0 +1,33 @@
+
+<div class="list-box clearfix">
+    <p class="sec"><a href="#" class="sys n-offic">系统</a></p>
+    <div class="sys-info">新用户下载东方财富App，好礼送不停，老用户推荐同样也可获得。<a href="#">点击查看详情</a></div>
+</div>
+<div class="list-box clearfix">
+    <p class="sec"><a href="#" class="sys n-offic">系统</a></p>
+    <div class="sys-info">东方财富可转债发行中。<a href="#">点击查看详情</a></div>
+</div>
+<div class="list-box">
+    <p class="sec"><a href="#" class="sys n-proce">处理</a></p>
+    <div class="sys-info">您发布的问题“$中兵红箭(SZ000519)$...”已被删除，原因是：辱骂谣言删除。</div>
+</div>
+<!--<div class="list-box">
+    <p class="sec"><a href="#" class="sys n-ann"></a></p>
+    <div class="sys-info"><a href="#">A股三大股指集体回调：沪指失守2900点 深成指与创业板指跌逾1%</a></div>
+</div>-->
+<div class="list-box">
+    <p class="sec"><a href="#" class="sys n-proce">处理</a></p>
+    <div class="sys-info">您发布的帖子“这期中双色球二等奖我直播吃X”已被删除，原因是：辱骂谣言删除。</div>
+</div>
+<div class="list-box">
+    <p class="sec"><a href="#" class="sys n-proce">处理</a></p>
+    <div class="sys-info">您的评论“XXXXXXXXXX”已被删除，原因是：政治危害删除。</div>
+</div>
+<div class="list-box">
+    <p class="sec"><a href="#" class="sys n-message">通知</a></p>
+    <div class="sys-info">您关注的悬赏问题已经结束了，快来看看大家的回答吧。<a href="#">点击查看详情</a></div>
+</div>
+<div class="list-box">
+    <p class="sec"><a href="#" class="sys n-message">通知</a></p>
+    <div class="sys-info">您的回答被采纳了，获得了<span class="ec5200">$10元</span>。<a href="#">点击查看详情</a></div>
+</div>

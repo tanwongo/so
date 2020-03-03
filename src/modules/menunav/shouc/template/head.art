@@ -1,0 +1,9 @@
+<div class="shouc-head">
+<div class="choose clearfix" id="shouc-head" data-box-types="shouc-head">
+<a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getShoucGuba">股吧</a>
+<a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getShoucHuati">话题</a>
+<a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getShoucWenda">问答</a>
+<a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getShoucMoney">财富号</a>
+<a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getShoucTouzi">主题投资</a>
+</div>
+</div>

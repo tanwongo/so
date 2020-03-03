@@ -1,0 +1,10 @@
+
+<div class="choose clearfix" id="zhuye-head" data-box-types="zhuye-head">
+     <a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getRandom">随机推荐</a>
+     <a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getHot">市场热点</a>
+     <a href="javascript:void(0)" class="choose-i  clearfix" data-click-types="getWatched">我关注的</a>
+</div>
+<div class="search-art">
+<input type="text" class="search-ipt" data-p="true" placeholder="搜索你想要的相关内容">
+<a href="#" class="search-submit"></a>
+</div>

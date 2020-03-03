@@ -1,0 +1,4 @@
+var adv = {
+    init: function () {
+    }
+};

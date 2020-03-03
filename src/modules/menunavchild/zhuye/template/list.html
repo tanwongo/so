@@ -1,0 +1,78 @@
+
+{{~it.result:value:index}}
+  <div class='zhuye-list {{? value.zd}}zd{{?? }}{{? }} clearfix' data-object='{id:{{=index}},name:{{=value.username}},from:{{=value.frome}}}' id='zhuye-list{{=index}}'>
+       <div class='vbq'>
+            <a href='javascript:void(0)' class='vbqfk' data-id='fk-box-{{=index}}' title='反馈'></a>
+       </div>
+       {{? value.zd}}<div class='zdtxt'>置顶</div>{{?? }}{{? }}
+       {{? value.vip}}
+        <em class='ts-vip'></em>
+       {{?? }}{{? }}
+       <div class='clearfix'>
+       <a href='javascript:void(0)' class='tscont-user-tx'><img src='{{=value.usertx}}'></a>
+       <div class='tscont'>
+         <div class='ts-bq'>
+             <a href='javascript:void(0)' class='tscont-user-name'>{{=value.username}}{{? value.watched}}<span class='fz12 c80 ml5 hd'>已关注</span>{{?? }}{{? }}</a>
+             <i class='ml5 mr5'>●</i>
+             <span class='tscont-send-time'>{{=value.time}}</span>
+             <i class='ml5 mr5'>●</i>
+             <a href='javascript:void(0)' class='fz12 hf'>{{=value.frome}}</a>
+         </div>
+         <div class='ts-title'>
+            <a href='javascript:void(0)' class='ts-href-a1'>{{=value.title}}</a>
+            <div class='ts-words'>{{=value.cont}}</div>
+            <div class='readall'><a href='javascript:void(0)'>阅读全文</a></div>
+            {{? value.upimg}}
+            <div class='ts-user-uploadimg clearfix' id='ts-user-uploadimg'>
+                {{~value.upimglist:action:i}}
+                <a href='{{=action}}' target="_blank"><img src='{{=action}}'></a>
+                {{~}}
+            </div>
+            {{?? }}{{? }}
+            <div class='ts-info clearfix'>
+                <a href='javascript:void(0)' title='阅读量' class='ts-info-read'><span>{{=value.iconslist.yuedu}}</span></a>
+                {{? value.frome!="悬赏问答"}}<a href='javascript:void(0)' title='赞'  data-box-good='{{=value.iconslist.good}}'  class='ts-info-good'><span>{{=value.iconslist.good}}</span></a>{{?? }}{{? }}
+                <a href='javascript:void(0)' title='评论' data-replybox='replybox-{{=index}}'  data-replyid='reply-{{=index}}' data-replyall='replyall-{{=index}}'  data-replytitle="replytitle-{{=index}}" class='ts-info-discu'><span>{{=value.iconslist.discu}}</span></a>
+                <a href='javascript:void(0)' title='收藏'   class='ts-info-sc'><span>{{=value.iconslist.shouc}}</span></a>
+                <a href='javascript:void(0)' title='举报'   class='ts-info-report'><span>举报</span></a>
+            </div>
+         </div>
+       </div>
+       <div class="replytitle" id="replytitle-{{=index}}">评论<span>({{=value.iconslist.discu}})</span></div>
+       <div id='replybox-{{=index}}' class='replybox'></div>
+       <div id='reply-{{=index}}' class='replybox'></div>
+       <div id='replyall-{{=index}}' class='replyall'><a href='http://www.eastmoney.com' class='a1 mr20' target="_blank">查看全部评论</a><a href='javascript:void(0)' data-replybox='replybox-{{=index}}'  data-replyid='reply-{{=index}}' data-id='zhuye-list{{=index}}' class='a2'>收起评论</a></div>
+       </div>
+       <div class='userfk' id='fk-box-{{=index}}'>
+            <a href="javascript:void(0)" data-id='fk-box-{{=index}}' data-object='{id:{{=index}},name:{{=value.username}},from:{{=value.frome}}}' class='userfk-submit'>提交</a>
+            <div class='dv1'>
+               <span class='report'>反馈</span>
+               <ul class='clearfix'>
+                  <li data-report-status='1'>
+                     <a href='javascript:void(0)'>侵权</a>
+                  </li>
+                  <li data-report-status='2'>
+                     <a href='javascript:void(0)'>辱骂、人身攻击</a>
+                  </li>
+                  <li data-report-status='5'>
+                     <a href='javascript:void(0)'>内容编造、谣言</a>
+                  </li>
+                  <li data-report-status='6'>
+                     <a href='javascript:void(0)'>广告</a>
+                  </li>
+               </ul>
+            </div>
+            <div class='dv1'>
+               <span class='report'>不感兴趣</span>
+               <ul class='clearfix'>
+                  <li data-report-user='{{=value.username}}'>
+                     <a href='javascript:void(0)'>作者：{{=value.username}}</a>
+                  </li>
+                  <li data-report-channel='{{=value.frome}}'>
+                     <a href='javascript:void(0)'>{{=value.frome}}</a>
+                  </li>
+               </ul>
+            </div>
+       </div>
+  </div>
+{{~}}

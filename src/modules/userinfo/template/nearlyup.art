@@ -1,0 +1,19 @@
+{{each result value i}}
+<li class="clearfix">
+<div class="ldv mt4">
+<a href="#">
+<span>{{value.name}}</span>
+<span>{{value.code}}</span>
+</a>
+</div>
+<div class="ldv">
+<span class="ff20">{{value.price2}}</span>
+<span class="bjup"></span>
+<span class="fz12">{{value.price1}}</span>
+</div>
+<div class="ldv">
+<span class="ff20">+{{value.zd}}%</span>
+<div class="bqup">{{value.bq}}</div>
+</div>
+</li>
+{{/each}}

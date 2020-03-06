@@ -69,10 +69,14 @@ input[data-p='true']::-webkit-input-placeholder{
   content: "";
 }
 
+a{
+  color:#004a99
+}
 a:visited{
   /* #653096? */
 }
 a:hover{
+  color:#ec5200;
   transition: 0.3s;
 }
 
@@ -97,6 +101,10 @@ a:hover{
   width: 50px;
 }
 
+.wd60{
+  width: 60px;
+}
+
 .wd70{
   width: 70px;
 }
@@ -109,12 +117,21 @@ a:hover{
   width: 80px;
 }
 
+.wd95{
+  width: 95px;
+}
+
 .wd120{
   width: 120px;
 }
 
 .wd160{
   width: 160px;
+}
+
+.wd1263{
+  width: 1263px;
+  margin: 0 auto;
 }
 
 .wd92{

@@ -21,6 +21,10 @@ img,a,button{
   outline: 0 none;
 }
 
+table tr:hover{
+  background: #fffef4;
+  transition: 0.3s;
+}
 a{
   text-decoration: none;
 }
@@ -29,6 +33,9 @@ b{
   font-weight:normal
 }
 
+em{
+  font-style: normal
+}
 input{
   outline: none;
 }

@@ -104,6 +104,11 @@ a:hover{
   position: relative;
 }
 
+.wd230{
+  width: 230px;
+  position: relative;
+}
+
 .wd50{
   width: 50px;
 }
@@ -183,8 +188,14 @@ a:hover{
 .mb10{
   margin-bottom: 10px;
 }
+.mb17{
+  margin-bottom: 17px;
+}
 .mr5{
   margin-right: 5px;
+}
+.ml25{
+  margin-left: 25px;
 }
 .ml12{
   margin-left: 12px;
@@ -389,6 +400,14 @@ a:hover{
 
 .ff20{
   color:#ff2020;
+}
+
+.bckred{
+  background: #f00;
+}
+
+.bckgreen{
+  background: #00c12b;
 }
 
 .res{

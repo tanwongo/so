@@ -88,8 +88,8 @@ a:hover{
 }
 
 
-.wd1200{
-  width: 1200px;
+.wd1000{
+  width: 1000px;
   margin: 0 auto;
   position: relative;
 }
@@ -104,8 +104,8 @@ a:hover{
   position: relative;
 }
 
-.wd230{
-  width: 230px;
+.wd147{
+  width: 147px;
   position: relative;
 }
 

@@ -34,7 +34,8 @@ b{
 }
 
 em{
-  font-style: normal
+  font-style: normal;
+  color:#f00;
 }
 input{
   outline: none;

@@ -22,7 +22,9 @@ router.get('/', async (ctx:Context, next) => {
         "getMyInfo":getMyInfo,
         "getNearlyUpDown":getNearlyUpDown
     }
-    await ctx.render('shared/layout',{data:data})
+    if(1==1){
+        await ctx.render('shared/layout',{data:"123"})
+    }
 })
 
 // 股票

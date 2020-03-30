@@ -62,10 +62,12 @@ router.get('/', function (ctx, next) { return __awaiter(void 0, void 0, void 0, 
                     "getMyInfo": getMyInfo,
                     "getNearlyUpDown": getNearlyUpDown
                 };
-                return [4 /*yield*/, ctx.render('shared/layout', { data: data })];
+                if (!(1 == 1)) return [3 /*break*/, 4];
+                return [4 /*yield*/, ctx.render('shared/layout', { data: "123" })];
             case 3:
                 _a.sent();
-                return [2 /*return*/];
+                _a.label = 4;
+            case 4: return [2 /*return*/];
         }
     });
 }); });

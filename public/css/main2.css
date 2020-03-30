@@ -87,7 +87,6 @@
     margin-left: 10px;
     text-decoration: underline;
     margin-top: 6px;
-    color: #004a99;
 }
 
 
@@ -539,59 +538,59 @@
     text-decoration: underline;
 }
 
-.search-result-module-collect{
+.search-result-module-others{
     margin-top: 10px;
     position: relative;
 }
 
 
-.search-result-module-collect em{
+.search-result-module-others em{
     color:#f00;
 }
 
-.search-result-module-collect .list
+.search-result-module-others .list
 {
     width: 326px;
     position: relative;
     float: left;
 }
 
-.search-result-module-collect .list h1
+.search-result-module-others .list h1
 {
     font-weight: normal;
-    width: 100px;
+    font-size: 14px;
     padding: 5px 0px 5px 5px;
     border-bottom: 2px solid #ec5200
 }
 
-.search-result-module-collect .list li
+.search-result-module-others .list li
 {
     padding: 5px 5px;
 }
 
-.search-result-module-collect .list li a
+.search-result-module-others .list li a
 {
-    font-size: 14px;
+    font-size: 13px;
     display: block;
     margin-top:3px;
     padding-left: 6px;
     text-decoration: underline;
 }
 
-.search-result-module-collect .list li p
+.search-result-module-others .list li p
 {
     margin-top: 3px;
     margin-left: 6px;
 }
 
-.search-result-module-collect .list li span
+.search-result-module-others .list li span
 {
     font-size: 12px;
     display: block;
     margin-top: 3px;
 }
 
-.search-result-module-collect .list .getmore
+.search-result-module-others .list .getmore
 {
     display: block;
     position: absolute;
@@ -600,51 +599,51 @@
     font-size: 12px;
 }
 
-.search-result-module-collect .module-collect-cfh img.tx,
-.search-result-module-collect .module-collect-bk img.tx
+.search-result-module-others .module-collect-cfh img.tx,
+.search-result-module-others .module-collect-bk img.tx
 {
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
 
-.search-result-module-collect .module-collect-cfh li a.name,
-.search-result-module-collect .module-collect-bk li a.name
+.search-result-module-others .module-collect-cfh li a.name,
+.search-result-module-others .module-collect-bk li a.name
 {
     text-decoration: none;
 }
 
-.search-result-module-collect .module-collect-guba h1{
-    border-bottom: 2px solid #f00;
+.search-result-module-others .module-collect-guba h1{
+    /* border-bottom: 2px solid #f00; */
 }
 
 
-.search-result-module-collect .module-collect-gg h1{
-    border-bottom: 2px solid #ff00e0
+.search-result-module-others .module-collect-gg h1{
+    /* border-bottom: 2px solid #ff00e0 */
 }
 
-.search-result-module-collect .module-collect-yb h1{
-    border-bottom: 2px solid #ff00e0;
+.search-result-module-others .module-collect-yb h1{
+    /* border-bottom: 2px solid #ff00e0; */
 }
 
-.search-result-module-collect .module-collect-wdm h1{
-    border-bottom: 2px solid #ff00e0;
+.search-result-module-others .module-collect-wdm h1{
+    /* border-bottom: 2px solid #ff00e0; */
 }
 
-.search-result-module-collect .module-collect-zt h1{
-    border-bottom: 2px solid #2196F3;
+.search-result-module-others .module-collect-zt h1{
+    /* border-bottom: 2px solid #2196F3; */
 }
 
-.search-result-module-collect .module-collect-bk h1{
-    border-bottom: 2px solid #2196F3;
+.search-result-module-others .module-collect-bk h1{
+    /* border-bottom: 2px solid #2196F3; */
 }
 
-.search-result-module-collect .module-collect-jgdy h1{
-    border-bottom: 2px solid #2196F3;
+.search-result-module-others .module-collect-jgdy h1{
+    /* border-bottom: 2px solid #2196F3; */
 }
 
-.search-result-module-collect .module-collect-theme,
-.search-result-module-collect .module-collect-ht
+.search-result-module-others .module-collect-theme,
+.search-result-module-others .module-collect-ht
 {
     margin-top: 25px;
     width: 495px;
@@ -652,8 +651,8 @@
     position: relative;
 }
 
-.search-result-module-collect .module-collect-theme .ico,
-.search-result-module-collect .module-collect-ht .ico{
+.search-result-module-others .module-collect-theme .ico,
+.search-result-module-others .module-collect-ht .ico{
     display: block;
     width: 95px;
     padding: 8px 0 8px 5px;
@@ -661,8 +660,8 @@
     background: #bf681e;
 }
 
-.search-result-module-collect .module-collect-theme .ico a,
-.search-result-module-collect .module-collect-ht .ico a{
+.search-result-module-others .module-collect-theme .ico a,
+.search-result-module-others .module-collect-ht .ico a{
     color: #fff;
     padding: 5px 28px;
     text-align: center;

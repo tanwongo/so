@@ -27,9 +27,10 @@
 /**
  * ts中 往window挂载自定义属性
  */
-declare global {
-interface Window {
-    iszhuye: boolean
-}
-}
+// declare global {
+// interface Window {
+//     iszhuye: boolean
+// }
+// }
+
   

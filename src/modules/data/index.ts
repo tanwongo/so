@@ -2,6 +2,7 @@
 const axios = require('axios')
 
 
+
 let datas= {
     // getdatas: function(){
     //     return data1;
@@ -10,6 +11,11 @@ let datas= {
     async getDatas(url){
         let back = await axios.get(url)
         return back.data;
+    },
+
+    async getSearchGroup(){
+        let a  = document.getElementById("")
+      return a
     },
 
     //我关注的

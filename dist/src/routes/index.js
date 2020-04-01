@@ -40,7 +40,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 exports.__esModule = true;
 var koa_router_1 = __importDefault(require("koa-router"));
-var data_1 = __importDefault(require("../modules/data"));
 var router = new koa_router_1["default"]();
 // const  data1  =  require('../test/datas');
 //首页
@@ -48,26 +47,32 @@ var router = new koa_router_1["default"]();
 //   await ctx.render('index/index',{
 //   })
 // })
-router.get('/', function (ctx, next) { return __awaiter(void 0, void 0, void 0, function () {
-    var getMyInfo, getNearlyUpDown, data;
+router.get('/web/main', function (ctx, next) { return __awaiter(void 0, void 0, void 0, function () {
+    var searchKeyWords;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, data_1["default"].getMyInfo()];
-            case 1:
-                getMyInfo = _a.sent();
-                return [4 /*yield*/, data_1["default"].getNearlyUpDown("up")];
-            case 2:
-                getNearlyUpDown = _a.sent();
-                data = {
-                    "getMyInfo": getMyInfo,
-                    "getNearlyUpDown": getNearlyUpDown
+            case 0:
+                searchKeyWords = {
+                    "hj": true,
+                    "qh": true,
+                    "bk": true
                 };
-                if (!(1 == 1)) return [3 /*break*/, 4];
-                return [4 /*yield*/, ctx.render('shared/layout', { data: "123" })];
-            case 3:
+                // let url ="123"
+                // let options = {
+                //     method: 'get',
+                //     headers: { 'content-type': 'application/x-www-form-urlencoded' },
+                //     data: "",
+                //     url
+                // };
+                ctx.body = {
+                    re: true,
+                    message: '',
+                    result: searchKeyWords
+                };
+                return [4 /*yield*/, ctx.render('shared/layout', { data: searchKeyWords })];
+            case 1:
                 _a.sent();
-                _a.label = 4;
-            case 4: return [2 /*return*/];
+                return [2 /*return*/];
         }
     });
 }); });

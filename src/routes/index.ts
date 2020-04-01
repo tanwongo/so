@@ -15,16 +15,25 @@ let router = new Router()
 //   await ctx.render('index/index',{
 //   })
 // })
-router.get('/', async (ctx:Context, next) => {
-    let getMyInfo =  await datas.getMyInfo()
-    let getNearlyUpDown =  await datas.getNearlyUpDown("up")
-    let data = {
-        "getMyInfo":getMyInfo,
-        "getNearlyUpDown":getNearlyUpDown
+router.get('/web/main', async (ctx:Context, next) => {
+    let searchKeyWords = {
+        "hj":true,
+        "qh":true,
+        "bk":true
     }
-    if(1==1){
-        await ctx.render('shared/layout',{data:"123"})
+    // let url ="123"
+    // let options = {
+    //     method: 'get',
+    //     headers: { 'content-type': 'application/x-www-form-urlencoded' },
+    //     data: "",
+    //     url
+    // };
+    ctx.body = { 
+        re: true,
+        message: '',
+        result: searchKeyWords
     }
+        await ctx.render('shared/layout',{data:searchKeyWords})
 })
 
 // 股票

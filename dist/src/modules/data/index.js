@@ -54,6 +54,15 @@ var datas = {
             });
         });
     },
+    getSearchGroup: function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var a;
+            return __generator(this, function (_a) {
+                a = document.getElementById("");
+                return [2 /*return*/, a];
+            });
+        });
+    },
     //我关注的
     getWatched: function () {
         return __awaiter(this, void 0, void 0, function () {

@@ -40,36 +40,98 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 exports.__esModule = true;
 var koa_router_1 = __importDefault(require("koa-router"));
+var ax = require('axios');
+var loadas = require("lodash").merge;
 var router = new koa_router_1["default"]();
 // const  data1  =  require('../test/datas');
 //首页
-// router.get('/(index.html)?',async(ctx,next)=>{
-//   await ctx.render('index/index',{
-//   })
-// })
-router.get('/web/main', function (ctx, next) { return __awaiter(void 0, void 0, void 0, function () {
-    var searchKeyWords;
+router.get('/web/quote', function (ctx, next) { return __awaiter(void 0, void 0, void 0, function () {
+    var data;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
-                searchKeyWords = {
-                    "hj": true,
-                    "qh": true,
-                    "bk": true
+                data = {
+                    a: {
+                        IsSuccess: false
+                    },
+                    b: {
+                        IsSuccess: true,
+                        TotalPage: 9158,
+                        TotalCount: 91566,
+                        Keyword: "",
+                        Data: [
+                            {
+                                Art_UniqueUrl: "http://hk.eastmoney.com/a/201902281056120161.html",
+                                Art_Title: "南方航空拟将有的2架<em>B777</em>-300ER客机订单转换为2架<em>B777</em>F货机订单",
+                                Art_Url: "http://hk.eastmoney.com/news/1535,201902281056120161.html",
+                                Art_CreateTime: "2019-02-28 15:52:20",
+                                Art_Content: "　　南方航空(01055.HK)宣布，公司于2017年10月20日与波音公司签订《8架B777-300ER和30架B737-8飞机购买协议》(以下简称“原协议”)，向波音公司购买8架B777-300ER和30架B737-8飞机。根据该协议约定，上述8架B777-300ER飞机计划..."
+                            }
+                        ]
+                    },
+                    c: ctx.query.keywords
                 };
-                // let url ="123"
-                // let options = {
-                //     method: 'get',
-                //     headers: { 'content-type': 'application/x-www-form-urlencoded' },
-                //     data: "",
-                //     url
-                // };
-                ctx.body = {
-                    re: true,
-                    message: '',
-                    result: searchKeyWords
-                };
-                return [4 /*yield*/, ctx.render('shared/layout', { data: searchKeyWords })];
+                return [4 /*yield*/, ctx.render('web/quote/index', { data: data })];
+            case 1:
+                _a.sent();
+                console.log(ctx.query);
+                return [2 /*return*/];
+        }
+    });
+}); });
+router.get('/web/main', function (ctx, next) { return __awaiter(void 0, void 0, void 0, function () {
+    var from_action, data;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                from_action = ctx.request.query;
+                if (from_action.keywords == "黄金") {
+                    data = {
+                        a: {
+                            IsSuccess: false
+                        },
+                        b: {
+                            IsSuccess: true,
+                            TotalPage: 9158,
+                            TotalCount: 91566,
+                            Keyword: "",
+                            Data: [
+                                {
+                                    Art_UniqueUrl: "http://hk.eastmoney.com/a/201902281056120161.html",
+                                    Art_Title: "南方航空拟将有的2架<em>B777</em>-300ER客机订单转换为2架<em>B777</em>F货机订单",
+                                    Art_Url: "http://hk.eastmoney.com/news/1535,201902281056120161.html",
+                                    Art_CreateTime: "2019-02-28 15:52:20",
+                                    Art_Content: "　　南方航空(01055.HK)宣布，公司于2017年10月20日与波音公司签订《8架B777-300ER和30架B737-8飞机购买协议》(以下简称“原协议”)，向波音公司购买8架B777-300ER和30架B737-8飞机。根据该协议约定，上述8架B777-300ER飞机计划..."
+                                }
+                            ]
+                        },
+                        c: ctx.query.keywords
+                    };
+                }
+                if (from_action.keywords == "赤峰黄金") {
+                    data = {
+                        a: {
+                            IsSuccess: false
+                        },
+                        b: {
+                            IsSuccess: false,
+                            TotalPage: 9158,
+                            TotalCount: 91566,
+                            Keyword: "",
+                            Data: [
+                                {
+                                    Art_UniqueUrl: "http://hk.eastmoney.com/a/201902281056120161.html",
+                                    Art_Title: "南方航空拟将有的2架<em>B777</em>-300ER客机订单转换为2架<em>B777</em>F货机订单",
+                                    Art_Url: "http://hk.eastmoney.com/news/1535,201902281056120161.html",
+                                    Art_CreateTime: "2019-02-28 15:52:20",
+                                    Art_Content: "　　南方航空(01055.HK)宣布，公司于2017年10月20日与波音公司签订《8架B777-300ER和30架B737-8飞机购买协议》(以下简称“原协议”)，向波音公司购买8架B777-300ER和30架B737-8飞机。根据该协议约定，上述8架B777-300ER飞机计划..."
+                                }
+                            ]
+                        },
+                        c: ctx.query.keywords
+                    };
+                }
+                return [4 /*yield*/, ctx.render('web/main/index', { data: data })];
             case 1:
                 _a.sent();
                 return [2 /*return*/];

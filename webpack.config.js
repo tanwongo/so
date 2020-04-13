@@ -10,7 +10,7 @@ jslist.forEach(v=>{
 })
 
 
-
+console.log(entrylist)
 module.exports = {
   entry: entrylist,
   output: {

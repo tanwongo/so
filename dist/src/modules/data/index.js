@@ -49,7 +49,7 @@ var datas = {
                     case 0: return [4 /*yield*/, axios.get(url)];
                     case 1:
                         back = _a.sent();
-                        return [2 /*return*/, back.data];
+                        return [2 /*return*/, back];
                 }
             });
         });
@@ -60,6 +60,19 @@ var datas = {
             return __generator(this, function (_a) {
                 a = document.getElementById("");
                 return [2 /*return*/, a];
+            });
+        });
+    },
+    getSearchList: function (url) {
+        return __awaiter(this, void 0, void 0, function () {
+            var back;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.getDatas(url)];
+                    case 1:
+                        back = _a.sent();
+                        return [2 /*return*/, back];
+                }
             });
         });
     },

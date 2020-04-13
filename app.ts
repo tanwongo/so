@@ -8,18 +8,19 @@ if (!process.env.NODE_ENV) {
 
   import Koa from 'koa'
   import path from "path"
-  import render from "koa-ejs";
+  import render from "./src/modules/koaejs";
+  import config from './config/index';
   import views from "koa-views"
   import koaBody from 'koa-body'
   import reg_route from './src/modules/reg_route'
   import onerror from './src/modules/onerror'
+  import getipandport from './src/modules/getipport'
 //   import catchweb from './modules/catchweb'
   
   const app = new Koa()
-  
+  app.proxy = true
+  app.use(getipandport())
   //静态文件
-
-app.use(require("koa-static")('config'))
 app.use(require("koa-static")('public'))
   
   
@@ -41,7 +42,7 @@ app.use(require("koa-static")('public'))
     cache: false,
     debug: false
   });
-  
+
 
   // render(app, {
   //   root:"views",
@@ -65,6 +66,12 @@ app.use(require("koa-static")('public'))
   app.use(async(ctx, next) => {
     ctx.status = 404
     await ctx.render('shared/404', {title:'404', layout: false})
+  })
+
+  app.use(async (ctx, next)=>{
+    ctx.state.machine_num = config.machine_num
+    //ctx.state.footer = 'footer'
+    await next()
   })
   
   const port = 12345

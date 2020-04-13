@@ -44,14 +44,17 @@ if (!process.env.NODE_ENV) {
 }
 require('source-map-support').install();
 var koa_1 = __importDefault(require("koa"));
-var koa_ejs_1 = __importDefault(require("koa-ejs"));
+var koaejs_1 = __importDefault(require("./src/modules/koaejs"));
+var index_1 = __importDefault(require("./config/index"));
 var koa_body_1 = __importDefault(require("koa-body"));
 var reg_route_1 = __importDefault(require("./src/modules/reg_route"));
 var onerror_1 = __importDefault(require("./src/modules/onerror"));
+var getipport_1 = __importDefault(require("./src/modules/getipport"));
 //   import catchweb from './modules/catchweb'
 var app = new koa_1["default"]();
+app.proxy = true;
+app.use(getipport_1["default"]());
 //静态文件
-app.use(require("koa-static")('config'));
 app.use(require("koa-static")('public'));
 app.use(onerror_1["default"]());
 app.use(koa_body_1["default"]());
@@ -62,7 +65,7 @@ app.use(koa_body_1["default"]());
 //   cache: false,
 //   debug: false 
 // });
-koa_ejs_1["default"](app, {
+koaejs_1["default"](app, {
     root: "views",
     layout: 'shared/layout',
     viewExt: 'ejs',
@@ -93,6 +96,20 @@ app.use(function (ctx, next) { return __awaiter(void 0, void 0, void 0, function
                 ctx.status = 404;
                 return [4 /*yield*/, ctx.render('shared/404', { title: '404', layout: false })];
             case 1:
+                _a.sent();
+                return [2 /*return*/];
+        }
+    });
+}); });
+app.use(function (ctx, next) { return __awaiter(void 0, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                ctx.state.machine_num = index_1["default"].machine_num;
+                //ctx.state.footer = 'footer'
+                return [4 /*yield*/, next()];
+            case 1:
+                //ctx.state.footer = 'footer'
                 _a.sent();
                 return [2 /*return*/];
         }

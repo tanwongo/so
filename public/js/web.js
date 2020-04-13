@@ -81,115 +81,48 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./jssrc/main.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./jssrc/web.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./jssrc/main.ts":
-/*!***********************!*\
-  !*** ./jssrc/main.ts ***!
-  \***********************/
+/***/ "./jssrc/web.ts":
+/*!**********************!*\
+  !*** ./jssrc/web.ts ***!
+  \**********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-// //父级导航栏
-// import menunav from "../src/modules/menunav"
-// menunav.init()
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 exports.__esModule = true;
-// //topnav 用户设置
-// import setting from "../src/modules/topnav/setting"
-// setting.init()
-// //topnav 消息通知
-// import notice from "../src/modules/topnav/notice"
-// notice.init()
-// //右边栏用户信息
-// import userinfo from "../src/modules/userinfo"
-// userinfo.init()
-// //处理通用事件
-// import others from "../src/modules/others"
-// others.init()
-// export interface Global {
-//     document: Document;
-//     window: Window;
-//   }
-//   declare var global: Global;
-/**
- * ts中 往window挂载自定义属性
- */
-// declare global {
-// interface Window {
-//     iszhuye: boolean
-// }
-// }
-var tools_1 = __importDefault(__webpack_require__(/*! ../src/modules/tools */ "./src/modules/tools/index.ts"));
-$(document).ready(function () {
-    $('.nav-div li[data-nav-id="main"]').addClass("active");
-});
-console.log(tools_1["default"].getQueryString("keywords"));
+var getnewslist_1 = __importDefault(__webpack_require__(/*! ../src/modules/getnewslist */ "./src/modules/getnewslist/index.ts"));
+getnewslist_1["default"].init();
 
 
 /***/ }),
 
-/***/ "./src/modules/tools/index.ts":
-/*!************************************!*\
-  !*** ./src/modules/tools/index.ts ***!
-  \************************************/
+/***/ "./src/modules/getnewslist/index.ts":
+/*!******************************************!*\
+  !*** ./src/modules/getnewslist/index.ts ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 exports.__esModule = true;
-var tools = {
+var getnewlist = {
     init: function () {
-    },
-    getQueryString: function (name) {
-        var enc = name.replace("*", "\\*");
-        var reg = new RegExp("(^|&)" + enc + "=([^&]*)(&|$)", "i");
-        var str = (window.location.search.substr(1));
-        var r = str.match(reg);
-        if (r != null) {
-            return decodeURIComponent(r[2]);
-        }
-        else {
-            return null;
-        }
-    },
-    getURLParamer: function () {
-        var str = window.location.search.substr(1);
-        var arr = str.split("&");
-        var obj = {};
-        for (var i = 0, len = arr.length; i < len; i++) {
-            var temp = arr[i].split("=");
-            var key = temp[0].toLocaleLowerCase();
-            var val = temp[1];
-            try {
-                val = decodeURIComponent(val);
-            }
-            catch (error) {
-            }
-            obj[key] = val;
-        }
-        return obj;
-    },
-    URLObjToString: function (obj) {
-        var arr = [];
-        for (var key in obj) {
-            arr.push(key + "=" + obj[key]);
-        }
-        return arr.join("&");
     }
 };
-exports["default"] = tools;
+exports["default"] = getnewlist;
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=web.js.map

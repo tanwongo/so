@@ -10,12 +10,17 @@ let datas= {
 
     async getDatas(url){
         let back = await axios.get(url)
-        return back.data;
+        return back
     },
 
     async getSearchGroup(){
         let a  = document.getElementById("")
       return a
+    },
+
+    async getSearchList(url:string){
+        let back = await this.getDatas(url)
+        return back
     },
 
     //我关注的

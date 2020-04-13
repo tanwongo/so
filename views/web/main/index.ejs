@@ -1,0 +1,17 @@
+
+<div class="cont-div">
+        <div class="wd1000">
+            <div class="search-result-sum">
+                <%-include('../../shared/searchresult.ejs')%>
+            </div>
+            <div class="search-result-list">
+                <%-include('./stock.ejs')%> 
+                <%-include('./stockitem.ejs')%> 
+                <%-include('./futures.ejs')%>
+                <%-include('./bk.ejs')%>
+                <%-include('./newslist.ejs')%>
+            </div>
+        </div>
+</div>
+<%- blockFor("htmlbottom") %>
+<script src="../js/web.js"></script>

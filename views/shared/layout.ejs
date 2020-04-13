@@ -6,17 +6,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>jojo</title>
 <meta http-equiv="refresh">
-<link rel="stylesheet" href="../css/main2.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/layout.css">
 <link rel="stylesheet" href="../css/top-nav.css">
 <link rel="stylesheet" href="../css/reset.css">
 </head>
 <body>
+<div class="topnav">
 <%-include('./topnav.ejs')%>
-<%-include('../web/main.ejs')%>
-<div class="lock" data-box-types="lock"></div>
+</div>
+<div class="main">
+<%-include('./contnav.ejs')%>
+<%-body%>
+</div>
+<div class="footer">
+    <div class="footer-iframe" style="margin: 0 auto;overflow: hidden;width: 1216px;">
+        <iframe src="http://emres.dfcfw.com/public/footer-1200-iframe.html" frameborder="0" width="1216" height="356" style="overflow: hidden;"></iframe>
+    </div>
+</div>
 <script src="http://emres.dfcfw.com/public/js/topnav.js" type="text/javascript"></script>
 <script src='//cdn.bootcss.com/jquery/1.11.2/jquery.min.js'></script>
 <script src="//emcharts.dfcfw.com/tspolyfill/1.0.0/tspolyfill.min.js"></script>
 <script src="../js/main.js"></script>
+<%- block('htmlbottom') %>
 </body>
 </html>

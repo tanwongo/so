@@ -5,89 +5,6 @@
     z-index: 7;
 }
 
-.nav-div{
-    background: #f7f7f7
-}
-
-.nav-div ul{
-
-}
-
-.nav-div li {
-    float: left;
-    padding:10px 15px;
-}
-
-.nav-div li a:hover{
-    color:#ec5200;
-}
-
-.nav-div li.active{
-    background: #ec5200;
-}
-
-.nav-div li a{
-    font-size: 14px;
-}
-
-.nav-div li.active a{
-    color:#fff;
-}
-
-
-.cont-div{
-    width: 100%;
-    margin-top:10px;
-    position: relative;
-}
-
-.search-result-sum{
-    font-size: 15px;
-    position: relative;
-}
-
-.search-result-sum span{
-    font-size: 12px;
-    vertical-align: middle
-}
-
-.search-result-sum span em{
-    color: #ec5200;
-    margin-right: 7px;
-    font-style: normal;
-    letter-spacing: 1px;
-}
-
-.search-result-list{
-    position: relative;
-    margin: 10px auto 0px auto;
-}
-
-.search-result-list .search-result-module-title{
-    margin-bottom: 5px;
-}
-
-.search-result-list .search-result-module-title span{
-    display: block;
-    float: left;
-    font-weight: bold;
-    margin-right: 10px;
-    font-size: 17px;
-}
-
-.search-result-list .search-result-module-title  em{
-    font-style: normal;
-    color: red;
-}
-
-.search-result-list .search-result-module-title  a.newsa{
-    display: block;
-    float: left;
-    font-size: 12px;
-    margin-left: 10px;
-    text-decoration: underline;
-    margin-top: 6px;
-}
 
 
 .search-result-module-qh{
@@ -235,7 +152,6 @@
     text-decoration: underline;
 }
 
-
 .search-result-module-gp{
     margin-top: 10px;
     position: relative;
@@ -330,6 +246,122 @@
     background: #fffef4;
     transition: 0.3s;
 }
+
+.search-result-module-stockitem{
+    margin-top: 10px;
+    position: relative;
+}
+
+.search-result-module-stockitem .stockitem-name{
+    padding: 10px;
+    background: #e2faff
+}
+
+.search-result-module-stockitem .stockitem-name a{
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.search-result-module-stockitem .stockitem-name .addstock,
+.search-result-module-stockitem .stockitem-name .jxban,
+.search-result-module-stockitem .stockitem-name .ccjj
+{
+    font-size: 12px;
+    /* margin-top: 4px; */
+    /* text-decoration: underline; */
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    padding: 3px 5px;
+}
+
+
+
+.stockitem-name .addstock:hover,
+.stockitem-name .jxban:hover,
+.stockitem-name .ccjj
+{
+    background: #f3f3f3;
+}
+
+.search-result-module-stockitem .stockitem-name .zbg{
+    font-size: 12px;
+    /* margin-top: 4px; */
+    /* text-decoration: underline; */
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    padding: 3px 5px;
+    background: #fff;
+}
+
+.search-result-module-stockitem .stockitem-cont{
+    padding: 10px;
+}
+
+.stockitem-cont .price{
+
+}
+
+.stockitem-cont .price i,
+.stockitem-cont .price span
+{
+    display: block;
+    float: left;
+}
+
+.stockitem-cont .price i{
+    width: 18px;
+    height: 18px;
+    background: url(../images/ico/up2.png) no-repeat center top;
+    /* padding-top: 8px; */
+    margin-top: 4px;
+}
+
+.stockitem-cont .price .sp1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 7px;
+}
+
+.stockitem-cont .price .sp2{
+    padding-top: 8px;
+    margin-left: 7px;
+    font-size: 15px;
+}
+
+.search-result-module-stockitem .stockitem-source{
+
+}
+.search-result-module-stockitem .stockitem-source span{
+    font-size: 12px;
+    display: block;
+    float: left;
+    width: 135px;
+}
+
+.search-result-module-stockitem .stockitem-draw{
+
+}
+
+.stockitem-draw ul{
+
+}
+
+.stockitem-draw ul li{
+    float: left;
+    padding: 5px 15px;
+    background: #f7f7f7;
+}
+
+.stockitem-draw ul li a{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.stockitem-draw ul li.active{
+
+}
+
 
 .search-result-module-bk{
     margin-bottom: 10px;
@@ -845,4 +877,6 @@
 .hot-search a{
     display: block;
 }
+
+
 /* #004a99 00458f 003b7a ecf5ff 74b5fc */

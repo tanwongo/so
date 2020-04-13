@@ -1,13 +1,79 @@
-<% if (data.hj) { %>
-    <div class="search-result-module-gp">
-            <div class="search-result-module-title clearfix">
+<% if (!data.b.IsSuccess) { %>
+    <div class="search-result-module-stockitem clearfix">
+        <div class="stockitem-name clearfix">
+            <a href="#" target="_blank">赤峰黄金(600988)</a>
+            <a href="#" class="addstock" target="_self">添加自选股</a>
+            <a href="#" class="jxban" target="_blank">查看极速版行情</a>
+            <a href="#" class="ccjj" target="_blank">持有该股的基金</a>
+            <a href="#" class="ccjj" target="_blank">持有该股的基金</a>
+        </div>
+        <div class="stockitem-cont">
+            <div class="price clearfix">
+                <i></i>
+                <span class="sp1 red">35.54</span>
+                <span class="sp2 red">10.00%</span>
+            </div>
+        </div>
+        <div class="stockitem-source">
+            <p class="clearfix mb17">
+                <span>今开：<em class="green">35.24</em></span>
+                <span>最高：<em class="red">35.24</em></span>
+                <span>成交量：80万手</span>
+                <span>换手：13.33%</span>
+                <span>流通市值：8763.33万</span>
+            </p>
+            <p class="clearfix">
+                <span>昨收：<em class="red">20.24</em></span>
+                <span>最低：<em class="red">20.18</em></span>
+                <span>成交额：500亿</span>
+                <span>量比：1:1</span>
+                <span>流通股本：1444亿</span>
+            </p>
+        </div>
+        <div class="stockitem-draw">
+            <ul class="clearfix">
+                <li class="active">
+                    <a href="#">分时图</a>
+                </li>
+                <li>
+                    <a href="#">5分钟</a>
+                </li>
+                <li>
+                    <a href="#">15分钟</a>
+                </li>
+                <li>
+                    <a href="#">30分钟</a>
+                </li>
+                <li>
+                    <a href="#">60分钟</a>
+                </li>
+                <li>
+                    <a href="#">日K</a>
+                </li>
+                <li>
+                    <a href="#">周K</a>
+                </li>
+                <li>
+                    <a href="#">月K</a>
+                </li>
+                <li>
+                    <a href="#">年K</a>
+                </li>
+            </ul>
+            <div class="item-draw-pic">
+                <img height="276px" width="578px" src="//webquotepic.eastmoney.com/GetPic.aspx?token=44c9d251add88e27b65ed86506f6e5da&amp;nid=90.BK0547&amp;type=r&amp;imageType=rf&amp;_=1583822082761">
+            </div>
+        </div>
+        <!-- <a href="#" class="zbg" target="_blank">上证50指标股</a>
+        <a href="#" class="jxban" target="_blank">查看极速版行情</a> -->
+            <div class="search-result-module-title clearfix hd">
             <span><em>黄金</em>相关个股</span>
             <a href="#" class="newsa">赤峰黄金遭大股东减持</a>
             <a href="#" class="newsa">国际金价多头持续升温</a>
             <a href="#" class="newsa">黄金会不会回调</a>
             <a href="#" class="newsa">伦敦交易所紧急配置黄金</a>
             </div>
-            <div class="module-gp-table">
+            <div class="module-gp-table hd">
                     <table>
                         <thead>
                             <th>名称\代码</th>

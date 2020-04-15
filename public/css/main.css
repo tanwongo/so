@@ -6,6 +6,289 @@
 }
 
 
+/*main个股样式*/
+.search-result-module-stockitem{
+    margin-top: 10px;
+    position: relative;
+}
+
+.search-result-module-stockitem .stockitem-name{
+    padding: 10px;
+    background: #e2faff
+}
+
+.stockitem-name a{
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.stockitem-name .addstock,
+.stockitem-name .jxban,
+.stockitem-name .ccjj
+{
+    font-size: 12px;
+    /* margin-top: 4px; */
+    /* text-decoration: underline; */
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    padding: 3px 5px;
+}
+
+
+
+.stockitem-name .addstock:hover,
+.stockitem-name .jxban:hover,
+.stockitem-name .ccjj
+{
+    background: #f3f3f3;
+}
+
+.stockitem-name .zbg{
+    font-size: 12px;
+    /* margin-top: 4px; */
+    /* text-decoration: underline; */
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    padding: 3px 5px;
+    background: #fff;
+}
+
+.search-result-module-stockitem .stockitem-cont{
+    padding: 10px;
+}
+
+.stockitem-cont .price{
+    position: relative;
+}
+
+.stockitem-cont .price i,
+.stockitem-cont .price span
+{
+    display: block;
+    float: left;
+}
+
+.stockitem-cont .price i{
+    width: 18px;
+    height: 18px;
+    background: url(../images/ico/up2.png) no-repeat center top;
+    /* padding-top: 8px; */
+    margin-top: 4px;
+}
+
+.stockitem-cont .price .sp1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 7px;
+}
+
+.stockitem-cont .price .sp2{
+    padding-top: 8px;
+    margin-left: 7px;
+    font-size: 15px;
+}
+
+.stockitem-cont .link{
+    font-size: 12px;
+    position: relative;
+}
+
+.stockitem-cont .link a{
+
+}
+
+.stockitem-cont .source{
+    position: relative;   
+}
+
+.stockitem-cont .source span{
+    font-size: 12px;
+    display: block;
+    float: left;
+    width: 125px;
+}
+
+.stockitem-cont .time{
+    font-size:12px;
+    margin-right: 15px;
+}
+
+.stockitem-cont .time span{
+    padding:5px;
+    text-align: center;
+    background: #0062c7;
+    color: #ffef33;
+}
+
+.stockitem-cont .time .jyz{
+    background: #c000ff;
+    color: #fff;
+}
+
+.stockitem-cont .time .tsz{
+    background: #000;
+    color: #ffef33;
+}
+
+.stockitem-cont .time .xsz{
+    background: #7b7b7b;
+    color: #ffef33;
+}
+
+.stockitem-cont .time .tpz{
+    background: #f00;
+    color: #ffef33;
+}
+
+
+.search-result-module-stockitem .stockitem-pictxt{
+    position: relative;
+}
+
+.stockitem-pictxt .draw{
+    width: 390px;
+    position: relative;
+}
+
+.stockitem-pictxt .draw li{
+    float: left;
+    margin-right: 15px;
+    padding: 5px 15px;
+    text-align: center
+}
+
+.stockitem-pictxt .draw li a{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.stockitem-pictxt .draw li.active{
+    border-bottom: 2px solid #ec5200;
+}
+
+.stockitem-pictxt .draw li.active a{
+    color:#ec5200
+}
+
+.stockitem-pictxt .info{
+    position: relative;
+}
+
+.stockitem-pictxt .info h1{
+    font-size: 14px;
+    font-weight:nomral;
+    border-bottom: 2px solid #384650;
+    /* font-size: 14px; */
+    padding: 4px 0;
+}
+
+.stockitem-pictxt .info .line{
+    background: #00acc7
+}
+
+.stockitem-pictxt .info table{
+    border-collapse: collapse;
+}
+
+.stockitem-pictxt .info table td{
+    font-size: 12px;
+    text-align: left;
+    /* margin-right: 10px; */
+    padding:6px
+}
+
+.stockitem-pictxt .info li a{
+    float: left;
+    margin-right: 10px;
+}
+
+.stockitem-pictxt .info li span{
+    float: left;
+    line-height: 21px;
+    margin-right: 10px;
+}
+
+.stockitem-pictxt .info .about-stock,
+.stockitem-pictxt .info .about-bk,
+.stockitem-pictxt .info .about-wd
+{
+    position: relative;
+    margin-right: 20px;
+}
+
+
+.search-result-module-stockitem .stockitem-jbm{
+    position: relative;
+    padding: 20px 10px;
+}
+
+.stockitem-jbm .jbxx{
+    float: left;
+}
+
+.stockitem-jbm .jbxx .yjmx{
+    height: 24px;
+    background: url(../images/ico/yj.png) no-repeat left top;
+    display: block;
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+.stockitem-jbm .jbxx .fxts{
+    height: 24px;
+    background: url(../images/ico/fx.png) no-repeat left top;
+    display: block;
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+
+.stockitem-jbm .jbxx table{
+    border-collapse: collapse
+}
+
+.stockitem-jbm .jbxx table tr{
+    border-bottom: 1px solid #eee;
+}
+
+.stockitem-jbm .jbxx table th{
+    background: #f7f7f7;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.stockitem-jbm .jbxx table td{
+    font-size: 12px;
+    padding: 3px;
+    height: 27px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .search-result-module-qh{
     margin-bottom: 10px;
@@ -245,121 +528,6 @@
 .search-result-module-gp thead tr:hover{
     background: #fffef4;
     transition: 0.3s;
-}
-
-.search-result-module-stockitem{
-    margin-top: 10px;
-    position: relative;
-}
-
-.search-result-module-stockitem .stockitem-name{
-    padding: 10px;
-    background: #e2faff
-}
-
-.search-result-module-stockitem .stockitem-name a{
-    display: block;
-    float: left;
-    margin-right: 10px;
-}
-
-.search-result-module-stockitem .stockitem-name .addstock,
-.search-result-module-stockitem .stockitem-name .jxban,
-.search-result-module-stockitem .stockitem-name .ccjj
-{
-    font-size: 12px;
-    /* margin-top: 4px; */
-    /* text-decoration: underline; */
-    border: 1px solid #e0e0e0;
-    background: #fff;
-    padding: 3px 5px;
-}
-
-
-
-.stockitem-name .addstock:hover,
-.stockitem-name .jxban:hover,
-.stockitem-name .ccjj
-{
-    background: #f3f3f3;
-}
-
-.search-result-module-stockitem .stockitem-name .zbg{
-    font-size: 12px;
-    /* margin-top: 4px; */
-    /* text-decoration: underline; */
-    border: 1px solid #e0e0e0;
-    background: #fff;
-    padding: 3px 5px;
-    background: #fff;
-}
-
-.search-result-module-stockitem .stockitem-cont{
-    padding: 10px;
-}
-
-.stockitem-cont .price{
-
-}
-
-.stockitem-cont .price i,
-.stockitem-cont .price span
-{
-    display: block;
-    float: left;
-}
-
-.stockitem-cont .price i{
-    width: 18px;
-    height: 18px;
-    background: url(../images/ico/up2.png) no-repeat center top;
-    /* padding-top: 8px; */
-    margin-top: 4px;
-}
-
-.stockitem-cont .price .sp1{
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 7px;
-}
-
-.stockitem-cont .price .sp2{
-    padding-top: 8px;
-    margin-left: 7px;
-    font-size: 15px;
-}
-
-.search-result-module-stockitem .stockitem-source{
-
-}
-.search-result-module-stockitem .stockitem-source span{
-    font-size: 12px;
-    display: block;
-    float: left;
-    width: 135px;
-}
-
-.search-result-module-stockitem .stockitem-draw{
-
-}
-
-.stockitem-draw ul{
-
-}
-
-.stockitem-draw ul li{
-    float: left;
-    padding: 5px 15px;
-    background: #f7f7f7;
-}
-
-.stockitem-draw ul li a{
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.stockitem-draw ul li.active{
-
 }
 
 

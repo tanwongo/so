@@ -118,6 +118,7 @@ router.get('/web/main', function (ctx, next) { return __awaiter(void 0, void 0, 
                             TotalPage: 9158,
                             TotalCount: 91566,
                             Keyword: "",
+                            news: true,
                             Data: [
                                 {
                                     Art_UniqueUrl: "http://hk.eastmoney.com/a/201902281056120161.html",

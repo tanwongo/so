@@ -110,6 +110,10 @@ a:hover{
   position: relative;
 }
 
+.wd100{
+  width: 100px;
+}
+
 .wd50{
   width: 50px;
 }

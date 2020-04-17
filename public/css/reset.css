@@ -100,11 +100,24 @@ a:hover{
   position: relative;
 }
 
+.wd700{
+  width: 700px;
+  position: relative;
+}
 .wd580{
   width: 580px;
   position: relative;
 }
 
+.wd533{
+  width: 533px;
+  position: relative;
+}
+
+.wd290{
+  width: 290px;
+  position: relative;
+}
 .wd147{
   width: 147px;
   position: relative;
@@ -112,6 +125,10 @@ a:hover{
 
 .wd100{
   width: 100px;
+}
+
+.wd55{
+  width: 55px;
 }
 
 .wd50{

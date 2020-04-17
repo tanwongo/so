@@ -55,26 +55,21 @@
 }
 
 .search-result-module-stockitem .stockitem-cont{
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 10px
 }
 
 .stockitem-cont .price{
+    text-align: center;
     position: relative;
 }
 
-.stockitem-cont .price i,
-.stockitem-cont .price span
-{
-    display: block;
-    float: left;
-}
 
 .stockitem-cont .price i{
-    width: 18px;
-    height: 18px;
     background: url(../images/ico/up2.png) no-repeat center top;
-    /* padding-top: 8px; */
     margin-top: 4px;
+    margin-left: 5px;
+    padding: 3px 7px;
 }
 
 .stockitem-cont .price .sp1{
@@ -103,40 +98,43 @@
 }
 
 .stockitem-cont .source span{
-    font-size: 12px;
+    font-size: 14px;
     display: block;
     float: left;
-    width: 125px;
+    width: 133px;
+    margin-bottom: 10px;
 }
 
 .stockitem-cont .time{
-    font-size:12px;
-    margin-right: 15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #808080;
 }
 
-.stockitem-cont .time span{
+.stockitem-cont .status span{
+    font-size: 12px;
     padding:5px;
     text-align: center;
     background: #0062c7;
     color: #ffef33;
 }
 
-.stockitem-cont .time .jyz{
+.stockitem-cont .status .jyz{
     background: #c000ff;
     color: #fff;
 }
 
-.stockitem-cont .time .tsz{
+.stockitem-cont .status .tsz{
     background: #000;
     color: #ffef33;
 }
 
-.stockitem-cont .time .xsz{
+.stockitem-cont .status .xsz{
     background: #7b7b7b;
     color: #ffef33;
 }
 
-.stockitem-cont .time .tpz{
+.stockitem-cont .status .tpz{
     background: #f00;
     color: #ffef33;
 }
@@ -147,7 +145,7 @@
 }
 
 .stockitem-pictxt .draw{
-    width: 390px;
+    width: 480px;
     position: relative;
 }
 
@@ -172,22 +170,26 @@
 }
 
 .stockitem-pictxt .info{
+    width: 200px;
     position: relative;
 }
 
 .stockitem-pictxt .info h1{
     font-size: 14px;
-    font-weight:nomral;
+    font-weight: nomral;
     border-bottom: 2px solid #384650;
     /* font-size: 14px; */
-    padding: 4px 0;
+    padding: 5px 0;
+    font-weight: normal;
 }
 
 .stockitem-pictxt .info .line{
-    background: #00acc7
+    background: #f00;
+    /* background: #00ab07 */
 }
 
 .stockitem-pictxt .info table{
+    width: 100%;
     border-collapse: collapse;
 }
 
@@ -209,68 +211,76 @@
     margin-right: 10px;
 }
 
-.stockitem-pictxt .info .about-stock,
-.stockitem-pictxt .info .about-bk,
 .stockitem-pictxt .info .about-wd
 {
     position: relative;
-    margin-right: 20px;
 }
 
-
-.search-result-module-stockitem .stockitem-jbm{
+.search-result-module-stockitem .stockitem-part{
+    padding-left: 10px;
+    padding-top: 10px;
     position: relative;
-    padding: 20px 10px;
 }
 
-.stockitem-jbm .jbxx{
-    float: left;
-}
-
-.stockitem-jbm .jbxx .yjmx{
-    height: 24px;
-    background: url(../images/ico/yj.png) no-repeat left top;
-    display: block;
-    padding-left: 30px;
-    line-height: 30px;
-}
-
-.stockitem-jbm .jbxx .fxts{
-    height: 24px;
-    background: url(../images/ico/fx.png) no-repeat left top;
-    display: block;
-    padding-left: 30px;
-    line-height: 30px;
+.stockitem-part h1{
+    font-size: 14px;
+    font-weight: normal;
+    /* margin-bottom: 3px; */
+    background: #e2faff;
+    /* width: 94px; */
+    /* padding-left: 5px; */
+    display: inline;
+    padding: 3px 10px;
 }
 
 
-.stockitem-jbm .jbxx table{
+.stockitem-part table{
+    width: 100%;
+    margin-left: 10px;
     border-collapse: collapse
 }
 
-.stockitem-jbm .jbxx table tr{
-    border-bottom: 1px solid #eee;
-}
-
-.stockitem-jbm .jbxx table th{
-    background: #f7f7f7;
-    font-size: 14px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: normal;
-    text-align: center;
-    border-top: 1px solid #eee;
-}
-
-.stockitem-jbm .jbxx table td{
+.stockitem-part table th{
+    /* background: #f7f7f7; */
     font-size: 12px;
-    padding: 3px;
-    height: 27px;
-    vertical-align: middle;
-    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    font-weight: normal;
+    text-align: left;
+    /* border-top: 1px solid #eee; */
+    border-bottom: 1px solid #384650;
 }
 
+.stockitem-part td
+{
+    font-size: 12px;
+    /* height: 25px; */
+    /* line-height: 25px; */
+    vertical-align: middle;
+    padding: 5px 0;
+}
 
+.stockitem-part td p{
+    margin-bottom: 5px;
+}
+
+/*综合接入-股吧,行情，资讯，公告，研报等*/
+.search-result-module-others{
+    position: relative;
+}
+
+.search-result-module-others .others-guba{
+    width: 330px;
+    position: relative;
+}
+
+.search-result-module-others .others-guba .title{
+
+}
+
+.others-guba .title a{
+    
+}
 
 
 
@@ -738,24 +748,24 @@
     text-decoration: underline;
 }
 
-.search-result-module-others{
+.search-result-module-otherss{
     margin-top: 10px;
     position: relative;
 }
 
 
-.search-result-module-others em{
+.search-result-module-otherss em{
     color:#f00;
 }
 
-.search-result-module-others .list
+.search-result-module-otherss .list
 {
     width: 326px;
     position: relative;
     float: left;
 }
 
-.search-result-module-others .list h1
+.search-result-module-otherss .list h1
 {
     font-weight: normal;
     font-size: 14px;
@@ -763,12 +773,12 @@
     border-bottom: 2px solid #ec5200
 }
 
-.search-result-module-others .list li
+.search-result-module-otherss .list li
 {
     padding: 5px 5px;
 }
 
-.search-result-module-others .list li a
+.search-result-module-otherss .list li a
 {
     font-size: 13px;
     display: block;
@@ -777,20 +787,20 @@
     text-decoration: underline;
 }
 
-.search-result-module-others .list li p
+.search-result-module-otherss .list li p
 {
     margin-top: 3px;
     margin-left: 6px;
 }
 
-.search-result-module-others .list li span
+.search-result-module-otherss .list li span
 {
     font-size: 12px;
     display: block;
     margin-top: 3px;
 }
 
-.search-result-module-others .list .getmore
+.search-result-module-otherss .list .getmore
 {
     display: block;
     position: absolute;
@@ -799,51 +809,51 @@
     font-size: 12px;
 }
 
-.search-result-module-others .module-collect-cfh img.tx,
-.search-result-module-others .module-collect-bk img.tx
+.search-result-module-otherss .module-collect-cfh img.tx,
+.search-result-module-otherss .module-collect-bk img.tx
 {
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
 
-.search-result-module-others .module-collect-cfh li a.name,
-.search-result-module-others .module-collect-bk li a.name
+.search-result-module-otherss .module-collect-cfh li a.name,
+.search-result-module-otherss .module-collect-bk li a.name
 {
     text-decoration: none;
 }
 
-.search-result-module-others .module-collect-guba h1{
+.search-result-module-otherss .module-collect-guba h1{
     /* border-bottom: 2px solid #f00; */
 }
 
 
-.search-result-module-others .module-collect-gg h1{
+.search-result-module-otherss .module-collect-gg h1{
     /* border-bottom: 2px solid #ff00e0 */
 }
 
-.search-result-module-others .module-collect-yb h1{
+.search-result-module-otherss .module-collect-yb h1{
     /* border-bottom: 2px solid #ff00e0; */
 }
 
-.search-result-module-others .module-collect-wdm h1{
+.search-result-module-otherss .module-collect-wdm h1{
     /* border-bottom: 2px solid #ff00e0; */
 }
 
-.search-result-module-others .module-collect-zt h1{
+.search-result-module-otherss .module-collect-zt h1{
     /* border-bottom: 2px solid #2196F3; */
 }
 
-.search-result-module-others .module-collect-bk h1{
+.search-result-module-otherss .module-collect-bk h1{
     /* border-bottom: 2px solid #2196F3; */
 }
 
-.search-result-module-others .module-collect-jgdy h1{
+.search-result-module-otherss .module-collect-jgdy h1{
     /* border-bottom: 2px solid #2196F3; */
 }
 
-.search-result-module-others .module-collect-theme,
-.search-result-module-others .module-collect-ht
+.search-result-module-otherss .module-collect-theme,
+.search-result-module-otherss .module-collect-ht
 {
     margin-top: 25px;
     width: 495px;
@@ -851,8 +861,8 @@
     position: relative;
 }
 
-.search-result-module-others .module-collect-theme .ico,
-.search-result-module-others .module-collect-ht .ico{
+.search-result-module-otherss .module-collect-theme .ico,
+.search-result-module-otherss .module-collect-ht .ico{
     display: block;
     width: 95px;
     padding: 8px 0 8px 5px;
@@ -860,8 +870,8 @@
     background: #bf681e;
 }
 
-.search-result-module-others .module-collect-theme .ico a,
-.search-result-module-others .module-collect-ht .ico a{
+.search-result-module-otherss .module-collect-theme .ico a,
+.search-result-module-otherss .module-collect-ht .ico a{
     color: #fff;
     padding: 5px 28px;
     text-align: center;

@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="clearfix">
-            <div class="fl wd700">
+            <div class="fl wd700" style="border-right: 10px solid #e2faff;">
                 <div class="stockitem-cont clearfix">
                     <div class="clearfix">
                             <div class="fl mr15">
@@ -38,16 +38,19 @@
                                         <p class="mt10">
                                             <span>沪</span>
                                             <span>上证50</span>
-                                            <span class="jyz">开盘中</span>
+                                           
                                         </p>
-                                            <!-- <p class="status xsz">休市中</p>
-                                            <p class="status tpz">停牌中</p>
-                                            <p class="status tsz">退市中</p> -->
                                     </div>
                                 </div>
                                 <div class="fl wd533">
                                     <div class="clearfix">
-                                        <div class="time fl clearfix">2020-03-07&nbsp;星期二&nbsp;14:51</div>
+                                        <div class="time clearfix">
+                                            <p class="fl">2020-03-07&nbsp;星期二&nbsp;14:51</p>
+                                            <p class="fl jyz">开盘中</p>
+                                                 <!-- <p class="status xsz">休市中</p>
+                                                <p class="status tpz">停牌中</p>
+                                                <p class="status tsz">退市中</p> -->
+                                        </div>
                                             <div class="source fl">
                                                 <p class="clearfix">
                                                     <span>今开：<em class="green">35.24</em></span>
@@ -78,7 +81,7 @@
                     </div>
                     <div class="clearfix mt10">
                         <div class="stockitem-pictxt clearfix">
-                            <div class="draw fl mr10">
+                            <div class="draw">
                                 <ul class="clearfix">
                                     <li class="active">
                                         <a href="#">分时图</a>
@@ -97,221 +100,426 @@
                                     </li>
                                 </ul>
                                 <div class="mt10">
-                                    <img src="../images/ico/stock.png" width="480" height="280">
-                                </div>
-                            </div>
-                            <div class="info fr clearfix">
-                                <div class="about-wd">
-                                    <h1>行情报价</h1>
-                                    <table>
-                                        <tr>
-                                            <td>卖五</td>
-                                            <td class="green">95.2</td>
-                                            <td>11300</td>
-                                        </tr>
-                                        <tr>
-                                            <td>卖四</td>
-                                            <td class="green">95.2</td>
-                                            <td>11300</td>
-                                        </tr>
-                                        <tr>
-                                            <td>卖三</td>
-                                            <td class="green">95.2</td>
-                                            <td>11300</td>
-                                        </tr>
-                                        <tr>
-                                            <td>卖二</td>
-                                            <td class="red">95.2</td>
-                                            <td>11300</td>
-                                        </tr>
-                                        <tr>
-                                            <td>卖一</td>
-                                            <td class="green">5.2</td>
-                                            <td>1300</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="line"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>买五</td>
-                                            <td class="red">95.2</td>
-                                            <td>35016545</td>
-                                        </tr>
-                                        <tr>
-                                            <td>买四</td>
-                                            <td class="red">95.2</td>
-                                            <td>1111300</td>
-                                        </tr>
-                                        <tr>
-                                            <td>买三</td>
-                                            <td class="red">95.2</td>
-                                            <td>11300</td>
-                                        </tr>
-                                        <tr>
-                                            <td>卖二</td>
-                                            <td class="green">95.2</td>
-                                            <td>11300</td>
-                                        </tr>
-                                        <tr>
-                                            <td>卖一</td>
-                                            <td class="green">95.2</td>
-                                            <td>11300</td>
-                                        </tr>
-                                    </table>
+                                    <img src="../images/ico/stock.png" width="100%" height="350">
                                 </div>
                             </div>
                         </div>
+                    </div>
+                        <div class="clearfix mt10">
+                        <div class="about-yd">
+                            <div class="clearfix">
+                                <a href="http://quote.eastmoney.com/changes/stocks/sh600988.html" class="stockitem-title-link" target="_blank">单日异动<i class="ysj"></i></a>
+                                <div class="fl about-yd-qt">
+                                    <a href="#">贵金属概念异动</a>
+                                    <a href="#">黄金概念异动</a>
+                                    <a href="#">人民币贬值异动</a>
+                                    <a href="http://quote.eastmoney.com/changes/" target="_blank">查看更多异动</a>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="about-yd-list">
+                                    <div class="about-yd-list-head clearfix">
+                                            <span>时间</span>
+                                            <span>类型</span>
+                                            <span>详情</span>
+                                            <span>价格</span>
+                                            <span>涨跌幅</span>
+                                            <span>实际成交(手)</span>
+                                            <a href="#" class="reload-yd" title="刷新数据"></a>
+                                    </div>
+                                    <div class="about-yd-list-cont">
+                                        <div class="clearfix mb5">
+                                                <span>10:55:33</span>
+                                                <span class="red">大笔买入</span>
+                                                <span class="red">1.68万手</span>
+                                                <span class="red">8.25</span>
+                                                <span class="red">+2.56%</span>
+                                                <span>400</span>
+                                        </div>
+                                        <div class="clearfix mb5">
+                                                <span>10:30:21</span>
+                                                <span class="green">大笔卖出</span>
+                                                <span class="green">1.68万手</span>
+                                                <span class="green">81.25</span>
+                                                <span class="red">+2.56%</span>
+                                                <span>111400</span>
+                                        </div>
+                                        <div class="clearfix mb5">
+                                                <span>10:27:54</span>
+                                                <span class="red">封涨停板</span>
+                                                <span class="red">13.31元</span>
+                                                <span class="red">13.31</span>
+                                                <span class="red">+10.05%</span>
+                                                <span>111400</span>
+                                        </div>
+                                        <div class="clearfix mb5">
+                                                <span>10:02:33</span>
+                                                <span class="red">火箭发射</span>
+                                                <span class="red">10.00%</span>
+                                                <span class="red">13.31</span>
+                                                <span class="red">+10.05%</span>
+                                                <span>111400</span>
+                                        </div>
+                                        <div class="clearfix mb5">
+                                                <span>10:00:00</span>
+                                                <span class="red">快速反弹</span>
+                                                <span class="red">1.98%</span>
+                                                <span class="red">11.25</span>
+                                                <span class="red">+1.98%</span>
+                                                <span>111400</span>
+                                        </div>
+                                        <div class="clearfix mb5">
+                                                <span>09:58:56</span>
+                                                <span class="green">60日新高</span>
+                                                <span class="green">12.11元</span>
+                                                <span class="green">12.10</span>
+                                                <span>0.00%</span>
+                                                <span>111400</span>
+                                        </div>
+                                        <div class="clearfix mb5">
+                                                <span>09:55:33</span>
+                                                <span class="green">打开涨停板</span>
+                                                <span class="green">13.31元</span>
+                                                <span class="green">13.31</span>
+                                                <span class="red">+10.00%</span>
+                                                <span>111400</span>
+                                        </div>
+                                        <div class="clearfix mb5">
+                                                <span>09:55:33</span>
+                                                <span class="green">高台跳水</span>
+                                                <span class="green">1.24%</span>
+                                                <span class="green">81.25</span>
+                                                <span class="red">+1.24%</span>
+                                                <span>111400</span>
+                                        </div>
+                                        <div class="clearfix mb5">
+                                                <span>09:55:33</span>
+                                                <span class="green">大笔卖出</span>
+                                                <span class="green">1.68万手</span>
+                                                <span class="green">81.25</span>
+                                                <span class="red">+2.56%</span>
+                                                <span>111400</span>
+                                        </div>
+                                        <div class="clearfix mb5">
+                                                <span>09:55:33</span>
+                                                <span class="green">大笔卖出</span>
+                                                <span class="green">1.68万手</span>
+                                                <span class="green">81.25</span>
+                                                <span class="red">+2.56%</span>
+                                                <span>111400</span>
+                                        </div>
+                                        <div class="clearfix mb5">
+                                                <span>09:55:33</span>
+                                                <span class="green">大笔卖出</span>
+                                                <span class="green">1.68万手</span>
+                                                <span class="green">81.25</span>
+                                                <span class="red">+2.56%</span>
+                                                <span>111400</span>
+                                        </div>
+                                        <div class="clearfix mb5">
+                                                <span>09:55:33</span>
+                                                <span class="green">大笔卖出</span>
+                                                <span class="green">1.68万手</span>
+                                                <span class="green">81.25</span>
+                                                <span class="red">+2.56%</span>
+                                                <span>111400</span>
+                                        </div>
+                                        <div class="clearfix mb5">
+                                                <span>09:55:33</span>
+                                                <span class="green">大笔卖出</span>
+                                                <span class="green">1.68万手</span>
+                                                <span class="green">81.25</span>
+                                                <span class="red">+2.56%</span>
+                                                <span>111400</span>
+                                        </div>
+                                    </div>
+                                    <div class="about-yd-sum">
+                                        <div class="domore clearfix">
+                                            <div class="tit fl">
+                                                <p>
+                                                    <span>多方异动成交量：</span>
+                                                    <em>498765</em>
+                                                </p>
+                                            </div>
+                                            <div class="kit fl clearfix">
+                                                    <span>∽大笔买单：<em>123</em>次</span>
+                                                    <span>∽火箭升空：<em>123</em>次</span>
+                                                    <span>∽封涨停板：<em>123</em>次</span>
+                                                    <span>∽快速反弹：<em>123</em>次</span>
+                                                    <span>∽60日新高：<em>123</em>次</span>
+                                            </div>
+                                        </div>
+                                        <div class="domore clearfix">
+                                            <div class="tit fl">
+                                                <p>
+                                                    <span>空方异动成交量：</span>
+                                                    <em class='green'>3000</em>
+                                                </p>
+                                            </div>
+                                            <div class="kit fl clearfix">
+                                                <span>∽大笔卖单：<em>123</em>次</span>
+                                                <span>∽打开涨停板：<em>123</em>次</span>
+                                                <span>∽高台跳水：<em>123</em>次</span>
+                                                <span>∽有大卖盘：<em>123</em>次</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="clearfix mt10">
+                            <div class="about-zjl">
+                                    <div class="clearfix">
+                                         <a href="http://data.eastmoney.com/zjlx/600988.html" class="stockitem-title-link" target="_blank">单日资金流<i class="ysj"></i></a>
+                                         <div class="fl about-yd-qt">
+                                             <a href="#">贵金属资金流</a>
+                                             <a href="#">黄金概念资金流</a>
+                                             <a href="#">人民币贬值资金流</a>
+                                             <a href="http://data.eastmoney.com/zjlx/" target="_blank">查看更多资金流</a>
+                                         </div>
+                                    </div>
+                                    <div class="about-zjl-table clearfix">
+                                        <div class="about-zjl-list">
+                                            <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>类型</th>
+                                                            <th>净额</th>
+                                                            <th>净占比</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                                <td>超大单净流入</td>
+                                                                <td class="green">-3578.45万</td>
+                                                                <td class="green">-6.43%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>大单净流入</td>
+                                                                <td class="green">-3578.45万</td>
+                                                                <td class="green">-6.43%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>中单净流入</td>
+                                                                <td class="green">-3578.45万</td>
+                                                                <td class="green">-6.43%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>小单净流入</td>
+                                                                <td class="red">78.45万</td>
+                                                                <td class="red">+6.43%</td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div class="about-zjl-list">
+                                                <table>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>类型</th>
+                                                                <th>流入</th>
+                                                                <th>流出</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr>
+                                                                    <td>超大单</td>
+                                                                    <td class="green">-3578.45万</td>
+                                                                    <td class="green">-3578.45万</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>大单</td>
+                                                                    <td class="green">-3578.45万</td>
+                                                                    <td class="green">-3578.45万</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>中单</td>
+                                                                    <td class="green">-3578.45万</td>
+                                                                    <td class="green">-3578.45万</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>小单</td>
+                                                                    <td class="green">-3578.45万</td>
+                                                                    <td class="green">-3578.45万</td>
+                                                                </tr>
+                                                        </tbody>
+                                                    </table>
+                                        </div>
+                                        <a href="#" class="reload-yd" title="刷新数据"></a>
+                                    </div>
+                                    <div class="zjlr">
+                                        <div class="clearfix">
+                                             <span>∽主力流入：</span>
+                                             <span><em>1232</em>万元</span>
+                                        </div>
+                                        <div class="clearfix">
+                                             <span>∽主力流出：</span>
+                                             <span><em class="green">-7564</em>万元</span>
+                                        </div>
+                                        <div class="zjlr_t">∽主力净流入：<b class="green">-1232万元</b></div>
+                                     </div>
+                                 </div>
                     </div>
                     <div class="clearfix mt10">
                         <%-include("./others.ejs")%> 
                     </div>
                 </div>
             </div>
-            <div class="fl wd290 ml10" style="
-            border-left: 10px solid #e2faff;
-        width: 280px">
+            <div class="fl wd290">
                 <div class="stockitem-part">
                     <div class="about-stock mb10">
-                        <div class="mb3"><h1>相关股票</h1></div>
-                        <table>
-                            <tr>
-                                    <td><a href="#">山东黄金</a></td>
-                                    <td class="red">35.61</td>
-                                    <td class="red">10.00%</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">二六三</a></td>
-                                    <td class="red">3115.61</td>
-                                    <td class="red">1000.00%</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">ST个股</a></td>
-                                    <td class="green">0.22</td>
-                                    <td class="green">5.30%</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">ST个股</a></td>
-                                    <td class="green">0.22</td>
-                                    <td class="green">5.30%</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">ST个股</a></td>
-                                    <td class="green">0.22</td>
-                                    <td class="green">5.30%</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">ST个股</a></td>
-                                    <td class="green">0.22</td>
-                                    <td class="green">5.30%</td>
-                                </tr>
-                        </table>
+                        <div class="mb3">
+                            <a href="http://quote.eastmoney.com/center/boardlist.html#boards-BK07321" class="stockitem-title-link" target="_blank">相关股票<i class="ysj"></i></a>
+                        </div>
+                        <div class="pl10">
+                                <table>
+                                        <tr>
+                                                <td><a href="#">山东黄金</a></td>
+                                                <td class="red">35.61</td>
+                                                <td class="red">10.00%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">二六三</a></td>
+                                                <td class="red">3115.61</td>
+                                                <td class="red">1000.00%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">ST个股</a></td>
+                                                <td class="green">0.22</td>
+                                                <td class="green">5.30%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">ST个股</a></td>
+                                                <td class="green">0.22</td>
+                                                <td class="green">5.30%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">ST个股</a></td>
+                                                <td class="green">0.22</td>
+                                                <td class="green">5.30%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">ST个股</a></td>
+                                                <td class="green">0.22</td>
+                                                <td class="green">5.30%</td>
+                                            </tr>
+                                    </table>
+                        </div>
                     </div>
                     <div class="about-bk mb10">
-                            <div class="mb3"><h1>相关板块</h1></div>
-                            <table>
-                                <tr>
-                                    <td><a href="#">黄金概念</a></td>
-                                    <td class="red">10.00%</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">人民币贬值收益</a></td>
-                                    <td class="red">10.00%</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">稀有资源</a></td>
-                                    <td class="red">0.00%</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">贵金属</a></td>
-                                    <td class="red">10.00%</td>
-                                </tr>
-                            </table>
+                            <div class="mb3"><a href="http://quote.eastmoney.com/center/boardlist.html#boards-BK07321" class="stockitem-title-link" target="_blank">相关板块<i class="ysj"></i></a></div>
+                           <div class="pl10">
+                                <table>
+                                        <tr>
+                                            <td><a href="#">黄金概念</a></td>
+                                            <td class="red">10.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">人民币贬值收益</a></td>
+                                            <td class="red">10.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">稀有资源</a></td>
+                                            <td class="red">0.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">贵金属</a></td>
+                                            <td class="red">10.00%</td>
+                                        </tr>
+                                    </table>
+                           </div>
                     </div>
                     <div class="about-yj mb10">
-                            <div class="mb3"><h1>相关业绩</h1></div>
-                            <table>
-                                    <thead>
-                                        <tr>
-                                            <th>截止日期</th>
-                                            <th>预计净利润(元)</th>
-                                            <th>类型</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>2020-03-31</td>
-                                            <td>
-                                                <p>8.20亿～9.20亿</p>
-                                                <p class="red">112.57%～138.49%</p>
-                                            </td>
-                                            <td class="bjup"><img src="../images/ico/bjup.png">预增</td>
-                                        </tr>
-                                         <tr>
-                                            <td>2020-01-31</td>
-                                            <td>
-                                                <p>1438.20亿～9223.20亿</p>
-                                                <p class="green">1112.57%～1384.49%</p>
-                                            </td>
-                                            <td class="bjdown"><img src="../images/ico/bjdown.png">预减</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2020-01-31</td>
-                                            <td>
-                                                <p>148.20亿～923.20亿</p>
-                                                <p class="green">12.57%～134.49%</p>
-                                            </td>
-                                            <td class="bjdown"><img src="../images/ico/bjdown.png">预减</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2020-01-31</td>
-                                            <td>
-                                                <p>18.20亿～922.20亿</p>
-                                                <p class="green">2.57%～4.49%</p>
-                                            </td>
-                                            <td class="bjdown"><img src="../images/ico/bjdown.png">预减</td>
-                                        </tr>
-                                        
-                                    </tbody>
-                                </table>
+                            <div class="mb3"><a href="http://data.eastmoney.com/bbsj/600988.html" class="stockitem-title-link" target="_blank">相关业绩<i class="ysj"></i></a></div>
+                            <div class="pl10">
+                                    <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>截止日期</th>
+                                                    <th>预计净利润(元)</th>
+                                                    <th>类型</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2020-03-31</td>
+                                                    <td>
+                                                        <p>8.20亿～9.20亿</p>
+                                                        <p class="red">112.57%～138.49%</p>
+                                                    </td>
+                                                    <td class="bjup"><img src="../images/ico/bjup.png">预增</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>2020-01-31</td>
+                                                    <td>
+                                                        <p>1438.20亿～9223.20亿</p>
+                                                        <p class="green">1112.57%～1384.49%</p>
+                                                    </td>
+                                                    <td class="bjdown"><img src="../images/ico/bjdown.png">预减</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2020-01-31</td>
+                                                    <td>
+                                                        <p>148.20亿～923.20亿</p>
+                                                        <p class="green">12.57%～134.49%</p>
+                                                    </td>
+                                                    <td class="bjdown"><img src="../images/ico/bjdown.png">预减</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2020-01-31</td>
+                                                    <td>
+                                                        <p>18.20亿～922.20亿</p>
+                                                        <p class="green">2.57%～4.49%</p>
+                                                    </td>
+                                                    <td class="bjdown"><img src="../images/ico/bjdown.png">预减</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                            </div>
                     </div>
                     <div class="about-ts">
-                            <div class="mb3"><h1>相关提示</h1></div>
-                            <table>
-                                    <thead>
-                                        <tr>
-                                            <th>类型</th>
-                                            <th>内容</th>
-                                            <th>日期</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="wd55">行政处罚</td>
-                                            <td><a href="#" title="对赤峰吉隆黄金矿业股份有限公司及有关责任人予以通报批评">对赤峰吉隆黄金矿业股...</a></td>
-                                            <td>2020-03-31</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="wd55">资产重组</td>
-                                            <td><a href="#" title="赤峰黄金收购报告书">赤峰黄金收购报告书</a></td>
-                                            <td>2020-03-31</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="wd55">重大事项</td>
-                                            <td><a href="#" title="关于赤峰黄金为子公司担包">关于赤峰黄金为子公司担...</a></td>
-                                            <td>2020-03-31</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="wd55">持股变动</td>
-                                            <td><a href="#" title="关于赤峰黄金股东集中竞价减持公告">关于赤峰黄金股东集中...</a></td>
-                                            <td>2020-03-31</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="wd55">风险警告</td>
-                                            <td><a href="#" title="关于赤峰黄金股股价异常公告">关于赤峰黄金股股价异常...</a></td>
-                                            <td>2020-03-31</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="mb3"> <a href="http://data.eastmoney.com/notices/stock/600988.html" class="stockitem-title-link" target="_blank">相关提示<i class="ysj"></i></a></div>
+                            <div class="pl10">
+                                    <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>类型</th>
+                                                    <th>内容</th>
+                                                    <th>日期</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="wd55">行政处罚</td>
+                                                    <td><a href="#" title="对赤峰吉隆黄金矿业股份有限公司及有关责任人予以通报批评">对赤峰吉隆黄金矿业股...</a></td>
+                                                    <td>2020-03-31</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="wd55">资产重组</td>
+                                                    <td><a href="#" title="赤峰黄金收购报告书">赤峰黄金收购报告书</a></td>
+                                                    <td>2020-03-31</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="wd55">重大事项</td>
+                                                    <td><a href="#" title="关于赤峰黄金为子公司担包">关于赤峰黄金为子公司担...</a></td>
+                                                    <td>2020-03-31</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="wd55">持股变动</td>
+                                                    <td><a href="#" title="关于赤峰黄金股东集中竞价减持公告">关于赤峰黄金股东集中...</a></td>
+                                                    <td>2020-03-31</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="wd55">风险警告</td>
+                                                    <td><a href="#" title="关于赤峰黄金股股价异常公告">关于赤峰黄金股股价异常...</a></td>
+                                                    <td>2020-03-31</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                            </div>
                     </div>
                 </div>
             </div>

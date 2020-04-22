@@ -14,14 +14,13 @@
 
 .search-result-module-stockitem a.stockitem-title-link{
     font-size: 14px;
-    font-weight: bold;
     display: block;
     float: left;
     height: 25px;
     line-height: 25px;
     background: #fff06b;
     padding: 0px 10px;
-    color: #384650;
+    color: #000;
     position: relative;
 }
 
@@ -351,12 +350,63 @@
     position: relative;
 }
 
-.stockitem-cont .about-zjl .about-zjl-list{
+.about-zjl .about-zjl-table .about-zjl-list{
     width: 340px;
     float: left;
 }
 
+.stockitem-cont .about-zjl  .about-zjl-sum{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
 
+.about-zjl  .about-zjl-sum .tit{
+    width: 185px;
+}
+
+.about-zjl  .about-zjl-sum  span{
+    width: 180px;
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+}
+
+
+.about-zjl  .about-zjl-sum p span{
+    display: inline;
+    float: none;
+}
+
+.about-zjl-sum .tit em{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.about-zjl-sum span em{
+    font-weight: bold;
+    color: #384650;
+}
+
+.stockitem-cont .zyjj{
+    position: relative;
+}
+
+.stockitem-cont .zyjj p{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.stockitem-cont .zyjj p span{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stockitem-cont .zyjj p span em{
+    font-weight: bold;
+    text-decoration: underline
+}
 
 
 
@@ -408,23 +458,50 @@
     margin-bottom: 5px;
 }
 
+
+
+
+
+
+
 /*综合接入-股吧,行情，资讯，公告，研报等*/
 .search-result-module-others{
     position: relative;
 }
 
-.search-result-module-others .others-guba{
-    width: 330px;
+.search-result-module-others .others-list{
+    margin-top: 20px;
     position: relative;
 }
 
-.search-result-module-others .others-guba .title{
-
+.search-result-module-others .others-list a.link{
+    font-size: 16px;
+    width: 95px;
+    display: block;
+    float: left;
 }
 
-.others-guba .title a{
-
+.search-result-module-others .others-list a.ctx{
+    font-size: 14px;
+    display: block;
+    float: left;
+    padding-top: 2px;
+    /* line-height: 25px; */
+    width: 495px;
+    word-break: break-all;
+    white-space: normal;
 }
+
+.search-result-module-others .others-list span.time{
+    font-size: 14px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    padding-top: 5px;
+    color: #808080;
+}
+
+
 
 
 
@@ -1200,5 +1277,15 @@
     display: block;
 }
 
+.stock-living-video{
+    position: relative;
+}
 
+.stock-living-video p.title{
+    font-size: 16px;
+}
+
+.stock-living-video .video-tabs{
+
+}
 /* #004a99 00458f 003b7a ecf5ff 74b5fc */

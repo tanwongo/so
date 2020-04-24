@@ -32,7 +32,4 @@ exports.__esModule = true;
 // }
 // }
 var tools_1 = __importDefault(require("../src/modules/tools"));
-$(document).ready(function () {
-    $('.nav-div li[data-nav-id="main"]').addClass("active");
-});
 console.log(tools_1["default"].getQueryString("keywords"));

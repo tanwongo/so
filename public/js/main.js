@@ -128,9 +128,6 @@ exports.__esModule = true;
 // }
 // }
 var tools_1 = __importDefault(__webpack_require__(/*! ../src/modules/tools */ "./src/modules/tools/index.ts"));
-$(document).ready(function () {
-    $('.nav-div li[data-nav-id="main"]').addClass("active");
-});
 console.log(tools_1["default"].getQueryString("keywords"));
 
 

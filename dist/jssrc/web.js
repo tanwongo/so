@@ -5,3 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 exports.__esModule = true;
 var getnewslist_1 = __importDefault(require("../src/modules/getnewslist"));
 getnewslist_1["default"].init();
+$(document).ready(function () {
+    $('.nav-div li[data-nav-id="main"]').addClass("active").siblings();
+});

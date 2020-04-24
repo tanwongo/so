@@ -21,7 +21,7 @@ img,a,button{
   outline: 0 none;
 }
 
-table tr:hover{
+table tbody tr:hover{
   background: #fffef4;
   transition: 0.3s;
 }
@@ -29,6 +29,16 @@ a{
   text-decoration: none;
 }
 
+a.link,
+a.ctx{
+  color:#0040d2
+}
+
+a.link:hover,
+a.ctx:hover{
+  color: #ec5200;
+  transition: 0.3s;
+}
 b{
   font-weight:normal
 }
@@ -78,7 +88,7 @@ input[data-p='true']::-webkit-input-placeholder{
 }
 
 a{
-  color:#043396
+  color:#0040d2
 }
 a:visited{
   /* #653096? */
@@ -118,8 +128,8 @@ a:hover{
   width: 380px;
 }
 
-.wd290{
-  width: 290px;
+.wd295{
+  width: 295px;
   position: relative;
 }
 .wd147{

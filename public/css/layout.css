@@ -1,15 +1,16 @@
 
 .nav-div{
-    background: #f7f7f7
+    position: relative;
+    margin-top: 10px;
 }
 
 .nav-div ul{
-
+list-style: none;
 }
 
 .nav-div li {
     float: left;
-    padding:10px 15px;
+    padding:5px 15px;
 }
 
 .nav-div li a:hover{
@@ -22,6 +23,7 @@
 
 .nav-div li a{
     font-size: 14px;
+    color:#043396
 }
 
 .nav-div li.active a{
@@ -36,7 +38,7 @@
 }
 
 .search-result-sum{
-    font-size: 15px;
+    padding-top: 10px;
     position: relative;
 }
 

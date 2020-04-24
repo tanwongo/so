@@ -1,11 +1,11 @@
 <div class="search-box">
      <div class="search-head">
           <div class='wd1000 clearfix'>
-               <div class="eastlogo">
+               <!-- <div class="eastlogo">
                     <a class="logo" href="http://www.eastmoney.com">
                          <img src="http://so.eastmoney.com/Content/img/logo-124.png">
                     </a>
-               </div>
+               </div> -->
                <div class="search-form clearfix">
                     <form action>
                          <input type="text" name="keywords" autocomplete="off" class="input-box" value="<%=data.c%>">
@@ -13,5 +13,55 @@
                     </form>
                </div>
           </div>
+
+          <div class="nav-div">
+                    <div class="wd1000">
+                        <ul class="clearfix">
+                            <li data-nav-id='main'>
+                                <a href="main?keywords=<%-data.c%>" target="_self">综合</a>
+                            </li>
+                            <li data-nav-id='quote'>
+                                <a href="quote?keywords=<%-data.c%>" target="_self">行情</a>
+                            </li>
+                            <li>
+                                <a href="information?keywords=<%-data.c%>" target="_self">资讯</a>
+                            </li>
+                            <li>
+                                <a href="announcement?keywords=<%-data.c%>" target="_self">公告</a>
+                            </li>
+                            <li>
+                                <a href="researchpt?keywords=<%-data.c%>" target="_self">研报</a>
+                            </li>
+                            <li>
+                                <a href="guba?keywords=<%-data.c%>" target="_self">股吧</a>
+                            </li>
+                            <li>
+                                <a href="cfh?keywords=<%-data.c%>" target="_self">财富号</a>
+                            </li>
+                            <li>
+                                <a href="cfhwz?keywords=<%-data.c%>" target="_self">财富号文章</a>
+                            </li>
+                            <li>
+                                <a href="cfsh?keywords=<%-data.c%>" target="_self">财富生活</a>
+                            </li>
+                            <li>
+                                <a href="blog?keywords=<%-data.c%>" target="_self">博客</a>
+                            </li>
+                            <li>
+                                <a href="comb?keywords=<%-data.c%>" target="_self">组合</a>
+                            </li>
+                            <li>
+                                <a href="wdm?keywords=<%-data.c%>" target="_self">问董秘</a>
+                            </li>
+                            <li>
+                                <a href="xsw?keywords=<%-data.c%>" target="_self">悬赏问</a>
+                            </li>
+                            <li>
+                                <a href="baik?keywords=<%-data.c%>" target="_self">百科</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+        
      </div>
 </div>

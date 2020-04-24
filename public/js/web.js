@@ -101,6 +101,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 exports.__esModule = true;
 var getnewslist_1 = __importDefault(__webpack_require__(/*! ../src/modules/getnewslist */ "./src/modules/getnewslist/index.ts"));
 getnewslist_1["default"].init();
+$(document).ready(function () {
+    $('.nav-div li[data-nav-id="main"]').addClass("active").siblings();
+});
 
 
 /***/ }),

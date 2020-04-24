@@ -34,8 +34,6 @@
 // }
 
 import tools from "../src/modules/tools"
-$(document).ready(function(){
-    $('.nav-div li[data-nav-id="main"]').addClass("active")
-})
+
 
 console.log(tools.getQueryString("keywords"))

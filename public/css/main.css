@@ -1,6 +1,6 @@
 .main{
     width: 100%;
-    margin-top: 110px;
+    margin-top: 128px;
     position: relative;
     z-index: 7;
 }
@@ -16,8 +16,8 @@
     font-size: 14px;
     display: block;
     float: left;
-    height: 25px;
-    line-height: 25px;
+    height: 30px;
+    line-height: 30px;
     background: #fff06b;
     padding: 0px 10px;
     color: #000;
@@ -210,7 +210,8 @@
 }
 
 .stockitem-cont .about-yd,
-.stockitem-cont .about-zjl
+.stockitem-cont .about-zjl,
+.stockitem-cont .about-stock
 {
     position: relative;
 }
@@ -223,6 +224,7 @@
 
 .about-yd-qt a{
     font-size: 12px;
+    color:#808080;
     text-decoration: underline;
 }
 
@@ -231,7 +233,7 @@
 }
 
 .about-yd .about-yd-list span{
-    font-size: 14px;
+    font-size: 12px;
     display: block;
     float: left;
     width: 110px;
@@ -239,9 +241,14 @@
 
 
 .about-yd .about-yd-list .about-yd-list-head{
-    border-bottom: 2px solid #384650;
+    border-bottom: 1px solid #000;
     padding-bottom: 5px;
     position: relative;
+}
+
+.about-yd .about-yd-list .about-yd-list-head span{
+    font-size: 14px;
+    color:#000;
 }
 
 .stockitem-cont .reload-yd{
@@ -260,11 +267,12 @@
 }
 
 .about-yd .about-yd-list .about-yd-list-cont{
-    max-height: 180px;
+    max-height: 370px;
     overflow-x: hidden;
     overflow-y: auto;
     /* background: #e2faff; */
     margin-top: 5px;
+    border-bottom: 1px solid #000;
 }
 
 .about-yd .about-yd-list .about-yd-list-cont div{
@@ -291,12 +299,12 @@
 }
 
 .about-yd-sum .domore .tit span{
+    font-size: 14px;
     display: inline;
     float: none;
 }
 
 .about-yd-sum .domore .tit em{
-    text-decoration: underline;
     font-weight: bold;
 }
 
@@ -332,13 +340,16 @@
     font-weight: normal;
     /* padding: 5px; */
     height: 24px;
+    color: #000;
     text-align: left;
+    /* font-weight: bold; */
     line-height: 24px;
-    border-bottom: 2px solid #384650;
+    border-bottom: 1px solid #000;
 }
 .stockitem-cont table td{
-    font-size: 14px;
+    font-size: 12px;
     text-align: left;
+    vertical-align: middle;
     /* margin-right: 10px; */
     padding: 6px 0px
 }
@@ -365,8 +376,9 @@
     width: 185px;
 }
 
-.about-zjl  .about-zjl-sum  span{
+.about-zjl .about-zjl-sum span{
     width: 180px;
+    font-size:12px;
     display: block;
     float: left;
     margin-bottom: 10px;
@@ -374,19 +386,27 @@
 
 
 .about-zjl  .about-zjl-sum p span{
+    font-size: 14px;
     display: inline;
     float: none;
 }
 
-.about-zjl-sum .tit em{
-    text-decoration: underline;
+.about-zjl-sum em{
     font-weight: bold;
 }
 
-.about-zjl-sum span em{
-    font-weight: bold;
-    color: #384650;
+.stockitem-cont .about-stock .about-stock-table{
+    margin-top: 5px;
+    margin-left: 10px;
+    position: relative;
 }
+
+.about-stock .about-stock-table a:hover p{
+    color:#ec5200
+}
+
+
+
 
 .stockitem-cont .zyjj{
     position: relative;
@@ -395,7 +415,7 @@
 .stockitem-cont .zyjj p{
     margin-top: 10px;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .stockitem-cont .zyjj p span{
@@ -405,12 +425,11 @@
 
 .stockitem-cont .zyjj p span em{
     font-weight: bold;
-    text-decoration: underline
 }
 
 
 
-
+/*A股右侧栏*/
 .search-result-module-stockitem .stockitem-part{
     padding-left: 10px;
     padding-top: 10px;
@@ -436,13 +455,14 @@
 
 .stockitem-part table th{
     /* background: #f7f7f7; */
-    font-size: 12px;
+    font-size: 14px;
     height: 25px;
     line-height: 25px;
     font-weight: normal;
     text-align: left;
+    color: #000;
     /* border-top: 1px solid #eee; */
-    border-bottom: 1px solid #384650;
+    border-bottom: 1px solid #000;
 }
 
 .stockitem-part td
@@ -456,6 +476,13 @@
 
 .stockitem-part td p{
     margin-bottom: 5px;
+}
+
+.stockitem-part .about-ts,
+.stockitem-part .about-gd
+{
+    margin-bottom: 20px;
+    position: relative;
 }
 
 
@@ -475,8 +502,8 @@
 }
 
 .search-result-module-others .others-list a.link{
-    font-size: 16px;
-    width: 95px;
+    font-size: 14px;
+    width: 75px;
     display: block;
     float: left;
 }
@@ -485,20 +512,28 @@
     font-size: 14px;
     display: block;
     float: left;
+    width: 495px;
     padding-top: 2px;
     /* line-height: 25px; */
-    width: 495px;
-    word-break: break-all;
+    word-break: break-word;
     white-space: normal;
 }
 
 .search-result-module-others .others-list span.time{
-    font-size: 14px;
+    font-size: 12px;
     display: block;
     float: left;
     margin-right: 10px;
     padding-top: 5px;
     color: #808080;
+}
+
+.search-result-module-others .others-list em.xsprice{
+    font-size: 12px;
+    background: #d04040;
+    color: #fff;
+    padding: 0 5px;
+    margin-left: 3px;
 }
 
 

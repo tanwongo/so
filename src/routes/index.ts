@@ -99,6 +99,41 @@ router.get('/web/main', async (ctx:Context, next) => {
     await ctx.render('web/main/index',{data:data})
 })
 
+router.get('/', async (ctx:Context, next) => {
+    let from_action = ctx.request.query
+    let data:any;
+
+        data = {
+            a:{
+             IsSuccess:false
+            },
+            b:{
+             IsSuccess:false,
+             TotalPage:9158,
+             TotalCount:91566,
+             Keyword:"",
+             Data:[
+                 {
+                     Art_UniqueUrl: "http://hk.eastmoney.com/a/201902281056120161.html",
+                     Art_Title: "南方航空拟将有的2架<em>B777</em>-300ER客机订单转换为2架<em>B777</em>F货机订单",
+                     Art_Url: "http://hk.eastmoney.com/news/1535,201902281056120161.html",
+                     Art_CreateTime: "2019-02-28 15:52:20",
+                     Art_Content: "　　南方航空(01055.HK)宣布，公司于2017年10月20日与波音公司签订《8架B777-300ER和30架B737-8飞机购买协议》(以下简称“原协议”)，向波音公司购买8架B777-300ER和30架B737-8飞机。根据该协议约定，上述8架B777-300ER飞机计划..."
+                 }
+             ]
+            },
+            c:ctx.query.keywords
+         }
+    
+
+
+  
+    
+
+
+    await ctx.render('web/main/index',{data:data})
+})
+
 
 // 股票
 // router.get('/stock/user/:id',async (ctx, next) => {

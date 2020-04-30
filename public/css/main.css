@@ -211,7 +211,8 @@
 
 .stockitem-cont .about-yd,
 .stockitem-cont .about-zjl,
-.stockitem-cont .about-stock
+.stockitem-cont .about-stock,
+.stockitem-cont .about-gd
 {
     position: relative;
 }
@@ -237,25 +238,27 @@
     display: block;
     float: left;
     width: 110px;
+    text-align: center;
 }
 
 
 .about-yd .about-yd-list .about-yd-list-head{
-    border-bottom: 1px solid #000;
-    padding-bottom: 5px;
+    background: #fff06b;
     position: relative;
 }
 
 .about-yd .about-yd-list .about-yd-list-head span{
     font-size: 14px;
     color:#000;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .stockitem-cont .reload-yd{
     position: absolute;
     display: block;
-    top: 0px;
-    right: 8px;
+    top: 3px;
+    right: 0px;
     background: url(../images/ico/reload.png) no-repeat 0 0;
     width: 24px;
     height: 24px;
@@ -290,44 +293,42 @@
     position: relative;
 }
 
-.about-yd-list .about-yd-sum .domore{
+.stockitem-cont  .domore{
     margin-bottom: 10px;
 }
 
-.about-yd-sum .domore .tit{
+.stockitem-cont .domore .tit{
     width: 185px;
+    position: relative;
 }
 
-.about-yd-sum .domore .tit span{
+.stockitem-cont .domore .tit span{
     font-size: 14px;
     display: inline;
     float: none;
 }
 
-.about-yd-sum .domore .tit em{
+.stockitem-cont  .domore .tit em{
     font-weight: bold;
 }
 
-.about-yd-sum .domore .kit{
-    width: 475px;
+.stockitem-cont .domore .kit{
+    width: 443px;
     margin-left: 20px;
 }
 
-.about-yd-sum .domore .kit span{
+.stockitem-cont  .domore .kit span{
     width: 180px;
+    font-size: 12px;
+    display: block;
+    float: left;
     margin-bottom: 10px;
 }
 
-.about-yd-sum .domore .kit em{
+.stockitem-cont  .domore .kit em{
     font-weight: bold;
-    color:#384650
 }
 
-
-.stockitem-cont .line{
-    background: #f00;
-    /* background: #00ab07 */
-}
 
 .stockitem-cont table{
     width: 100%;
@@ -341,17 +342,21 @@
     /* padding: 5px; */
     height: 24px;
     color: #000;
-    text-align: left;
+    text-align: center;
     /* font-weight: bold; */
+    background: #fff06b;
     line-height: 24px;
-    border-bottom: 1px solid #000;
+    /* border-bottom: 1px solid #000; */
+    /* border-top: 1px solid #000; */
 }
 .stockitem-cont table td{
     font-size: 12px;
     text-align: left;
     vertical-align: middle;
     /* margin-right: 10px; */
-    padding: 6px 0px
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center;
 }
 
 
@@ -362,8 +367,9 @@
 }
 
 .about-zjl .about-zjl-table .about-zjl-list{
-    width: 340px;
+    width: 320px;
     float: left;
+    margin-right: 10px;
 }
 
 .stockitem-cont .about-zjl  .about-zjl-sum{
@@ -427,6 +433,49 @@
     font-weight: bold;
 }
 
+/*A股相关股东*/
+.stockitem-cont .about-gd{
+    position: relative;
+    font-size: 14px;
+}
+
+.stockitem-cont .about-gd .about-gd-rs{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.about-gd .about-gd-rs img.gdrs-img{
+    display: block;
+    width: 650px;
+    height: 260px;
+    margin-bottom: 10px;
+}
+
+
+.stockitem-cont .about-gd .jzrq{
+    font-weight: bold;
+    color:#000;
+    margin-bottom: 5px;
+}
+
+.stockitem-cont .about-gd .sjkg{
+    margin: 0 auto;
+    /* width: 481px; */
+    /* margin-left: 153px; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.stockitem-cont .about-gd .about-lt{
+    margin-left: 10px; 
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.about-gd .about-lt h1{
+    margin-bottom: 5px;
+}
+
 
 
 /*A股右侧栏*/
@@ -478,8 +527,7 @@
     margin-bottom: 5px;
 }
 
-.stockitem-part .about-ts,
-.stockitem-part .about-gd
+.stockitem-part .about-ts
 {
     margin-bottom: 20px;
     position: relative;
@@ -1163,6 +1211,9 @@
 
 }
 
+/*
+综合新闻列表
+*/
 .search-result-module-zhnews{
     position: relative;
 }
@@ -1173,6 +1224,9 @@
     position: relative;
 }
 
+.search-result-module-zhnews .module-zhnews-fl em{
+    color:#f00;
+}
 .search-result-module-zhnews .list{
     margin-bottom: 22px;
 }

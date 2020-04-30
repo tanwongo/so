@@ -115,7 +115,7 @@ app.use(function (ctx, next) { return __awaiter(void 0, void 0, void 0, function
         }
     });
 }); });
-var port = 12345;
+var port = 777;
 app.listen(port, function () {
     console.info("(ENV\uFF1A" + process.env.NODE_ENV + ")\u5DF2\u542F\u52A8\uFF0C\u76D1\u542C\u7AEF\u53E3 " + port);
 });

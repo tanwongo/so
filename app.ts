@@ -74,7 +74,7 @@ app.use(require("koa-static")('public'))
     await next()
   })
   
-  const port = 12345
+  const port = 777
   app.listen(port, function(){
     console.info(`(ENV：${process.env.NODE_ENV})已启动，监听端口 ${port}`);
   }); 

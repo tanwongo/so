@@ -45,7 +45,6 @@ b{
 
 em{
   font-style: normal;
-  color:#f00;
 }
 input{
   outline: none;
@@ -132,13 +131,34 @@ a:hover{
   width: 295px;
   position: relative;
 }
+
+.wd220{
+  width: 220px;
+}
+.wd170{
+  width: 170px;
+}
+
 .wd147{
   width: 147px;
   position: relative;
 }
 
+.wd110{
+  width: 110px;
+}
+
+
 .wd100{
   width: 100px;
+}
+
+.wd85{
+  width: 85px;
+}
+
+.wd70{
+  width: 70px;
 }
 
 .wd55{
@@ -147,6 +167,10 @@ a:hover{
 
 .wd50{
   width: 50px;
+}
+
+.wd40{
+  width: 40px;
 }
 
 .wd60{
@@ -233,6 +257,9 @@ a:hover{
 .mr11{
   margin-right: 11px;
 }
+.ml32{
+  margin-left: 32px;
+}
 .ml25{
   margin-left: 25px;
 }
@@ -317,6 +344,9 @@ a:hover{
 }
 .pl28{
   padding-left: 28px;
+}
+.pr6{
+  padding-right: 6px;
 }
 .fl{
   display: block;

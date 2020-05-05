@@ -6,7 +6,7 @@
   z-index: 9;
   width: 100%;
   border-bottom: 2px solid #ec5200;
-  background: #fff;
+  background: #242e38;
   /* background: url("../images/ico/sbg.jpg") repeat-x center top; */
 }
 
@@ -29,8 +29,9 @@
   height: 35px;
   padding-left: 10px;
   font-size: 16px;
-  color: #222;
+  color: #faf4ff;
   position: relative;
+  background: #2c3f52;
   display: block;
   float: left;
   border: 2px solid #ec5200;

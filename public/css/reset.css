@@ -69,7 +69,7 @@ button{
 }
 
 input::-webkit-input-placeholder{
-  color:#585858;
+  color:#faf4ff;
 }
 input:focus:not(.side-bar-search)::-webkit-input-placeholder{
   color:#fff

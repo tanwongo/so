@@ -41,7 +41,7 @@
 
 .search-result-module-stockitem .stockitem-name{
     padding: 10px;
-    background: #e2faff
+    background: #eee
 }
 
 .stockitem-name a{
@@ -362,7 +362,6 @@
 
 .stockitem-cont .about-zjl .about-zjl-table{
     margin-top: 5px;
-    margin-left: 10px;
     position: relative;
 }
 
@@ -403,7 +402,6 @@
 
 .stockitem-cont .about-stock .about-stock-table{
     margin-top: 5px;
-    margin-left: 10px;
     position: relative;
 }
 
@@ -539,50 +537,6 @@
 
 
 
-/*综合接入-股吧,行情，资讯，公告，研报等*/
-.search-result-module-others{
-    position: relative;
-}
-
-.search-result-module-others .others-list{
-    margin-top: 20px;
-    position: relative;
-}
-
-.search-result-module-others .others-list a.link{
-    font-size: 14px;
-    width: 75px;
-    display: block;
-    float: left;
-}
-
-.search-result-module-others .others-list a.ctx{
-    font-size: 14px;
-    display: block;
-    float: left;
-    width: 495px;
-    padding-top: 2px;
-    /* line-height: 25px; */
-    word-break: break-word;
-    white-space: normal;
-}
-
-.search-result-module-others .others-list span.time{
-    font-size: 12px;
-    display: block;
-    float: left;
-    margin-right: 10px;
-    padding-top: 5px;
-    color: #808080;
-}
-
-.search-result-module-others .others-list em.xsprice{
-    font-size: 12px;
-    background: #d04040;
-    color: #fff;
-    padding: 0 5px;
-    margin-left: 3px;
-}
 
 
 
@@ -1215,6 +1169,7 @@
 综合新闻列表
 */
 .search-result-module-zhnews{
+    margin-top:20px;
     position: relative;
 }
 
@@ -1228,17 +1183,95 @@
     color:#f00;
 }
 .search-result-module-zhnews .list{
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .search-result-module-zhnews .list .acrt{
-    line-height: 20px;
     font-size: 12px;
+    margin-top:7px;
+    margin-bottom: 7px;
     position: relative;
 }
 
+.search-result-module-zhnews .list .acrt .xsprice{
+    font-size: 13px;
+    margin-left: 5px;
+    background: #f00;
+    color: #fff;
+    padding: 2px 7px;
+}
+
+.search-result-module-zhnews .list .zx-item,
+.search-result-module-zhnews .list .gb-item,
+.search-result-module-zhnews .list .xswd-item,
+.search-result-module-zhnews .list .wdm-item,
+.search-result-module-zhnews .list .yb-item,
+.search-result-module-zhnews .list .cfh-item
+{
+    position: relative;
+}
+
+.search-result-module-zhnews .list .sdicon{
+    padding: 4px 5px;
+    color: #fff;
+    font-size: 12px;
+    vertical-align: top;
+    margin-right: 5px;
+    /* box-shadow: 3px 3px 2px 1px #adadad;
+    -webkit-box-shadow:3px 3px 2px 1px #adadad; */
+}
+
+.search-result-module-zhnews .list .zx-item .icon{
+    background: #0023e2;
+}
+
+.search-result-module-zhnews .list .gb-item .icon{
+    background: #4394fe;
+}
+
+.search-result-module-zhnews .list .xswd-item .icon{
+    background: #607D8B;
+}
+
+.search-result-module-zhnews .list .wdm-item .icon{
+    background: #FF9800;
+}
+
+.search-result-module-zhnews .list .yb-item .icon{
+    background: #E91E63;
+}
+
+.search-result-module-zhnews .list .cfh-item .icon{
+    background: #FF5722;
+}
+
+.search-result-module-zhnews .list .xswd-pitem,
+.search-result-module-zhnews .list .wdm-pitem,
+.search-result-module-zhnews .list .cfh-pitem
+{
+    font-size: 13px;
+    line-height: 21px;
+    position: relative;
+}
+
+.search-result-module-zhnews .list .xswd-pitem p{
+    margin-top: 5px;
+}
+
+.search-result-module-zhnews .list .xswd-pitem p b{
+    color:#0062c7
+}
+
+
+
 .search-result-module-zhnews .acrt .from{
     font-size: 12px;
+}
+
+.search-result-module-zhnews .acrt .from_gay{
+    font-size: 12px;
+    color:#808080;
+    cursor: default;
 }
 
 
@@ -1248,22 +1281,38 @@
 }
 
 .search-result-module-zhnews .list .actions{
-    display: block;
     font-size: 16px;
     /* font-weight: bold; */
     text-decoration: underline;
 }
 
 .search-result-module-zhnews .list .txtdiv{
-    font-size: 12px;
+    font-size: 13px;
+    line-height: 21px;
 }
 
 .search-result-module-zhnews .txtdiv .times{
     margin-right: 10px;
 }
 
+.search-result-module-zhnews .list .fl_img{
+    width: 145px;
+    float: left;
+}
+
+.search-result-module-zhnews .list .fl_img img{
+    display: block;
+    width: 145px;
+    height: 100px;
+}
+.search-result-module-zhnews .list .fl_txt{
+    width: 485px;
+    float: left;
+    margin-left: 10px;
+}
+
 .search-result-module-zhnews .list .urldiv{
-    font-size: 12px;
+    font-size: 13px;
     color: #008000;
 }
 .search-result-module-zhnews  .ablink{
@@ -1283,6 +1332,8 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+/*综合新闻列表end*/
+
 .pageF{
     margin-top: 15px;
     position: relative;

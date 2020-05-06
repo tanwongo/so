@@ -6,8 +6,8 @@
   z-index: 9;
   width: 100%;
   border-bottom: 2px solid #ec5200;
-  background: #242e38;
-  /* background: url("../images/ico/sbg.jpg") repeat-x center top; */
+  background: url("../images/ico/sbg.jpg") repeat-x center top;
+  box-shadow: 3px 3px 2px 1px #adadad;
 }
 
 .search-box .search-head{
@@ -29,9 +29,9 @@
   height: 35px;
   padding-left: 10px;
   font-size: 16px;
-  color: #faf4ff;
+  /* color: #faf4ff; */
   position: relative;
-  background: #2c3f52;
+  background: #fdfdfd;
   display: block;
   float: left;
   border: 2px solid #ec5200;

@@ -9,7 +9,9 @@ html,body,div,input,textarea,video,em,table,tr,td,th,label,a,p,span,ul,li,h1,h2,
   vertical-align: baseline;
 }
 
-
+body{
+  background: #f8f9fa;
+}
 ul{
   list-style: none;
   padding: 0;
@@ -223,6 +225,9 @@ a:hover{
 }
 .mt10{
   margin-top: 10px;
+}
+.mt14{
+  margin-top: 14px;
 }
 .mt15{
   margin-top: 15px;

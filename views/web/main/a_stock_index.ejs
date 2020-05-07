@@ -1,0 +1,209 @@
+<% if (!data.b.IsSuccess) { %>
+    <div class="search-result-module-stockitem clearfix">
+        <div class="stockitem-name clearfix">
+            <a href="#" target="_blank">赤峰黄金(600988)</a>
+            <a href="#" class="jxban" target="_blank">操盘必读</a>
+            <a href="#" class="ccjj" target="_blank">查看企业信用</a>
+            <a href="#" class="jxban" target="_blank">查看极速版行情</a>
+            <a href="#" class="ccjj" target="_blank">查看持股基金</a>
+            <a href="#" class="ccjj" target="_blank">查看深度数据</a>
+            <a href="#" class="ccjj" target="_blank">查看H股</a>
+            <a href="#" class="ccjj" target="_blank">查看日历</a>
+            <a href="#" class="ccjj" target="_blank">查看百科</a>
+        </div>
+        <div class="clearfix">
+            <div class="fl wd700" style="border-right: 5px solid #eee;">
+                <div class="a-stockitem-cont clearfix">
+                    <div class="clearfix">
+                            <div class="fl mr15">
+                                    <div class="price clearfix">
+                                        <span class="sp1 red">35.54</span>
+                                        <i></i>
+                                    </div>
+                                    <div class="price clearfix">
+                                        <span class="sp2 red">+1.32</span>
+                                        <span class="sp2 red">+10.00%</span>
+                                    </div>
+                                    <div class="link mt5">
+                                        <p>
+                                            <a href="#">[股吧]</a>
+                                            <a href="#">[悬赏问]</a>
+                                            <a href="#">[问董秘]</a>
+                                        </p>
+                                    </div>
+                                    <div class="addstock">
+                                        <a href="#" target="_self">＋添加自选股</a>
+                                    </div>
+                                </div>
+                                <div class="fl wd533">
+                                    <div class="clearfix">
+                                        <div class="time clearfix">
+                                            <p class="fl">2020-03-07&nbsp;星期二&nbsp;14:51</p>
+                                            <p class="fl jyz">开盘中</p>
+                                            <p class="fl hs">沪</p>
+                                            <p class="fl hs">上证50</p>
+                                                 <!-- <p class="status xsz">休市中</p>
+                                                <p class="status tpz">停牌中</p>
+                                                <p class="status tsz">退市中</p> -->
+                                        </div>
+                                            <div class="source fl">
+                                                <p class="clearfix">
+                                                    <span>今开：<em class="green">35.24</em></span>
+                                                    <span>最高：<em class="red">35.24</em></span>
+                                                    <span>涨停：<em class="red">45.24</em></span>
+                                                    <span>成交量：80万手</span>
+                                                </p>
+                                                <p class="clearfix">
+                                                    <span>昨收：<em class="red">20.24</em></span>
+                                                    <span>最低：<em class="red">20.18</em></span>
+                                                    <span>跌停：<em class="green">10.18</em></span>
+                                                    <span>成交额：500亿</span>
+                                                </p>
+                                                <p class="clearfix">
+                                                    <span>换手率：13.33%</span>
+                                                    <span>市盈率(动)：899</span>
+                                                    <span>流通股本：1444亿</span>
+                                                    <span>流通市值：8763.3万</span>
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="clearfix mt20">
+                        <div class="clearfix">
+                            <a href="//same.eastmoney.com/c?z=eastmoney&amp;la=0&amp;si=1&amp;cg=86&amp;c=1063&amp;ci=1&amp;or=47&amp;l=10879&amp;bg=10879&amp;b=16261&amp;u=https%3A%2F%2Facttg.eastmoney.com%2Fpub%2Fweb_kh_dchqy_zt_01_01_01_0" target="_blank"><img src="//g1.dfcfw.com/g3/201902/20190225163634.gif" style="width: 690px;height:34px;border:none;"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix mt20">
+                            <%-include("./a_stocktalk.ejs")%> 
+                    </div>
+                    <div class="clearfix mt20">
+                        <div class="stockitem-pictxt clearfix">
+                            <div class="draw">
+                                <ul class="clearfix">
+                                    <li class="active">
+                                        <a href="#">分时图</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">日K</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">周K</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">月K</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">年K</a>
+                                    </li>
+                                </ul>
+                                <div class="mt10">
+                                    <img src="../images/ico/stock.png" width="100%" height="350">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A股股票异动 -->
+                    <div class="clearfix mt20">
+                        <%-include('./a_stock_index_yidong.ejs') %> 
+                    </div>
+                    <!-- A股股票资金流 -->
+                    <div class="clearfix mt20">
+                        <%-include('./a_stock_index_zjl.ejs') %> 
+                    </div>
+                     <!-- A股股票相关个股 -->
+                    <div class="clearfix mt20">
+                        <%-include('./a_stock_index_xg.ejs') %> 
+                    </div>
+                    <!-- A股股票相关板块 -->
+                    <div class="clearfix mt20">
+                        <%-include('./a_stock_index_bk.ejs') %> 
+                    </div>
+                    <!-- A股股票相关股东 -->
+                    <div class="clearfix mt20">
+                        <%-include('./a_stock_index_gd.ejs') %> 
+                    </div>
+                     <!-- A股股票业绩 -->
+                     <div class="clearfix mt20">
+                        <%-include('./a_stock_index_yj.ejs') %> 
+                    </div>
+                    <div class="clearfix mt20">
+                        <div class="zyjj">
+                            <div class="clearfix">
+                                <a href="http://data.eastmoney.com/gpzy/" class="stockitem-title-link" target="_blank">质押<i class="ysj"></i></a>
+                                <div class="fl about-yd-qt">
+                                    <a href="#" title="西藏矿业大股东突发质押4344万股">西藏矿业大股东突发质押</a>
+                                    <a href="#" title="大森机电股东赵晓东质押400万股 用于为贷款提供股权质押担保">大森机电股东赵晓东质押400万股</a>
+                                    <a href="#" title="连阿里股份也卖了！软银孙正义股权质押提至60% 问题还不止“缺钱”">连阿里股份也卖了！软银孙正义股</a>
+                                    <a href="http://data.eastmoney.com/gpzy/" target="_blank">查看更多质押</a>
+                                </div>
+                            </div>
+                            <p>
+                                <span>截止2020-04-17，质押比例<em class="red">20.87%</em>。质押股数<em class="red">34730.51万股</em>，质押市值<em class="red">1.32亿元</em></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clearfix mt20">
+                        <div class="zyjj">
+                            <div class="clearfix">
+                                <a href="http://data.eastmoney.com/gpzy/" class="stockitem-title-link" target="_blank">解禁<i class="ysj"></i></a>
+                                <div class="fl about-yd-qt">
+                                    <a href="#" title="西藏矿业大股东突发质押4344万股">解禁1234343</a>
+                                    <a href="#" title="大森机电股东赵晓东质押400万股 用于为贷款提供股权质押担保">解禁供股权质押担</a>
+                                    <a href="#" title="连阿里股份也卖了！软银孙正义股权质押提至60% 问题还不止“缺钱”">解禁</a>
+                                    <a href="http://data.eastmoney.com/dxf/" target="_blank">查看更多解禁</a>
+                                </div>
+                            </div>
+                            <p><span>最近解禁日：<em class="red">2020年3月20日</em>，将解禁<em class="red">1.29</em>亿股</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fl wd295">
+                <div class="stockitem-part">
+                    <div class="about-ts">
+                            <div class="mb3 clearfix"> <a href="http://data.eastmoney.com/notices/stock/600988.html" class="stockitem-title-link" target="_blank">相关提示<i class="ysj"></i></a></div>
+                            <div class="pl10">
+                                    <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>类型</th>
+                                                    <th>内容</th>
+                                                    <th>日期</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="wd55">行政处罚</td>
+                                                    <td><a href="#" title="对赤峰吉隆黄金矿业股份有限公司及有关责任人予以通报批评">对赤峰吉隆黄金矿业股...</a></td>
+                                                    <td>2020-03-31</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="wd55">资产重组</td>
+                                                    <td><a href="#" title="赤峰黄金收购报告书">赤峰黄金收购报告书</a></td>
+                                                    <td>2020-03-31</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="wd55">重大事项</td>
+                                                    <td><a href="#" title="关于赤峰黄金为子公司担包">关于赤峰黄金为子公司担...</a></td>
+                                                    <td>2020-03-31</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="wd55">持股变动</td>
+                                                    <td><a href="#" title="关于赤峰黄金股东集中竞价减持公告">关于赤峰黄金股东集中...</a></td>
+                                                    <td>2020-03-31</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="wd55">风险警告</td>
+                                                    <td><a href="#" title="关于赤峰黄金股股价异常公告">关于赤峰黄金股股价异常...</a></td>
+                                                    <td>2020-03-31</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% } %>

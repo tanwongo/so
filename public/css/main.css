@@ -1180,7 +1180,8 @@
 综合新闻列表
 */
 .search-result-module-zhnews{
-    margin-top:20px;
+    margin-top:30px;
+    margin-left: 10px;
     position: relative;
 }
 
@@ -1606,7 +1607,6 @@
 }
 
 .a-stock-gd .a-stock-gd-list .a-stock-gd-ten{
-    margin-left: 10px; 
     margin-bottom: 10px;
     position: relative;
 }
@@ -1624,10 +1624,58 @@
 
 /*A股相关业绩模块*/
 .a-stock-yj{
-    
+    position: relative;
+}
+
+.a-stock-yj .a-stock-yj-table{
+    margin-top: 10px;
+}
+/*end*/
+
+
+/*A股相关提示模块*/
+.a-stock-ts{
+    position: relative;
+}
+
+.a-stock-ts-table{
+    margin-top: 10px;
+}
+
+.a-stock-ts-table table th,
+.a-stock-ts-table table td{
+    text-align: left;
 }
 
 
+/*A股质押模块*/
+.a-stock-zy{
+    position: relative;
+}
+.a-stock-zy .a-stock-zy-txt{
+    margin-top:10px;
+    font-size: 14px;
+}
+/*end*/
+
+
+/*A股解禁模块*/
+.a-stock-jj{
+    position: relative;
+}
+.a-stock-jj .a-stock-jj-txt{
+    margin-top:10px;
+    font-size: 14px;
+}
+/*end*/
+
+
+
+
+
+.a-stock-linktitle{
+    position: relative;
+}
 
 .a-stock-linktitle{
     position: relative;
@@ -1641,6 +1689,7 @@
     font-size: 12px;
     text-decoration: underline;
     color: #808080;
+    margin-right: 10px;
 }
 
 .a-stock-linktitle .a1{

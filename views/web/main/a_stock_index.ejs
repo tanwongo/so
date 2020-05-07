@@ -127,35 +127,17 @@
                      <div class="clearfix mt20">
                         <%-include('./a_stock_index_yj.ejs') %> 
                     </div>
-                    <div class="clearfix mt20">
-                        <div class="zyjj">
-                            <div class="clearfix">
-                                <a href="http://data.eastmoney.com/gpzy/" class="stockitem-title-link" target="_blank">质押<i class="ysj"></i></a>
-                                <div class="fl about-yd-qt">
-                                    <a href="#" title="西藏矿业大股东突发质押4344万股">西藏矿业大股东突发质押</a>
-                                    <a href="#" title="大森机电股东赵晓东质押400万股 用于为贷款提供股权质押担保">大森机电股东赵晓东质押400万股</a>
-                                    <a href="#" title="连阿里股份也卖了！软银孙正义股权质押提至60% 问题还不止“缺钱”">连阿里股份也卖了！软银孙正义股</a>
-                                    <a href="http://data.eastmoney.com/gpzy/" target="_blank">查看更多质押</a>
-                                </div>
-                            </div>
-                            <p>
-                                <span>截止2020-04-17，质押比例<em class="red">20.87%</em>。质押股数<em class="red">34730.51万股</em>，质押市值<em class="red">1.32亿元</em></span>
-                            </p>
-                        </div>
+                     <!-- A股股票相关提示-->
+                     <div class="clearfix mt20">
+                        <%-include('./a_stock_index_ts.ejs') %> 
                     </div>
+                     <!-- A股股票质押 -->
+                     <div class="clearfix mt20">
+                        <%-include('./a_stock_index_zy.ejs') %> 
+                    </div>
+                    <!-- A股股票解禁 -->
                     <div class="clearfix mt20">
-                        <div class="zyjj">
-                            <div class="clearfix">
-                                <a href="http://data.eastmoney.com/gpzy/" class="stockitem-title-link" target="_blank">解禁<i class="ysj"></i></a>
-                                <div class="fl about-yd-qt">
-                                    <a href="#" title="西藏矿业大股东突发质押4344万股">解禁1234343</a>
-                                    <a href="#" title="大森机电股东赵晓东质押400万股 用于为贷款提供股权质押担保">解禁供股权质押担</a>
-                                    <a href="#" title="连阿里股份也卖了！软银孙正义股权质押提至60% 问题还不止“缺钱”">解禁</a>
-                                    <a href="http://data.eastmoney.com/dxf/" target="_blank">查看更多解禁</a>
-                                </div>
-                            </div>
-                            <p><span>最近解禁日：<em class="red">2020年3月20日</em>，将解禁<em class="red">1.29</em>亿股</span></p>
-                        </div>
+                        <%-include('./a_stock_index_jj.ejs') %> 
                     </div>
                 </div>
             </div>

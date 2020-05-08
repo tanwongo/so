@@ -1,16 +1,18 @@
 
-<div class="cont-div">
-        <div class="wd1000">
-            <div class="search-result-sum">
-                <%-include('../../shared/searchresult.ejs')%>
-            </div>
-            <div class="search-result-list">
-                <%-include('./stock.ejs')%> 
-                <%-include('./a_stock_index.ejs')%> 
-                <%-include('./futures.ejs')%>
-                <%-include('./newslist.ejs')%>
-            </div>
-        </div>
+
+<div class="wd1000">
+    <div class="search-result-sum">
+        <%-include('../../shared/searchresult.ejs')%>
+    </div>
+    <div class="search-result-list">
+        <%-include('./stock.ejs')%> 
+        <%-include('./a_stock/index.ejs')%> 
+        <%-include('./futures.ejs')%>
+        <%-include('./newslist.ejs')%>
+    </div>
 </div>
+
+<%- blockFor("csstop") %>
+<link href="../css/style_a_stock.css" rel="stylesheet">
 <%- blockFor("htmlbottom") %>
 <script src="../js/web.js"></script>

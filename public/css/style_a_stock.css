@@ -141,9 +141,9 @@
   margin-right: 10px;
 }
 .a-stock-base .a-stock-base-info .time .hs {
-  background: #ffe7c3;
+  background: #0087c7;
   padding: 0px 10px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .a-stock-base .a-stock-base-info .time .jyz {
   background: #fb0000;
@@ -467,6 +467,29 @@
   position: relative;
   background: #fff;
   padding-bottom: 10px;
+  padding-top: 10px;
+}
+.a-stock-history p {
+  font-size: 12px;
+  margin-top: 10px;
+  border-left: 2px solid #0062c7;
+  padding-left: 8px;
+  position: relative;
+}
+.a-stock-history p span {
+  font-size: 12px;
+  margin-left: 0px;
+  display: inline-block;
+}
+.a-stock-history p span b {
+  color: #808080;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.a-stock-history p span.sp1 {
+  width: 100px;
 }
 .a-stock-history .shdate {
   position: relative;
@@ -483,6 +506,9 @@
   font-size: 14px;
   margin-top: 5px;
   font-weight: 400;
+  color: #fff;
+  background: #0062c7;
+  padding: 5px 10px;
 }
 .a-stock-history ul {
   list-style: none;

@@ -172,6 +172,7 @@
     background: #0087c7;
     padding: 0px 10px;
     font-size: 14px;
+    color:#fff;
 }
 
 .a-stock-base .a-stock-base-info .time .jyz{
@@ -566,7 +567,7 @@
 }
 /*end*/
 
-/*A股右侧栏*/
+/*A股历史信息*/
 .a-stock-history{
     position: relative;
     background: #fff;
@@ -582,6 +583,7 @@
             font-size: 12px;
             margin-left: 0px;
             display: inline-block;
+            vertical-align: top;
             b{
                 color: #808080;
                 font-size: 12px;
@@ -592,6 +594,16 @@
         }
         span.sp1{
             width: 100px;
+        }
+        span.sp2{
+            width: 223px;
+        }
+        em{
+            font-size: 12px;
+            display: inline-block;
+            width: 111px;
+            margin-bottom: 10px;
+            text-decoration: underline;
         }
     }
     .shdate{
@@ -625,3 +637,146 @@
         }
     }
 }
+/*end*/
+
+/*热门搜索*/
+.hot-search{
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background: #fff;
+    margin-top: 20px;
+    h1{
+        position: relative;
+        .hot-icon{
+            position: absolute;
+            top: 3px;
+            left: 70px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: url(https://g1.dfcfw.com/g3/201806/20180607200429.png) no-repeat -686px -72px;
+        }
+        .hot-search-change{
+            position: absolute;
+            top: 3px;
+            right: 10px;
+            display: block;
+            width: 75px;
+            height: 20px;
+            background: url(/images/ico/reload3.png) no-repeat 40px 2px;
+            font-size: 12px;
+        }
+        :hover{
+            background: url(/images/ico/reload4.png) no-repeat 40px 2px;
+        }
+    }
+    ul{
+        list-style: none;
+        margin-top: 10px;
+    }
+    li{
+        font-size: 13px;
+        margin-bottom: 10px;
+        position: relative;
+        a{
+            display: inline-block;
+        }
+        span{
+            font-size: 13px;
+            padding: 3px 0px;
+            width: 25px;
+            display: inline-block;
+            text-align: center;
+            /* color: #ffeb3b; */
+            background: #d6d6d6;
+            margin-right: 5px;
+            font-style: italic;
+        }
+        span.qsm{
+            background: linear-gradient(90deg, #872dff, #ff1100);
+            color: #fff;
+        }
+        i{
+            margin-left: 5px;
+            font-size: 12px;
+            display: inline-block;
+            font-style: normal;
+            color:#808080;
+        }
+    }
+}
+/*end*/
+
+/*领涨概念*/
+.hot-concept{
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background: #fff;
+    margin-top: 20px;
+    h1{
+        position: relative;
+        .hot-icon{
+            position: absolute;
+            top: 3px;
+            left: 70px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: url(https://g1.dfcfw.com/g3/201806/20180607200429.png) no-repeat -686px -72px;
+        }
+        .hot-concept-change{
+            position: absolute;
+            top: 3px;
+            right: 10px;
+            display: block;
+            width: 75px;
+            height: 20px;
+            background: url(/images/ico/reload3.png) no-repeat 40px 2px;
+            font-size: 12px;
+        }
+        :hover{
+            background: url(/images/ico/reload4.png) no-repeat 40px 2px;
+        }
+    }
+    ul{
+        list-style: none;
+        margin-top: 10px;
+    }
+    li{
+        font-size: 13px;
+        margin-bottom: 10px;
+        position: relative;
+        .a1{
+            display: inline-block;
+            margin-right: 5px;
+            width: 105px;
+        }
+        .a2{
+            display: inline-block;  
+        }
+        span{
+            display: inline-block;
+            margin-right: 5px;
+            width: 60px;
+        }
+        i{
+            font-size: 13px;
+            padding: 3px 0px;
+            width: 25px;
+            display: inline-block;
+            text-align: center;
+            /* color: #ffeb3b; */
+            background: #d6d6d6;
+            margin-right: 5px;
+        }
+        i.qsm{
+            background: linear-gradient(90deg, #872dff, #ff1100);
+            color: #fff;
+        }
+    }
+}
+/*end*/

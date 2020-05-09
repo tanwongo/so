@@ -53,6 +53,9 @@ table tbody tr:hover {
 a {
   text-decoration: none;
 }
+:hover {
+  transition: 0.3s;
+}
 a.link,
 a.ctx {
   color: #0040d2;

@@ -270,7 +270,7 @@
 
 
 .a-stock-yidong .a-stock-yidong-list .a-stock-yidong-cont{
-    max-height: 370px;
+    max-height: 195px;
     overflow-x: hidden;
     overflow-y: auto;
     /* background: #e2faff; */
@@ -461,7 +461,22 @@
 }
 /*end*/
 
-/*股票搜索链接*/
+/*沪深港通模块*/
+.a-stock-hsg{
+    position: relative;
+    .a-stock-hsgtable{
+        margin-top: 10px;
+        h1{
+            font-size: 12px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            font-weight: 400;
+            color: #808080;
+        }
+    }
+}
+
+/*股票通用模块搜索链接*/
 .a-stock-linktitle{
     position: relative;
 }
@@ -495,7 +510,7 @@
 /*end*/
 
 
-/*A股table和描述字段*/
+/*A股通用table和描述字段*/
 .search-result-module-item .a-stockitem-cont{
    position: relative;
 }
@@ -506,6 +521,7 @@
 
 .a-stockitem-cont .domore .tit{
     width: 185px;
+    font-size: 14px;
     position: relative;
 }
 
@@ -567,216 +583,12 @@
 }
 /*end*/
 
-/*A股历史信息*/
-.a-stock-history{
-    position: relative;
-    background: #fff;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    p{
-        font-size: 12px;
-        margin-top: 10px;
-        border-left: 2px solid #0062c7;
-        padding-left: 8px;
-        position: relative;
-        span{
-            font-size: 12px;
-            margin-left: 0px;
-            display: inline-block;
-            vertical-align: top;
-            b{
-                color: #808080;
-                font-size: 12px;
-                position: absolute;
-                top: 0;
-                right: 10px;
-            }
-        }
-        span.sp1{
-            width: 100px;
-        }
-        span.sp2{
-            width: 223px;
-        }
-        em{
-            font-size: 12px;
-            display: inline-block;
-            width: 111px;
-            margin-bottom: 10px;
-            text-decoration: underline;
-        }
-    }
-    .shdate{
-        position: relative;
-        .p-title{
-                padding: 10px;
-                background: #ffffff;
-                border-left: 3px solid #ec5200;
-                }
-        }
-    .p-price{
-        margin-left: 12px;
-    }
-    h1{
-        font-size: 14px;
-        margin-top: 5px;
-        font-weight: 400;
-        color: #fff;
-        background: #0062c7;
-        padding: 5px 10px;
-    }
-    ul{
-        list-style: none;
-        margin-top: 5px;
-    }
-    li{
-        font-size: 12px;
-        margin-bottom: 5px;
-        span{
-              font-size: 12px;
-        }
-    }
+/*弹出框*/
+.pop-up-box{
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
 }
-/*end*/
 
-/*热门搜索*/
-.hot-search{
-    position: relative;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    background: #fff;
-    margin-top: 20px;
-    h1{
-        position: relative;
-        .hot-icon{
-            position: absolute;
-            top: 3px;
-            left: 70px;
-            display: block;
-            width: 16px;
-            height: 16px;
-            background: url(https://g1.dfcfw.com/g3/201806/20180607200429.png) no-repeat -686px -72px;
-        }
-        .hot-search-change{
-            position: absolute;
-            top: 3px;
-            right: 10px;
-            display: block;
-            width: 75px;
-            height: 20px;
-            background: url(/images/ico/reload3.png) no-repeat 40px 2px;
-            font-size: 12px;
-        }
-        :hover{
-            background: url(/images/ico/reload4.png) no-repeat 40px 2px;
-        }
-    }
-    ul{
-        list-style: none;
-        margin-top: 10px;
-    }
-    li{
-        font-size: 13px;
-        margin-bottom: 10px;
-        position: relative;
-        a{
-            display: inline-block;
-        }
-        span{
-            font-size: 13px;
-            padding: 3px 0px;
-            width: 25px;
-            display: inline-block;
-            text-align: center;
-            /* color: #ffeb3b; */
-            background: #d6d6d6;
-            margin-right: 5px;
-            font-style: italic;
-        }
-        span.qsm{
-            background: linear-gradient(90deg, #872dff, #ff1100);
-            color: #fff;
-        }
-        i{
-            margin-left: 5px;
-            font-size: 12px;
-            display: inline-block;
-            font-style: normal;
-            color:#808080;
-        }
-    }
-}
-/*end*/
-
-/*领涨概念*/
-.hot-concept{
-    position: relative;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    background: #fff;
-    margin-top: 20px;
-    h1{
-        position: relative;
-        .hot-icon{
-            position: absolute;
-            top: 3px;
-            left: 70px;
-            display: block;
-            width: 16px;
-            height: 16px;
-            background: url(https://g1.dfcfw.com/g3/201806/20180607200429.png) no-repeat -686px -72px;
-        }
-        .hot-concept-change{
-            position: absolute;
-            top: 3px;
-            right: 10px;
-            display: block;
-            width: 75px;
-            height: 20px;
-            background: url(/images/ico/reload3.png) no-repeat 40px 2px;
-            font-size: 12px;
-        }
-        :hover{
-            background: url(/images/ico/reload4.png) no-repeat 40px 2px;
-        }
-    }
-    ul{
-        list-style: none;
-        margin-top: 10px;
-    }
-    li{
-        font-size: 13px;
-        margin-bottom: 10px;
-        position: relative;
-        .a1{
-            display: inline-block;
-            margin-right: 5px;
-            width: 105px;
-        }
-        .a2{
-            display: inline-block;  
-        }
-        span{
-            display: inline-block;
-            margin-right: 5px;
-            width: 60px;
-        }
-        i{
-            font-size: 13px;
-            padding: 3px 0px;
-            width: 25px;
-            display: inline-block;
-            text-align: center;
-            /* color: #ffeb3b; */
-            background: #d6d6d6;
-            margin-right: 5px;
-        }
-        i.qsm{
-            background: linear-gradient(90deg, #872dff, #ff1100);
-            color: #fff;
-        }
-    }
-}
-/*end*/
+@import './right.less';

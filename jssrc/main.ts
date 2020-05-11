@@ -35,5 +35,3 @@
 
 import tools from "../src/modules/tools"
 
-
-console.log(tools.getQueryString("keywords"))

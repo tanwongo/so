@@ -1,0 +1,11 @@
+<div class="hot-stock-title clearfix">
+    <h1>热门标签<i class="hot-icon"></i><a href="#" class="hot-stocktitle-change">换一换</a></h1>
+    <% let bqarry=["昨日表现","均线并头","突破新高","创新低","连续大涨","连续大跌","大股东回购","低价长线持有","爆炒热门","近期新股","均线并头","低位横盘","反转形态","金叉","死叉","顶背离"]%>
+<div class="clearfix">
+    <% for( let index = 0; index < bqarry.length; index++ ) { %>
+
+            <a href="#" class="a<%=index%4%>"><%=bqarry[index]%></a>
+
+    <% } %>
+</div>
+</div>

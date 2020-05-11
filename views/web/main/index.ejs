@@ -5,14 +5,10 @@
         <%-include('../../shared/searchresult.ejs')%>
     </div>
     <div class="search-result-list">
-        <%-include('./stock.ejs')%> 
-        <%-include('./a_stock/index.ejs')%> 
+        <%-include('./stock.ejs')%>
+        <%-include('./a_stock/index.ejs')%>
         <%-include('./futures.ejs')%>
-        <%-include('./newslist.ejs')%>
     </div>
 </div>
-
-<%- blockFor("csstop") %>
-<link href="../css/style_a_stock.css" rel="stylesheet">
 <%- blockFor("htmlbottom") %>
-<script src="../js/web.js"></script>
+<script src="../js/style_a_stock.js"></script>

@@ -1,4 +1,2 @@
-import a from "../src/modules/astock"
-
-a.init()
-
+import astock from "../src/modules/astock"
+astock.init()

@@ -40,7 +40,7 @@ let argv = minimist(process.argv.slice(2))
 async function makeLess(lesspath: string, outdir: string) {
   let lessfile = await fs.readFile(lesspath, 'utf-8')
   less.render(lessfile, {
-      paths: ['./less/']
+      paths: ['./src/less/']
     }, function (e:any, output:any) {
       if (e) {
         console.error(e);
@@ -67,17 +67,17 @@ async function makeLess(lesspath: string, outdir: string) {
 
 
 if (argv.w) {
-  var less_watcher = chokidar.watch('./less/**/*.less');
+  var less_watcher = chokidar.watch('./src/less/**/*.less');
   console.info('开始监听./less/*.less');
   less_watcher.on('change', lesspath => {
-    var lessfile = glob.sync('./less/*.less')
+    var lessfile = glob.sync('./src/less/*.less')
     lessfile.forEach(v=>{
       makeLess(v, './public/css/')
     })
   })  
 }
 else{
-  var lessfile = glob.sync('./less/*.less')
+  var lessfile = glob.sync('./src/less/*.less')
   console.info('开始编译./less/*.less');
   lessfile.forEach(v=>{
     makeLess(v, './public/css/')

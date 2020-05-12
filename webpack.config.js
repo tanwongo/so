@@ -14,15 +14,15 @@ jslist.forEach(v=>{
 })
 
 
-let lesslist = glob.sync('./src/less/*.less')
+// let lesslist = glob.sync('./src/less/*.less')
 
 
 // lesslist.forEach(v=>{
-//   let name = 'style_' + path.basename(v, '.less') //加个前缀防止重名
+//   let name =path.basename(v, '.less') //加个前缀防止重名
 //   entrylist[name] = v
 // })
 
-console.log(entrylist)
+
 
 module.exports = {
   entry:entrylist,
@@ -42,18 +42,28 @@ module.exports = {
         },
 
       },
+      
+      // {
+      //   test: /\.less$/,
+      //   use: [
+      //     MiniCssExtractPlugin.loader,
+      //     'css-loader',
+      //     'less-loader'
+      //   ]
+      // },
       {
-        test: /\.less$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'less-loader'
-        ]
+        test: /\.(html|ejs|art|dot|css)$/,
+        use: 'raw-loader'
       },
       {
-        test: /\.(html|ejs)$/,
-        use: 'raw-loader'
-    },
+        test: /\.(jpg|gif|png)$/i,
+        use: [{
+            loader: 'url-loader',
+            options: {
+                limit: 80000
+            }
+        }]
+      },
     {
         test: /\.art$/,
         loader: "art-template-loader"
@@ -62,30 +72,30 @@ module.exports = {
         test: /\.jpg$/,
         loader: "file-loader"
     },
-    {
-      test: /\.(jpg|gif|png)$/i,
-      include: path.resolve(__dirname, './src/less/'),
-      use: [{
-          loader: 'url-loader',
-          options: {
-            esModule: false,
-            limit: 20000,
-            name: '[hash:10].[ext]',
-            publicPath: '',
-            outputPath: '../../images/'
-          }
-      }]
-    }
+    // {
+    //   test: /\.(jpg|gif|png)$/i,
+    //   include: path.resolve(__dirname, './src/less/'),
+    //   use: [{
+    //       loader: 'url-loader',
+    //       options: {
+    //         esModule: false,
+    //         limit: 20000,
+    //         name: '[hash:10].[ext]',
+    //         publicPath: '',
+    //         outputPath: '../../images/'
+    //       }
+    //   }]
+    // }
     ]
   },
   resolve: {
     extensions: ['.ts', '.js', '.json']
   },
   mode: 'development',
-  devtool: 'source-map',
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '../css/[name].css'
-    })
-  ]
+  devtool: 'source-map'
+  // plugins: [
+  //   new MiniCssExtractPlugin({
+  //     filename: '../css/[name].css'
+  //   })
+  // ]
 }

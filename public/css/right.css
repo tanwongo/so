@@ -1,0 +1,285 @@
+/*A股历史信息*/
+.a-stock-history {
+  position: relative;
+  background: #fff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.a-stock-history p {
+  font-size: 12px;
+  margin-top: 10px;
+  border-left: 2px solid #0062c7;
+  padding-left: 8px;
+  position: relative;
+}
+.a-stock-history p span {
+  font-size: 12px;
+  margin-left: 0px;
+  display: inline-block;
+  vertical-align: top;
+}
+.a-stock-history p span b {
+  color: #808080;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.a-stock-history p span.sp1 {
+  width: 100px;
+}
+.a-stock-history p span.sp2 {
+  width: 223px;
+}
+.a-stock-history p a {
+  font-size: 12px;
+  margin-left: 0px;
+  display: inline-block;
+  vertical-align: top;
+}
+.a-stock-history p em {
+  font-size: 12px;
+  display: inline-block;
+  width: 111px;
+  margin-bottom: 10px;
+}
+.a-stock-history .shdate {
+  position: relative;
+}
+.a-stock-history .shdate .p-title {
+  padding: 10px;
+  background: #ffffff;
+  border-left: 3px solid #ec5200;
+}
+.a-stock-history .p-price {
+  margin-left: 12px;
+}
+.a-stock-history h1 {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: 400;
+  color: #fff;
+  background: #0062c7;
+  padding: 5px 10px;
+}
+.a-stock-history ul {
+  list-style: none;
+  margin-top: 5px;
+}
+.a-stock-history li {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.a-stock-history li span {
+  font-size: 12px;
+}
+/*end*/
+/*热门搜索*/
+.hot-search {
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background: #fff;
+  margin-top: 20px;
+}
+.hot-search h1 {
+  position: relative;
+}
+.hot-search h1 .hot-icon {
+  position: absolute;
+  top: 3px;
+  left: 70px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(https://g1.dfcfw.com/g3/201806/20180607200429.png) no-repeat -686px -72px;
+}
+.hot-search h1 .hot-search-change {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  display: block;
+  width: 75px;
+  height: 20px;
+  background: url(/images/ico/reload3.png) no-repeat 40px 2px;
+  font-size: 12px;
+}
+.hot-search h1 .hot-search-change:hover {
+  background: url(/images/ico/reload4.png) no-repeat 40px 2px;
+}
+.hot-search ul {
+  list-style: none;
+  margin-top: 10px;
+}
+.hot-search li {
+  font-size: 13px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.hot-search li a {
+  display: inline-block;
+}
+.hot-search li span {
+  font-size: 13px;
+  padding: 3px 0px;
+  width: 25px;
+  display: inline-block;
+  text-align: center;
+  /* color: #ffeb3b; */
+  background: #d6d6d6;
+  margin-right: 5px;
+  font-style: italic;
+}
+.hot-search li span.qsm {
+  background: linear-gradient(90deg, #872dff, #ff1100);
+  color: #fff;
+}
+.hot-search li i {
+  margin-left: 5px;
+  font-size: 12px;
+  display: inline-block;
+  font-style: normal;
+  color: #808080;
+}
+/*end*/
+/*领涨概念*/
+.hot-concept {
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background: #fff;
+  margin-top: 20px;
+}
+.hot-concept h1 {
+  position: relative;
+}
+.hot-concept h1 .hot-icon {
+  position: absolute;
+  top: 3px;
+  left: 70px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(https://g1.dfcfw.com/g3/201806/20180607200429.png) no-repeat -686px -72px;
+}
+.hot-concept h1 .hot-concept-change {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  display: block;
+  width: 75px;
+  height: 20px;
+  background: url(/images/ico/reload3.png) no-repeat 40px 2px;
+  font-size: 12px;
+}
+.hot-concept h1 .hot-concept-change:hover {
+  background: url(/images/ico/reload4.png) no-repeat 40px 2px;
+}
+.hot-concept ul {
+  list-style: none;
+  margin-top: 10px;
+}
+.hot-concept li {
+  font-size: 13px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.hot-concept li .a1 {
+  display: inline-block;
+  margin-right: 5px;
+  width: 105px;
+}
+.hot-concept li .a2 {
+  display: inline-block;
+}
+.hot-concept li span {
+  display: inline-block;
+  margin-right: 5px;
+  width: 60px;
+}
+.hot-concept li i {
+  font-size: 13px;
+  padding: 3px 0px;
+  width: 25px;
+  display: inline-block;
+  text-align: center;
+  /* color: #ffeb3b; */
+  background: #d6d6d6;
+  margin-right: 5px;
+}
+.hot-concept li i.qsm {
+  background: linear-gradient(90deg, #872dff, #ff1100);
+  color: #fff;
+}
+/*end*/
+/*热门标签找股*/
+.hot-stock-title {
+  padding: 10px 0 10px 10px;
+  position: relative;
+  background: #fff;
+  margin-top: 20px;
+}
+.hot-stock-title h1 {
+  position: relative;
+  margin-bottom: 10px;
+}
+.hot-stock-title h1 .hot-icon {
+  position: absolute;
+  top: 3px;
+  left: 70px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(https://g1.dfcfw.com/g3/201806/20180607200429.png) no-repeat -686px -72px;
+}
+.hot-stock-title h1 .hot-stocktitle-change {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  display: block;
+  width: 75px;
+  height: 20px;
+  background: url(/images/ico/reload3.png) no-repeat 40px 2px;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0;
+  float: none;
+}
+.hot-stock-title h1 .hot-stocktitle-change:hover {
+  background: url(/images/ico/reload4.png) no-repeat 40px 2px;
+}
+.hot-stock-title a {
+  display: block;
+  font-size: 14px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.hot-stock-title .a0 {
+  border-bottom: 2px solid #ff0000;
+}
+.hot-stock-title .a1 {
+  border-bottom: 2px solid #fba200;
+}
+.hot-stock-title .a2 {
+  border-bottom: 2px solid #ec00ec;
+}
+.hot-stock-title .a3 {
+  border-bottom: 2px solid #0000ab;
+}
+/*end*/
+/*新闻推送*/
+.right-pushnews {
+  position: relative;
+}
+.right-pushnews ul {
+  list-style: none;
+}
+.right-pushnews li {
+  font-style: 14px;
+}
+.right-pushnews li a {
+  font-style: 14px;
+}

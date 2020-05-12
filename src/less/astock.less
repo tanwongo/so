@@ -253,6 +253,7 @@
     float: left;
     width: 110px;
     text-align: center;
+    position: relative;
 }
 
 
@@ -565,7 +566,7 @@
     /* padding: 5px; */
     height: 24px;
     color: #000;
-    text-align: center;
+    text-align: left;
     /* font-weight: bold; */
     background: #e7f3ff;
     line-height: 24px;
@@ -579,16 +580,53 @@
     /* margin-right: 10px; */
     padding-top: 6px;
     padding-bottom: 6px;
-    text-align: center;
+    text-align: left;
 }
 /*end*/
 
 /*弹出框*/
 .pop-up-box{
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     display: block;
+    background: #eee;
+    top: 300px;
+    left: 856px;
+    z-index: 99;
+    padding: 10px;
+}
+
+.pop-up-box h1{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding:10px;
+    margin-bottom: 10px;
+    background: #0087c7;
+}
+
+.pop-up-box table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pop-up-box table th{
+    font-size: 14px;
+    text-align: left;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    color: #000;
+    font-weight: 400;
+}
+
+.pop-up-box table td{
+    font-size: 12px;
+    text-align: left;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
 }
 
 @import './right.less';

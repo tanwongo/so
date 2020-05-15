@@ -42,7 +42,7 @@ exports.__esModule = true;
 var dot = require("dot");
 var pop_up_box_html_1 = __importDefault(require("./pop_up_box.html"));
 var options = {
-    "title": "大笔买入",
+    "title": "大笔买单",
     "sum": 123,
     "css": {
         width: "250px",
@@ -51,12 +51,12 @@ var options = {
         left: "50%",
         top: "35px",
         bottom: "0",
-        height: "auto",
+        height: "100%",
         padding: "10px",
         marginLeft: "100px",
-        background: " #fffbd5",
-        border: "1px solid #000",
-        boxshadow: "2px 2px 5px 2px #808080"
+        background: " #f8f9fa",
+        border: "1px solid #ccc",
+        overflow: "auto"
     }
 };
 var astock = {
@@ -65,13 +65,15 @@ var astock = {
         console.log(123);
     },
     ydPopUpBox: function () {
-        $("[data-yd-status='bigbuy']").on("click", function () {
+        $("[data-yd-status='bigbuy']").on("click", function (e) {
             return __awaiter(this, void 0, void 0, function () {
                 return __generator(this, function (_a) {
+                    e.stopPropagation();
+                    if ($(".pop-up-box")) {
+                        $(".pop-up-box").remove();
+                    }
                     $("body").append(dot.template(pop_up_box_html_1["default"])(options));
-                    $(".pop-up-box").css(options.css);
-                    console.log($(this).offset().top);
-                    console.log($(this).offset().left);
+                    $(".pop-up-box").css(options.css).show();
                     return [2 /*return*/];
                 });
             });

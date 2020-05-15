@@ -5,9 +5,11 @@
         <%-include('../../shared/searchresult.ejs')%>
     </div>
     <div class="search-result-list">
-        <%-include('./stock.ejs')%>
-        <%-include('./a_stock/index.ejs')%>
-        <%-include('./futures.ejs')%>
+        <% if (1==2) { %>
+            <%-include('./a_stock/index.ejs')%>
+        <% } %>
+        <%-include('./entry/index.ejs')%>
+        <%-include('./newslist.ejs')%>
     </div>
 </div>
 

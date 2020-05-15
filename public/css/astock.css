@@ -1,42 +1,6 @@
 /*A股页面顶部名称*/
 .a-stock-name {
   padding: 10px;
-  background: #eee;
-  position: relative;
-}
-.a-stock-name a {
-  display: block;
-  float: left;
-  margin-right: 10px;
-}
-.a-stock-name .addstock,
-.a-stock-name .jxban,
-.a-stock-name .ccjj {
-  font-size: 12px;
-  /* margin-top: 4px; */
-  /* text-decoration: underline; */
-  border: 1px solid #cecece;
-  background: #fff;
-  padding: 3px 5px;
-}
-.a-stock-name .addstock:hover,
-.a-stock-name .jxban:hover,
-.a-stock-name .ccjj:hover {
-  background: #f7f7f7;
-}
-.a-stock-name .zbg {
-  font-size: 12px;
-  /* margin-top: 4px; */
-  /* text-decoration: underline; */
-  border: 1px solid #e0e0e0;
-  padding: 3px 5px;
-  background: #fff;
-}
-/*end*/
-/*A股页面顶部名称*/
-.a-stock-name {
-  padding: 10px;
-  background: #eee;
   position: relative;
 }
 .a-stock-name a {
@@ -103,15 +67,14 @@
   border: 1px solid #cecece;
   background: #fff;
 }
-.a-stock-base .a-stock-base-price .addstock:hover {
-  background: #f5f5f5;
-  transition: 0.3s;
-}
 .a-stock-base .a-stock-base-price .addstock a {
   display: block;
   font-size: 12px;
   padding: 5px 0;
   text-align: center;
+}
+.a-stock-base .a-stock-base-price .addstock:hover {
+  background: #f5f5f5;
 }
 .a-stock-base .a-stock-base-info {
   width: 533px;
@@ -141,7 +104,7 @@
   margin-right: 10px;
 }
 .a-stock-base .a-stock-base-info .time .hs {
-  background: #0087c7;
+  background: #808080;
   padding: 0px 10px;
   font-size: 14px;
   color: #fff;
@@ -166,10 +129,10 @@
   color: #ffef33;
   padding: 0px 10px;
 }
-.a-stock-base .a-stock-base-info .status {
+.a-stock-base .a-stock-base-info .time .status {
   text-align: center;
 }
-.a-stock-base .a-stock-base-info .status span {
+.a-stock-base .a-stock-base-info .time .status span {
   font-size: 12px;
   padding: 5px;
   text-align: center;
@@ -340,6 +303,67 @@
   padding: 5px 0 5px 10px;
 }
 /*end*/
+/*A股经营分析*/
+.a-stock-jyfx {
+  font-size: 14px;
+  position: relative;
+}
+.a-stock-jyfx .a-stock-jyfx-list {
+  margin-top: 10px;
+}
+.a-stock-jyfx .a-stock-jyfx-list > h1 {
+  margin-bottom: 10px;
+}
+.a-stock-jyfx .a-stock-jyfx-list .a-stock-jyfx-jzrq {
+  font-size: 14px;
+  color: #515151;
+  margin-bottom: 10px;
+}
+.a-stock-jyfx .a-stock-jyfx-list .a-stock-jyfx-draw {
+  position: relative;
+}
+.a-stock-jyfx .a-stock-jyfx-list .a-stock-jyfx-draw h1 {
+  font-size: 14px;
+}
+.a-stock-jyfx .a-stock-jyfx-list p.lb {
+  font-size: 12px;
+  float: left;
+  width: 220px;
+}
+.a-stock-jyfx .a-stock-jyfx-list p.lb span {
+  font-size: 12px;
+  display: block;
+  margin-top: 10px;
+}
+.a-stock-jyfx .a-stock-jyfx-list p.lb i {
+  font-size: 12px;
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  vertical-align: top;
+  margin-right: 5px;
+}
+.a-stock-jyfx .a-stock-jyfx-list p.lb i.i1 {
+  background: #29a3e3;
+}
+.a-stock-jyfx .a-stock-jyfx-list p.lb i.i2 {
+  background: #e65b41;
+}
+.a-stock-jyfx .a-stock-jyfx-list p.lb i.i3 {
+  background: #af06f5;
+}
+.a-stock-jyfx .a-stock-jyfx-list p.lb i.i4 {
+  background: #2806f5;
+}
+.a-stock-jyfx .a-stock-jyfx-list p.lb i.i5 {
+  background: #7106f5;
+}
+.a-stock-jyfx .a-stock-jyfx-list p.lb i.i6 {
+  background: #515151;
+}
+.a-stock-jyfx .a-stock-jyfx-list p.lb i.i7 {
+  background: #bba800;
+}
 /*A股相关业绩模块*/
 .a-stock-yj {
   position: relative;
@@ -460,12 +484,12 @@
   font-size: 14px;
   font-weight: normal;
   /* padding: 5px; */
-  height: 24px;
+  height: 35px;
   color: #000;
   text-align: left;
   /* font-weight: bold; */
   background: #e7f3ff;
-  line-height: 24px;
+  line-height: 35px;
   /* border-bottom: 1px solid #000; */
   /* border-top: 1px solid #000; */
 }
@@ -496,7 +520,8 @@
   text-align: center;
   padding: 10px;
   margin-bottom: 10px;
-  background: #0087c7;
+  /* background: #e7f3ff; */
+  color: #000;
 }
 .pop-up-box table {
   width: 100%;
@@ -508,8 +533,9 @@
   height: 25px;
   line-height: 25px;
   vertical-align: middle;
-  color: #000;
+  color: #515151;
   font-weight: 400;
+  background: #e7f3ff;
 }
 .pop-up-box table td {
   font-size: 12px;
@@ -517,6 +543,7 @@
   height: 25px;
   line-height: 25px;
   vertical-align: middle;
+  padding: 5px 0px;
 }
 /*A股历史信息*/
 .a-stock-history {
@@ -791,15 +818,13 @@
 }
 /*end*/
 /*新闻推送*/
-.right-pushnews {
+.allday-news {
+  padding: 10px 0 10px 10px;
   position: relative;
+  background: #fff;
+  margin-top: 20px;
 }
-.right-pushnews ul {
-  list-style: none;
-}
-.right-pushnews li {
-  font-style: 14px;
-}
-.right-pushnews li a {
-  font-style: 14px;
+.allday-news h1 {
+  position: relative;
+  margin-bottom: 10px;
 }

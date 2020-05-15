@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%=data.c%>--相关综合信息</title>
+<meta http-equiv="refresh">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="/css/astock.css">
+</head>
+<body>
+<div class="topnav">
+<%-include('../../../shared/topnav.ejs')%>
+</div>
+<div class="main">
+    <div class="wd1000">
+        <div class="search-result-sum">
+            <%-include('../../../shared/searchresult.ejs')%>
+        </div>
+        <div class="search-result-list">
+            <%-include('./index.ejs')%>
+            <%-include('../newslist.ejs')%>
+        </div>
+    </div>
+</div>
+<%-include('../../../shared/foot.ejs')%>
+<script src="http://emres.dfcfw.com/public/js/topnav.js" type="text/javascript"></script>
+<script src='//cdn.bootcss.com/jquery/1.11.2/jquery.min.js'></script>
+<script src="//emcharts.dfcfw.com/tspolyfill/1.0.0/tspolyfill.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/astock.js"></script>
+</body>
+</html>

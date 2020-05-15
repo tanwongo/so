@@ -100,6 +100,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 exports.__esModule = true;
 var astock_1 = __importDefault(__webpack_require__(/*! ../src/modules/astock */ "./src/modules/astock/index.ts"));
+$(document).ready(function () {
+    $('.nav-div li[data-nav-id="main"]').addClass("active").siblings().removeClass("active");
+});
 astock_1["default"].init();
 
 
@@ -311,7 +314,7 @@ exports.__esModule = true;
 var dot = __webpack_require__(/*! dot */ "./node_modules/dot/doT.js");
 var pop_up_box_html_1 = __importDefault(__webpack_require__(/*! ./pop_up_box.html */ "./src/modules/astock/pop_up_box.html"));
 var options = {
-    "title": "大笔买入",
+    "title": "大笔买单",
     "sum": 123,
     "css": {
         width: "250px",
@@ -320,12 +323,12 @@ var options = {
         left: "50%",
         top: "35px",
         bottom: "0",
-        height: "auto",
+        height: "100%",
         padding: "10px",
         marginLeft: "100px",
-        background: " #fffbd5",
-        border: "1px solid #000",
-        boxshadow: "2px 2px 5px 2px #808080"
+        background: " #f8f9fa",
+        border: "1px solid #ccc",
+        overflow: "auto"
     }
 };
 var astock = {
@@ -334,13 +337,15 @@ var astock = {
         console.log(123);
     },
     ydPopUpBox: function () {
-        $("[data-yd-status='bigbuy']").on("click", function () {
+        $("[data-yd-status='bigbuy']").on("click", function (e) {
             return __awaiter(this, void 0, void 0, function () {
                 return __generator(this, function (_a) {
+                    e.stopPropagation();
+                    if ($(".pop-up-box")) {
+                        $(".pop-up-box").remove();
+                    }
                     $("body").append(dot.template(pop_up_box_html_1["default"])(options));
-                    $(".pop-up-box").css(options.css);
-                    console.log($(this).offset().top);
-                    console.log($(this).offset().left);
+                    $(".pop-up-box").css(options.css).show();
                     return [2 /*return*/];
                 });
             });
@@ -359,7 +364,7 @@ exports["default"] = astock;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"pop-up-box\">\r\n    <h1>{{=it.title}}：{{=it.sum}}笔</h1>\r\n    <table>\r\n        <thead>\r\n            <tr>\r\n                <th>时间</th>\r\n                <th>详情</th>\r\n                <th>价格</th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n            <tr>\r\n                <td>09:12:54</td>  \r\n                <td class=\"up\">100万手</td>\r\n                <td class=\"up\">1119.23</td>\r\n            </tr>\r\n            <tr>\r\n                <td>09:12:51</td>  \r\n                <td class=\"down\">100万手</td>\r\n                <td class=\"down\">1119.23</td>\r\n            </tr>\r\n            <tr>\r\n                <td>09:11:32</td>  \r\n                <td>1.43万手</td>\r\n                <td class=\"up\">119.23</td>\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n</div>"
+module.exports = "<div class=\"pop-up-box\">\r\n    <h1>{{=it.title}}：{{=it.sum}}&nbsp;笔</h1>\r\n    <table>\r\n        <thead>\r\n            <tr>\r\n                <th>时间</th>\r\n                <th>详情</th>\r\n                <th>价格</th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n            <tr>\r\n                <td>09:12:54</td>  \r\n                <td class=\"up\">100万手</td>\r\n                <td class=\"up\">1119.23</td>\r\n            </tr>\r\n            <tr>\r\n                <td>09:12:51</td>  \r\n                <td class=\"up\">100万手</td>\r\n                <td class=\"down\">1119.23</td>\r\n            </tr>\r\n            <tr>\r\n                <td>09:11:32</td>  \r\n                <td class=\"up\">1.43万手</td>\r\n                <td class=\"up\">119.23</td>\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n</div>"
 
 /***/ })
 

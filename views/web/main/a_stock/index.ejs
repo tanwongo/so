@@ -1,85 +1,85 @@
-<% if (!data.b.IsSuccess) { %>
-    <div class="search-result-module-item clearfix">
-        <!-- A股头部信息 -->
-        <%-include('./name.ejs')%> 
-        <div class="clearfix">
-            <div class="fl wd700" style="border-right: 5px solid #eee;">
-                <div class="a-stockitem-cont clearfix">
-                    <!-- A股基本面 -->
-                    <div class="clearfix mt10">
-                        <%-include('./base.ejs')%>
-                    </div>
-                    <!--广告位-->
-                    <div class="clearfix mt20">
-                        <div class="clearfix">
-                            <a href="//same.eastmoney.com/c?z=eastmoney&amp;la=0&amp;si=1&amp;cg=86&amp;c=1063&amp;ci=1&amp;or=47&amp;l=10879&amp;bg=10879&amp;b=16261&amp;u=https%3A%2F%2Facttg.eastmoney.com%2Fpub%2Fweb_kh_dchqy_zt_01_01_01_0" target="_blank"><img src="//g1.dfcfw.com/g3/201902/20190225163634.gif" style="width: 690px;height:34px;border:none;"></a>
-                        </div>
-                    </div>
-                    <!-- 在线直播-->
-                    <div class="clearfix mt20 hd">
-                    </div>
-                    <!-- A股走势图形 -->
-                    <div class="clearfix mt20">
-                        <%-include("./draw.ejs")%> 
-                    </div>
-                    <!-- A股股票异动 -->
-                    <div class="clearfix mt20">
-                        <%-include('./yd.ejs') %> 
-                    </div>
-                    <!-- A股股票资金流 -->
-                    <div class="clearfix mt20">
-                        <%-include('./zjl.ejs') %> 
-                    </div>
-                     <!-- A股股票相关个股 -->
-                    <div class="clearfix mt20">
-                        <%-include('./xg.ejs') %> 
-                    </div>
-                    <!-- A股股票相关板块 -->
-                    <div class="clearfix mt20">
-                        <%-include('./bk.ejs') %> 
-                    </div>
-                    <!-- A股股票相关股东 -->
-                    <div class="clearfix mt20">
-                        <%-include('./gd.ejs') %> 
-                    </div>
-                     <!-- A股股票业绩 -->
-                     <div class="clearfix mt20">
-                        <%-include('./yj.ejs') %> 
-                    </div>
-                     <!-- A股股票相关提示-->
-                     <div class="clearfix mt20">
-                        <%-include('./ts.ejs') %> 
-                    </div>
-                     <!-- A股股票质押 -->
-                     <div class="clearfix mt20">
-                        <%-include('./zy.ejs') %> 
-                    </div>
-                    <!-- A股股票解禁 -->
-                    <div class="clearfix mt20">
-                        <%-include('./jj.ejs') %> 
-                    </div>
-                    <!-- 沪通，深通，港通 -->
-                    <div class="clearfix mt20">
-                        <%-include('./hsg.ejs') %> 
+
+<div class="search-result-module-item clearfix">
+    <!-- A股头部信息 -->
+    <%-include('./name.ejs')%> 
+    <div class="clearfix">
+        <div class="fl wd700" style="border-right: 5px solid #eee;">
+            <div class="a-stockitem-cont clearfix">
+                <!-- A股基本面 -->
+                <div class="clearfix mt10">
+                    <%-include('./base.ejs')%>
+                </div>
+                <!--广告位-->
+                <div class="clearfix mt20">
+                    <div class="clearfix">
+                        <a href="//same.eastmoney.com/c?z=eastmoney&amp;la=0&amp;si=1&amp;cg=86&amp;c=1063&amp;ci=1&amp;or=47&amp;l=10879&amp;bg=10879&amp;b=16261&amp;u=https%3A%2F%2Facttg.eastmoney.com%2Fpub%2Fweb_kh_dchqy_zt_01_01_01_0" target="_blank"><img src="//g1.dfcfw.com/g3/201902/20190225163634.gif" style="width: 690px;height:34px;border:none;"></a>
                     </div>
                 </div>
-            </div>
-            <div class="fl wd295">
-                <!-- A股股票历史信息 -->
-                <%-include('./ls.ejs') %>
-                <!--热门搜索-->
-                <%-include('../../../shared/hotsearch.ejs')%> 
-                <!--领涨概念-->
-                <%-include('../../../shared/hotconcept.ejs')%> 
-                <!--热门标签-->
-                <%-include('../../../shared/hotsotcktitle.ejs')%>
-                <div class="mt20"><a href="#" target="_blank"><img src="//g1.dfcfw.com/g4/202004/20200427150634.gif" width="100%" height="40px"></a></div>
+                <!-- 在线直播-->
+                <div class="clearfix mt20 hd">
+                </div>
+                <!-- A股走势图形 -->
+                <div class="clearfix mt20">
+                    <%-include("./draw.ejs")%> 
+                </div>
+                <!-- A股股票异动 -->
+                <div class="clearfix mt20">
+                    <%-include('./yd.ejs') %> 
+                </div>
+                <!-- A股股票资金流 -->
+                <div class="clearfix mt20">
+                    <%-include('./zjl.ejs') %> 
+                </div>
+                    <!-- A股股票相关个股 -->
+                <div class="clearfix mt20">
+                    <%-include('./xg.ejs') %> 
+                </div>
+                <!-- A股股票相关板块 -->
+                <div class="clearfix mt20">
+                    <%-include('./bk.ejs') %> 
+                </div>
+                <!-- A股股票相关股东 -->
+                <div class="clearfix mt20">
+                    <%-include('./gd.ejs') %> 
+                </div>
+                 <!-- A股股票营业分析 -->
+                 <div class="clearfix mt20">
+                    <%-include('./jyfx.ejs') %> 
+                </div>
+                <!-- A股股票业绩 -->
+                <div class="clearfix mt20">
+                    <%-include('./yj.ejs') %> 
+                </div>
+                <!-- A股股票相关提示-->
+                <div class="clearfix mt20">
+                    <%-include('./ts.ejs') %> 
+                </div>
+                <!-- A股股票质押 -->
+                <div class="clearfix mt20">
+                    <%-include('./zy.ejs') %> 
+                </div>
+                <!-- A股股票解禁 -->
+                <div class="clearfix mt20">
+                    <%-include('./jj.ejs') %> 
+                </div>
+                <!-- 沪通，深通，港通 -->
+                <div class="clearfix mt20">
+                <%-include('./hsg.ejs') %> 
+                </div>
             </div>
         </div>
+        <div class="fl wd295">
+            <!-- A股股票历史信息 -->
+            <%-include('./ls.ejs') %>
+            <!--热门搜索-->
+            <%-include('../../../shared/hotsearch.ejs')%> 
+            <!--领涨概念-->
+            <%-include('../../../shared/hotconcept.ejs')%> 
+            <!--热门标签-->
+            <%-include('../../../shared/hotsotcktitle.ejs')%>
+             <!--7X24小时新闻-->
+             <%-include('../../../shared/alldaynews.ejs')%>
+            <div class="mt20"><a href="#" target="_blank"><img src="http://g1.dfcfw.com/g3/201910/20191011151245.gif" width="100%" height="140px"></a></div>
+        </div>
     </div>
-    <%-include('../newslist.ejs')%>
-    <%- blockFor("csstop") %>
-    <link href="../css/astock.css" rel="stylesheet"> 
-    <%- blockFor("htmlbottom") %>
-<script src="../js/astock.js"></script>
-<% } %>
+</div>

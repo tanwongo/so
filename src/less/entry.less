@@ -1,136 +1,228 @@
-.search-result-module-qh{
-    margin-bottom: 10px;
-    margin-top: 15px;
+
+.entry{
+    margin-top: 10px;
     position: relative;
+    .entry-stock-table{
+        text-align: center;
+        a.stockmore{
+            font-size: 12px;
+        
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            th{
+                background: #e7f3ff;
+                font-size: 14px;
+                height: 30px;
+                line-height: 30px;
+                font-weight: normal;
+                text-align: center;
+                color: #515151;
+            }
+            tr{
+                border-bottom: 1px solid #eee;
+            }
+            td{
+                font-size: 12px;
+                text-align: center;
+                /* height: 35px; */
+                /* line-height: 35px; */
+                padding: 5px 0;
+                /* border-bottom: 1px solid #d6d6d6; */
+                position: relative;
+                vertical-align: middle;
+                i.zbg{
+                    font-size: 12px;
+                    background: #808080;
+                    color: #fff;
+                    padding: 2px 5px;
+                    font-style: normal;
+                }
+                .hot{
+                    display: block;
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    z-index: 3;
+                }
+            }
+            span{
+                display: block;
+                font-size: 12px;
+            }
+
+        }
+    }
+    
 }
+/*end*/
 
 
-
-.module-qh-item{
-    width: 215px;
-    float: left;
-    margin-right: 10px;
+/*词条搜索期货*/
+.entry-qh{
+    margin-top: 20px;
     position: relative;
-    /* border: 2px solid #0063ca; */
+    .entry-qh-inter,.entry-qh-china{
+        position: relative;
+    }
+    h1.tit{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        i.img-inter{
+            padding: 1px 10px;
+            margin-right: 5px;
+            background: url(/images/ico/inter-qh.png) no-repeat center top;
+        }
+        i.img-sh{
+            padding: 1px 10px;
+            margin-right: 5px;
+            background: url(/images/ico/sh-qh.png) no-repeat center top;
+        }
+        a{
+            color:#384650;
+        }
+        a:hover{
+            color:#ec5200;
+        }
+    }
+    .entry-qh-inter-quote{
+        position: relative;
+    }
+    .entry-qh-item{
+        width: 280px;
+        float: left;
+        position: relative;
+        .qh-head{
+            width: 100%;
+            position: relative;
+            height: 30px;
+            line-height: 30px;
+            background: #f9f9f9;
+            border-bottom: 1px solid #eaeaea;
+            img.qh-place{
+                display: block;
+                float: left;
+                margin-top: 3px;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+            span.qh-place{
+                font-size: 12px;
+                display: block;
+                float: left;
+            }
+            .bq{
+                display: none;
+                position: absolute;
+                top: -22px;
+                left: 0px;
+                color: #fff;
+                z-index: 3;
+                font-size: 12px;
+                font-style: normal;
+                background: #003369;
+                padding: 3px 5px;
+            }
+            a:hover{
+                color:#ec5200;
+                transition: 0.3s
+            }
+            a.tit{
+                font-size: 13px;
+                display: block;
+                float: left;
+                padding-left: 10px;
+                margin-right: 10px;
+            }
+            .isdell{
+                display: block;
+                font-size: 12px;
+                display: block;
+                color: #ee0404;
+                float: right;
+                margin-right: 10px;
+            }
+            .nodell{
+                display: block;
+            }
+            .qh-more{
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: block;
+                width: 25px;
+                height: 100%;
+                background: url(/images/ico/qh-more.png) no-repeat -2px 3px;
+            }
+        }
+        .qh-list{
+            position: relative;
+            .qh-list-cont{
+                text-align: center;
+                .tb{
+                    text-align: left;
+                    padding-top: 5px;
+                    p{
+                        width: 135px;
+                        font-size: 12px;
+                        padding-left: 5px;
+                        span{
+                            display: block;
+                            float: left;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                .mb{
+                    width: 100%;
+                    margin-top: 5px;
+                    p{
+                        float: left;
+                        font-size: 24px;
+                        color: #fff;
+                        margin-right: 10px;
+                        font-weight: bold;
+                        line-height: 35px;
+                    }
+                    span{
+                        display: block;
+                        float: left;
+                        font-size: 14px;
+                        color: #fff;
+                        /* line-height: 35px; */
+                        margin-right: 5px;
+                        /* padding-top: 13px; */
+                        line-height: 35px;
+                    }
+                }
+                .bckup{
+                    i{
+                        display: block;
+                        float: left;
+                        width: 30px;
+                        height: 35px;
+                        margin-left: 20px;
+                        background: url(/images/ico/up3.png) no-repeat center 8px;
+                    }
+                }
+                .bckdown{
+                    i{
+                        display: block;
+                        float: left;
+                        width: 30px;
+                        height: 35px;
+                        margin-left: 20px;
+                        background: url(/images/ico/down3.png) no-repeat center 8px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.module-qh-item .qh-head{
-    width: 100%;
-    position: relative;
-    height: 30px;
-    line-height: 30px;
-    background: #f7f7f7;
-}
-
-
-.module-qh-item .qh-head .bq{
-    display: none;
-    position: absolute;
-    top: -22px;
-    left: 0px;
-    color: #fff;
-    z-index: 3;
-    font-size: 12px;
-    font-style: normal;
-    background: #003369;
-    padding: 3px 5px;
-}
-
-.module-qh-item .qh-head a.tit{
-    font-size: 12px;
-    display: block;
-    float: left;
-    padding-left: 10px;
-    margin-right: 10px;
-    color: #004a99;
-}
-
-.module-qh-item .qh-head a:hover{
-    color:#ec5200;
-    transition: 0.3s
-}
-
-.module-qh-item .qh-head .isdell{
-    display: block;
-    font-size: 12px;
-    display: block;
-    color: #ee0404;
-    float: right;
-    margin-right: 10px;
-}
-
-.module-qh-item .qh-head .nodell{
-    display: block;
-}
-
-
-.module-qh-item .qh-head .qh-more{
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    width: 25px;
-    height: 100%;
-    background: url(/images/ico/qh-more.png) no-repeat -2px 3px;
-}
-
-.module-qh-item .qh-list{
-    position: relative;
-    background: #fbfbfb;
-}
-
-.module-qh-item .qh-list .qh-list-cont{
-    text-align: center;
-}
-
-.qh-list-cont .tb{
-    text-align: left;
-    padding-top: 5px;
-}
-
-.qh-list-cont .tb p{
-    width: 90px;
-    font-size: 12px;
-    padding-left: 5px;
-}
-
-.qh-list-cont .tb p span{
-    display: block;
-    float: left;
-    line-height: 22px;
-}
-
-.qh-list-cont .mb{
-    width: 100%;
-    margin-top: 5px;
-}
-
-.qh-list-cont .mb i{
-    display: block;
-    float: left;
-    width: 30px;
-    height: 35px;
-    background: url(/images/ico/down3.png) no-repeat center top;
-}
-
-.qh-list-cont .mb p{
-    float: left;
-    font-size: 18px;
-    color: #fff;
-    margin-right: 10px;
-    font-weight: bold;
-    line-height: 35px;
-}
-
-.qh-list-cont .mb span{
-    display: block;
-    float: left;
-    font-size: 12px;
-    color: #fff;
-    /* line-height: 35px; */
-    margin-right: 5px;
-    padding-top: 12px;
-}
 
 .search-result-module-qh .module-qh-more{
     float: left;
@@ -143,100 +235,6 @@
     text-decoration: underline;
 }
 
-.search-result-module-gp{
-    margin-top: 10px;
-    position: relative;
-}
-
-.search-result-module-gp em{
-    font-style: normal;
-    color:red
-}
-
-.search-result-module-gp .module-gp-table{
-    text-align: center
-}
-
-.search-result-module-gp .module-gp-table a.gpmore{
-    font-size: 12px;
-
-}
-
-.search-result-module-gp table{
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.search-result-module-gp table th{
-    background: #f7f7f7;
-    font-size: 14px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: normal;
-    text-align: center;
-    border-top: 1px solid #eee;
-}
-
-.search-result-module-gp table tr{
-    border-bottom: 1px solid #eee
-}
-
-.search-result-module-gp table td{
-    font-size: 12px;
-    text-align: center;
-    /* height: 35px; */
-    /* line-height: 35px; */
-    padding: 5px 0;
-    /* border-bottom: 1px solid #d6d6d6; */
-    position: relative;
-    vertical-align: middle;
-    /* line-height: 18px; */
-}
-
-.search-result-module-gp td i.zbg{
-    font-size: 12px;
-    background: #ab00e2;
-    color: #fff;
-    padding: 2px 5px;
-    font-style: normal;
-
-}
-
-.search-result-module-gp table td .hot{
-    display: block;
-    position: absolute;
-    top: 8px;
-    left: 0;
-    z-index: 3;
-}
-
-.search-result-module-gp table span{
-    display: block;
-    font-size: 12px;
-}
-
-
-.search-result-module-gp td a,
-.search-result-module-gp td a span{
-    color:#004a99
-}
-
-.search-result-module-gp td span.nomore{
-    height: 48px;
-    line-height: 48px;
-}
-
-
-.search-result-module-gp td a:hover span,
-.search-result-module-gp td a:hover{
-    color:#ec5200;
-    transition: 0.3s;
-}
-
-.search-result-module-gp thead tr:hover{
-    background: #fffef4;
-    transition: 0.3s;
-}
 
 
 .search-result-module-bk{

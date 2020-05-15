@@ -42,7 +42,7 @@
   z-index: 9;
   width: 100%;
   border-bottom: 2px solid #ec5200;
-  background: url("/images/ico/sbg.jpg") repeat-x center top;
+  background: #f7f7f7;
   box-shadow: 3px 3px 2px 1px #adadad;
 }
 .search-box .search-head {
@@ -84,6 +84,7 @@
 .search-box .search-head .search-form .search-submit .search-submit:hover {
   background: #da4d02;
 }
+/*end*/
 .nav-div {
   position: relative;
   margin-top: 10px;
@@ -103,7 +104,7 @@
 }
 .nav-div li a {
   font-size: 14px;
-  color: #faf4ff;
+  color: #000;
 }
 .nav-div li.active a {
   color: #fff;
@@ -124,12 +125,14 @@
   font-style: normal;
   letter-spacing: 1px;
 }
+/*end*/
+/*词条搜索结果*/
 .search-result-list {
   position: relative;
   margin: 10px auto 0px auto;
 }
 .search-result-list .search-result-module-title {
-  margin-bottom: 5px;
+  position: relative;
 }
 .search-result-list .search-result-module-title span {
   display: block;
@@ -149,6 +152,7 @@
   margin-left: 10px;
   text-decoration: underline;
   margin-top: 6px;
+  color: #808080;
 }
 /*end*/
 /*main个股样式*/
@@ -215,7 +219,8 @@
 .search-result-module-zhnews .list .xswd-item,
 .search-result-module-zhnews .list .wdm-item,
 .search-result-module-zhnews .list .yb-item,
-.search-result-module-zhnews .list .cfh-item {
+.search-result-module-zhnews .list .cfh-item,
+.search-result-module-zhnews .list .boke-item {
   position: relative;
 }
 .search-result-module-zhnews .list .sdicon {
@@ -245,9 +250,13 @@
 .search-result-module-zhnews .list .cfh-item .icon {
   background: #FF5722;
 }
+.search-result-module-zhnews .list .boke-item .icon {
+  background: #795548;
+}
 .search-result-module-zhnews .list .xswd-pitem,
 .search-result-module-zhnews .list .wdm-pitem,
-.search-result-module-zhnews .list .cfh-pitem {
+.search-result-module-zhnews .list .cfh-pitem,
+.search-result-module-zhnews .list .boke-pitem {
   font-size: 13px;
   line-height: 21px;
   position: relative;

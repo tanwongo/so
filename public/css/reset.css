@@ -33,7 +33,7 @@ input {
   vertical-align: baseline;
 }
 body {
-  background: #f8f9fa;
+  background: #fff;
 }
 ul {
   list-style: none;
@@ -134,6 +134,10 @@ a:hover {
 }
 .wd533 {
   width: 533px;
+  position: relative;
+}
+.wd420 {
+  width: 420px;
   position: relative;
 }
 .wd380 {
@@ -240,6 +244,9 @@ a:hover {
 }
 .mb0 {
   margin-bottom: 0;
+}
+.mb20 {
+  margin-bottom: 20px;
 }
 .mb10 {
   margin-bottom: 10px;
@@ -457,11 +464,11 @@ a:hover {
 .ff20 {
   color: #ff2020;
 }
-.bckred {
-  background: #f00;
+.bckup {
+  background: #f44;
 }
-.bckgreen {
-  background: #00c12b;
+.bckdown {
+  background: #00a725;
 }
 .res {
   background: #eee !important;
@@ -484,22 +491,22 @@ a:hover {
 .br-right {
   border-right: 1px solid #d7d7d7;
 }
-.scbar::-webkit-scrollbar {
-  width: 5px;
+::-webkit-scrollbar {
+  width: 10px;
 }
-.scbar::-webkit-scrollbar-track {
-  background: #f1f1f1;
+::-webkit-scrollbar-track {
+  background: #bfbfbf;
 }
-.scbar::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #c0c0c0;
 }
-.scbar2::-webkit-scrollbar {
-  width: 5px;
+::-webkit-scrollbar {
+  width: 10px;
 }
-.scbar2::-webkit-scrollbar-track {
+:-webkit-scrollbar-track {
   background: #d7d7d7;
 }
-.scbar2::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #808080;
 }
 /* .scbar::-webkit-scrollbar{

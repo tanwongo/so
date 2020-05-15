@@ -271,15 +271,13 @@
 }
 /*end*/
 /*新闻推送*/
-.right-pushnews {
+.allday-news {
+  padding: 10px 0 10px 10px;
   position: relative;
+  background: #fff;
+  margin-top: 20px;
 }
-.right-pushnews ul {
-  list-style: none;
-}
-.right-pushnews li {
-  font-style: 14px;
-}
-.right-pushnews li a {
-  font-style: 14px;
+.allday-news h1 {
+  position: relative;
+  margin-bottom: 10px;
 }

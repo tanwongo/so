@@ -32,6 +32,16 @@
 //     iszhuye: boolean
 // }
 // }
+$(document).on("click",async function(e:any){
+    let pop_up_box = $(".pop-up-box")
+    if(pop_up_box.is(":visible")){
+        if(!pop_up_box.is(e.target) && pop_up_box.has(e.target).length === 0){
+            pop_up_box.hide()
+        }
+    }
+    
+})
+
 
 
 

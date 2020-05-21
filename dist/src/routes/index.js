@@ -119,7 +119,14 @@ router.get('/web/main', function (ctx, next) { return __awaiter(void 0, void 0, 
                         Keyword: "",
                         news: 123
                     },
-                    c: ctx.query.keywords
+                    c: ctx.query.keywords,
+                    d: {
+                        stock: true,
+                        futures: true,
+                        spot: true,
+                        fund: true,
+                        bk: true
+                    }
                 };
                 return [4 /*yield*/, ctx.render('web/main/entry/layout', {
                         layout: 'web/main/entry/layout',

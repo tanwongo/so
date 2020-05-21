@@ -75,8 +75,13 @@ html,body,div,input,textarea,video,em,table,tr,td,th,label,a,p,span,ul,li,h1,h2,
 
   
   input::-webkit-input-placeholder{
-    color:#faf4ff;
+    color:#333;
   }
+
+  input[type='text']:focus{
+    border: 1px solid #ec5200;
+  }
+  
   input:focus:not(.side-bar-search)::-webkit-input-placeholder{
     color:#fff
   }

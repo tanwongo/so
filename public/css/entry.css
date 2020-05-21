@@ -96,7 +96,7 @@
   position: relative;
 }
 .entry-qh .entry-qh-item {
-  width: 320px;
+  width: 400px;
   float: left;
   position: relative;
 }
@@ -107,6 +107,12 @@
   line-height: 30px;
   background: #f9f9f9;
   border-bottom: 1px solid #eaeaea;
+}
+.entry-qh .entry-qh-item .qh-head .price {
+  font-size: 12px;
+  display: block;
+  float: left;
+  margin-right: 5px;
 }
 .entry-qh .entry-qh-item .qh-head img.qh-place {
   display: block;
@@ -137,7 +143,7 @@
   transition: 0.3s;
 }
 .entry-qh .entry-qh-item .qh-head a.tit {
-  font-size: 13px;
+  font-size: 14px;
   display: block;
   float: left;
   padding-left: 10px;
@@ -243,7 +249,7 @@
   position: relative;
 }
 .entry-bk .entry-bk-cont .entry-bk-cont-dv {
-  width: 320px;
+  width: 400px;
   float: left;
   position: relative;
 }
@@ -251,37 +257,22 @@
   display: block;
   height: 30px;
   line-height: 30px;
-  background: #f7f7f7;
+  background: #f9f9f9;
+  border-bottom: 1px solid #eaeaea;
 }
 .entry-bk .entry-bk-cont .entry-bk-cont-dv .dvname a {
+  font-size: 14px;
   display: block;
   float: left;
   padding-left: 10px;
   padding-top: 0;
+  margin-right: 10px;
 }
-.entry-bk .entry-bk-cont .entry-bk-cont-dv .dvname .hq {
-  line-height: 30px;
-  margin-top: 5px;
-  padding-left: 10px;
+.entry-bk .entry-bk-cont .entry-bk-cont-dv .dvname .price {
   float: left;
-}
-.entry-bk .entry-bk-cont .entry-bk-cont-dv .dvname .hq i {
   display: block;
-  width: 18px;
-  height: 18px;
-  background: url(/images/ico/up2.png) no-repeat center top;
-  float: left;
-  margin-top: 3px;
-}
-.entry-bk .entry-bk-cont .entry-bk-cont-dv .dvname .hq p {
-  float: left;
-  font-weight: bold;
-  font-size: 22px;
-  margin-left: 10px;
-}
-.entry-bk .entry-bk-cont .entry-bk-cont-dv .dvname .hq span {
   font-size: 12px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 .entry-bk .entry-bk-cont .entry-bk-cont-dv .dvsj {
   position: relative;

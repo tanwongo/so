@@ -285,57 +285,57 @@
 /*换算工具*/
 .entry-tools {
   position: relative;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  padding-left: 10px;
+  /* padding-bottom: 10px; */
+  /* margin-top: 10px; */
+  /* padding-left: 10px; */
   background: #fff;
-  margin-top: 20px;
 }
 .entry-tools h1 {
   font-size: 14px;
-  margin-top: 5px;
-  font-weight: 400;
-  color: #fff;
-  background: #0062c7;
-  padding: 5px 10px;
+  /* margin-top: 5px; */
+  /* color: #fff; */
 }
 .entry-tools .entry-tools-change {
-  margin-top: 10px;
-  margin-left: 10px;
   position: relative;
 }
 .entry-tools .entry-tools-change P {
   font-size: 14px;
 }
+.entry-tools .entry-tools-change p.tit {
+  font-weight: bold;
+}
 .entry-tools .entry-tools-change .entry-tools-change-input {
-  width: 125px;
+  width: 165px;
   display: block;
   float: left;
-  height: 22px;
-  font-size: 12px;
+  height: 30px;
+  font-size: 14px;
   margin-right: 10px;
   padding-left: 10px;
   border: 1px solid #ccc;
-  line-height: 22px;
+  line-height: 30px;
 }
 .entry-tools .entry-tools-change .entry-tools-change-input:focus {
   border: 1px solid #ec5200;
 }
 .entry-tools .entry-tools-change .entry-tools-change-select {
+  font-size: 14px;
   display: block;
   float: left;
   width: 110px;
-  height: 24px;
+  height: 32px;
 }
 .entry-tools .entry-tools-change .entry-tools-change-button {
-  margin-top: 10px;
   position: relative;
+  float: left;
+  margin-left: 10px;
 }
 .entry-tools .entry-tools-change .entry-tools-change-button button {
+  width: 65px;
+  height: 32px;
   border: 1px solid #0070e4;
   background: #0062c7;
-  padding: 3px 10px;
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   cursor: pointer;
 }
@@ -344,18 +344,17 @@
   background: #ec5200;
 }
 .entry-tools .entry-tools-change .entry-tools-change-result {
-  margin-top: 10px;
   position: relative;
-}
-.entry-tools .entry-tools-change .entry-tools-change-result p {
-  font-size: 12px;
-  line-height: 22px;
+  /* margin-left: 10px; */
+  /* height: 31px; */
+  line-height: 30px;
+  /* border-bottom: 1px solid #cccccc; */
+  margin-top: 10px;
 }
 .entry-tools .entry-tools-change .entry-tools-change-result p span {
   font-size: 18px;
   display: block;
   float: left;
-  border-bottom: 2px solid #384650;
   /* margin-right: 10px; */
   padding-right: 5px;
 }
@@ -364,9 +363,6 @@
 }
 .entry-tools .entry-tools-change .entry-tools-change-rate {
   position: relative;
-}
-.entry-tools .entry-tools-change .entry-tools-change-rate .entry-tools-change-input {
-  width: 80px;
 }
 .entry-tools .entry-tools-change .entry-tools-change-rate .exi {
   display: block;
@@ -377,7 +373,4 @@
   margin-right: 8px;
   margin-left: 8px;
   margin-top: 5px;
-}
-.entry-tools .entry-tools-change .entry-tools-change-rate .entry-tools-change-select {
-  width: 66px;
 }

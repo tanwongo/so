@@ -1,9 +1,13 @@
 
 <div class="search-result-module-item clearfix">
     <div class="entry clearfix">
-        <div class="fl wd700" style="border-right: 5px solid #eee;">
+        <div class="fl wd700">
+            <!-- 相关换算 -->
+            <%-include('./exchange.ejs')%>
              <!-- 股票相关 -->
             <%-include('./stock.ejs')%>
+             <!-- 股票相关 -->
+             <%-include('./talk.ejs')%>
             <div class="mt20"><img src="https://g1.dfcfw.com/g4/202004/20200401173525.gif" width="100%"></div>
             <!--期货现货相关 -->
             <%-include('./futures.ejs')%> 
@@ -16,7 +20,7 @@
         </div>
         <div class="fl wd295"> 
             <!--股票相关-->
-            <%-include('../../../shared/tools.ejs')%>
+
         </div>
     </div>
 </div>

@@ -1,6 +1,33 @@
 let tools = {
     init: function(){
     },
+    keyWordsRed: function(str:any,kw:any,kw2:any){
+
+            kw = kw ? kw : "";
+            if ((str + "") && (kw + "")) {
+        
+                var enc = kw.replace(/\*/g, "\\*");
+                enc = enc.replace(/\^/g, "\\^");
+                enc = enc.replace(/\$/g, "\\$");
+                enc = enc.replace(/\+/g, "\\+");
+                enc = enc.replace(/\?/g, "\\?");
+                enc = enc.replace(/\./g, "\\.");
+                enc = enc.replace(/\(/g, "\\(");
+                enc = enc.replace(/\)/g, "\\)");
+                var reg = new RegExp(enc, "g");
+                var rep = "<em>" + kw + "</em>";
+                var nstr = str.replace(reg, rep);
+        
+                // 标红第二个关键字		
+                if (kw2) {
+                    return this.keyWordRed(nstr, kw2);
+                } else {
+                    return nstr;
+                }
+            }
+        
+            return "";
+    },
     getQueryString: function(name:any){
         let enc = name.replace("*", "\\*");
         let reg = new RegExp("(^|&)" + enc + "=([^&]*)(&|$)", "i");

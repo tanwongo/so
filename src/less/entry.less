@@ -63,6 +63,22 @@
 }
 /*end*/
 
+.entry-talk{
+    font-size: 14px;
+    margin-top: 10px;
+    position: relative;
+    div{
+        margin-bottom: 7px;
+    }
+    a{
+        font-size: 14px;
+        text-decoration: underline;
+    }
+    span{
+        font-size: 12px;
+    }
+}
+
 
 /*词条搜索期货*/
 .entry-qh{
@@ -239,12 +255,12 @@
         float: right;
         width: 280px;
         position: relative;
-        img{
+        a{
             display: block;
         }
         p{
             font-size: 12px;
-            margin-top: 10px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -315,7 +331,7 @@
                     font-weight: normal;
                     font-size: 14px;
                     border-bottom: 1px solid #eee;
-                    padding: 3px 0px;
+                    padding: 3px 0px 3px 5px;
                 }
                 table{
                    width: 100%;
@@ -396,6 +412,104 @@
 .entry-others{
     margin-top: 20px;
     position: relative;
+    .entry-others-special{
+        position: relative;
+        margin: 10px 0 0 10px;
+        .item{
+            position: relative;
+            padding-bottom: 5px;
+            background: #000;
+            float: left;
+            margin-right: 10px;
+            a{
+                font-size: 14px;
+                background: #3bb0ff;
+                background:-webkit-linear-gradient(45deg, #3bb0ff, #e935ff);
+                display: block;
+                padding: 5px 10px;
+                color:#fff;
+            }
+            p{
+                font-size: 14px;
+                text-align: center;
+                margin-top: 5px;
+                position: relative;
+                span{
+                    display:inline-block;
+                }
+                .sp1{
+                    background: url(/images/ico/bjup.png) 0 0 no-repeat;
+                    width: 12px;
+                    height: 12px;
+                }
+                .sp2{
+                    background: url(/images/ico/bjdown.png) 0 0 no-repeat;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+    .entry-others-normal{
+        margin: 10px 0 0 10px;
+        position: relative;
+        .item{
+            margin-bottom: 10px;
+            position: relative;
+            .title{
+                float: left;
+                margin-right: 10px;
+                /* text-align: right; */
+                width: 85px;
+                font-size: 14px;
+                background: #fff;
+                text-align: center;
+                padding: 5px 0;
+                color: #fff;
+                border: 1px solid #cecece;
+                a{
+                    display: block;
+                }
+                &:hover{
+                    background: #f7f7f7;
+                }
+            }
+            .cont{
+                float: left;
+                font-size: 14px;
+                width: 555px;
+                line-height: 22px;
+                .dvhf{
+                    margin-bottom: 5px;
+                }
+                .entry-others-normal-combe{
+                    position: relative;
+                    table{
+                        width: 100%;
+                        border-collapse:collapse;
+                        th{
+                            font-size: 14px;
+                            text-align: center;
+                            background: #e7f3ff;
+                            font-size: 14px;
+                            height: 30px;
+                            line-height: 30px;
+                            font-weight: normal;
+                            text-align: center;
+                            color: #000000;
+                        }
+                        td{
+                            font-size: 14px;
+                            text-align: center;
+                            padding: 15px 0;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 

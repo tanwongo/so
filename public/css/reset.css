@@ -395,6 +395,12 @@ a:hover {
 .down {
   color: #007100;
 }
+.up2 {
+  color: #f00;
+}
+.down2 {
+  color: #00ff00;
+}
 .sz {
   color: #a70000;
 }

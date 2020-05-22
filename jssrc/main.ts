@@ -32,6 +32,8 @@
 //     iszhuye: boolean
 // }
 // }
+
+
 $(document).on("click",async function(e:any){
     let pop_up_box = $(".pop-up-box")
     if(pop_up_box.is(":visible")){
@@ -41,6 +43,7 @@ $(document).on("click",async function(e:any){
     }
     
 })
+
 
 
 

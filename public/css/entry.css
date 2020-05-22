@@ -58,6 +58,21 @@
   color: #0040d2;
 }
 /*end*/
+.entry-talk {
+  font-size: 14px;
+  margin-top: 10px;
+  position: relative;
+}
+.entry-talk div {
+  margin-bottom: 7px;
+}
+.entry-talk a {
+  font-size: 14px;
+  text-decoration: underline;
+}
+.entry-talk span {
+  font-size: 12px;
+}
 /*词条搜索期货*/
 .entry-qh {
   margin-top: 20px;
@@ -231,12 +246,12 @@
   width: 280px;
   position: relative;
 }
-.entry-qh .entry-qh-draw img {
+.entry-qh .entry-qh-draw a {
   display: block;
 }
 .entry-qh .entry-qh-draw p {
   font-size: 12px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /*end*/
 /*词条搜索板块*/
@@ -306,7 +321,7 @@
   font-weight: normal;
   font-size: 14px;
   border-bottom: 1px solid #eee;
-  padding: 3px 0px;
+  padding: 3px 0px 3px 5px;
 }
 .entry-bk .entry-bk-cont .entry-bk-cont-dv .dvlx table {
   width: 100%;
@@ -379,6 +394,101 @@
 .entry-others {
   margin-top: 20px;
   position: relative;
+}
+.entry-others .entry-others-special {
+  position: relative;
+  margin: 10px 0 0 10px;
+}
+.entry-others .entry-others-special .item {
+  position: relative;
+  padding-bottom: 5px;
+  background: #000;
+  float: left;
+  margin-right: 10px;
+}
+.entry-others .entry-others-special .item a {
+  font-size: 14px;
+  background: #3bb0ff;
+  background: -webkit-linear-gradient(45deg, #3bb0ff, #e935ff);
+  display: block;
+  padding: 5px 10px;
+  color: #fff;
+}
+.entry-others .entry-others-special .item p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+  position: relative;
+}
+.entry-others .entry-others-special .item p span {
+  display: inline-block;
+}
+.entry-others .entry-others-special .item p .sp1 {
+  background: url(/images/ico/bjup.png) 0 0 no-repeat;
+  width: 12px;
+  height: 12px;
+}
+.entry-others .entry-others-special .item p .sp2 {
+  background: url(/images/ico/bjdown.png) 0 0 no-repeat;
+  width: 12px;
+  height: 12px;
+}
+.entry-others .entry-others-normal {
+  margin: 10px 0 0 10px;
+  position: relative;
+}
+.entry-others .entry-others-normal .item {
+  margin-bottom: 10px;
+  position: relative;
+}
+.entry-others .entry-others-normal .item .title {
+  float: left;
+  margin-right: 10px;
+  /* text-align: right; */
+  width: 85px;
+  font-size: 14px;
+  background: #fff;
+  text-align: center;
+  padding: 5px 0;
+  color: #fff;
+  border: 1px solid #cecece;
+}
+.entry-others .entry-others-normal .item .title a {
+  display: block;
+}
+.entry-others .entry-others-normal .item .title:hover {
+  background: #f7f7f7;
+}
+.entry-others .entry-others-normal .item .cont {
+  float: left;
+  font-size: 14px;
+  width: 555px;
+  line-height: 22px;
+}
+.entry-others .entry-others-normal .item .cont .dvhf {
+  margin-bottom: 5px;
+}
+.entry-others .entry-others-normal .item .cont .entry-others-normal-combe {
+  position: relative;
+}
+.entry-others .entry-others-normal .item .cont .entry-others-normal-combe table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.entry-others .entry-others-normal .item .cont .entry-others-normal-combe table th {
+  background: #e7f3ff;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #000000;
+}
+.entry-others .entry-others-normal .item .cont .entry-others-normal-combe table td {
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 0;
+  vertical-align: middle;
 }
 /*词条搜索现货*/
 .entry-spot {
@@ -937,57 +1047,57 @@
 /*换算工具*/
 .entry-tools {
   position: relative;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  padding-left: 10px;
+  /* padding-bottom: 10px; */
+  /* margin-top: 10px; */
+  /* padding-left: 10px; */
   background: #fff;
-  margin-top: 20px;
 }
 .entry-tools h1 {
   font-size: 14px;
-  margin-top: 5px;
-  font-weight: 400;
-  color: #fff;
-  background: #0062c7;
-  padding: 5px 10px;
+  /* margin-top: 5px; */
+  /* color: #fff; */
 }
 .entry-tools .entry-tools-change {
-  margin-top: 10px;
-  margin-left: 10px;
   position: relative;
 }
 .entry-tools .entry-tools-change P {
   font-size: 14px;
 }
+.entry-tools .entry-tools-change p.tit {
+  font-weight: bold;
+}
 .entry-tools .entry-tools-change .entry-tools-change-input {
-  width: 125px;
+  width: 165px;
   display: block;
   float: left;
-  height: 22px;
-  font-size: 12px;
+  height: 30px;
+  font-size: 14px;
   margin-right: 10px;
   padding-left: 10px;
   border: 1px solid #ccc;
-  line-height: 22px;
+  line-height: 30px;
 }
 .entry-tools .entry-tools-change .entry-tools-change-input:focus {
   border: 1px solid #ec5200;
 }
 .entry-tools .entry-tools-change .entry-tools-change-select {
+  font-size: 14px;
   display: block;
   float: left;
   width: 110px;
-  height: 24px;
+  height: 32px;
 }
 .entry-tools .entry-tools-change .entry-tools-change-button {
-  margin-top: 10px;
   position: relative;
+  float: left;
+  margin-left: 10px;
 }
 .entry-tools .entry-tools-change .entry-tools-change-button button {
+  width: 65px;
+  height: 32px;
   border: 1px solid #0070e4;
   background: #0062c7;
-  padding: 3px 10px;
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   cursor: pointer;
 }
@@ -996,18 +1106,17 @@
   background: #ec5200;
 }
 .entry-tools .entry-tools-change .entry-tools-change-result {
-  margin-top: 10px;
   position: relative;
-}
-.entry-tools .entry-tools-change .entry-tools-change-result p {
-  font-size: 12px;
-  line-height: 22px;
+  /* margin-left: 10px; */
+  /* height: 31px; */
+  line-height: 30px;
+  /* border-bottom: 1px solid #cccccc; */
+  margin-top: 10px;
 }
 .entry-tools .entry-tools-change .entry-tools-change-result p span {
   font-size: 18px;
   display: block;
   float: left;
-  border-bottom: 2px solid #384650;
   /* margin-right: 10px; */
   padding-right: 5px;
 }
@@ -1016,9 +1125,6 @@
 }
 .entry-tools .entry-tools-change .entry-tools-change-rate {
   position: relative;
-}
-.entry-tools .entry-tools-change .entry-tools-change-rate .entry-tools-change-input {
-  width: 80px;
 }
 .entry-tools .entry-tools-change .entry-tools-change-rate .exi {
   display: block;
@@ -1029,7 +1135,4 @@
   margin-right: 8px;
   margin-left: 8px;
   margin-top: 5px;
-}
-.entry-tools .entry-tools-change .entry-tools-change-rate .entry-tools-change-select {
-  width: 66px;
 }

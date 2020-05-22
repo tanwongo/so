@@ -292,54 +292,55 @@
 /*换算工具*/
 .entry-tools{
     position: relative;
-    padding-bottom: 10px;
-    margin-top: 10px;
-    padding-left: 10px;
+    /* padding-bottom: 10px; */
+    /* margin-top: 10px; */
+    /* padding-left: 10px; */
     background: #fff;
-    margin-top: 20px;
     h1{
         font-size: 14px;
-        margin-top: 5px;
-        font-weight: 400;
-        color: #fff;
-        background: #0062c7;
-        padding: 5px 10px;
+        /* margin-top: 5px; */
+        /* color: #fff; */
+        // background: #ffeac3;
     }
     .entry-tools-change{
-        margin-top: 10px;
-        margin-left: 10px;
         position: relative;
         P{
             font-size: 14px;
         }
+        p.tit{
+            font-weight:bold;
+        }
         .entry-tools-change-input{
-            width: 125px;
+            width: 165px;
             display: block;
             float: left;
-            height: 22px;
-            font-size: 12px;
+            height: 30px;
+            font-size: 14px;
             margin-right: 10px;
             padding-left: 10px;
             border: 1px solid #ccc;
-            line-height: 22px;
+            line-height: 30px;
             &:focus{
                 border: 1px solid #ec5200;
             }
         }
         .entry-tools-change-select{
+            font-size:14px;
             display: block;
             float: left;
             width: 110px;
-            height: 24px;
+            height: 32px;
         }
         .entry-tools-change-button{
-            margin-top:10px;
             position: relative;
+            float: left;
+            margin-left: 10px;
             button{
+                width: 65px;
+                height: 32px;
                 border: 1px solid #0070e4;
                 background: #0062c7;
-                padding: 3px 10px;
-                font-size: 12px;
+                font-size: 14px;
                 color: #fff;
                 cursor: pointer;
                 &:hover{
@@ -349,16 +350,17 @@
             }
         }
         .entry-tools-change-result{
-            margin-top:10px;
             position: relative;
+            /* margin-left: 10px; */
+            /* height: 31px; */
+            line-height: 30px;
+            /* border-bottom: 1px solid #cccccc; */
+            margin-top: 10px;
             p{
-                font-size: 12px;
-                line-height: 22px;
                 span{
                     font-size: 18px;
                     display: block;
                     float: left;
-                    border-bottom: 2px solid #384650;
                     /* margin-right: 10px; */
                     padding-right: 5px;
                 }
@@ -369,9 +371,6 @@
         }
         .entry-tools-change-rate{
             position: relative;
-            .entry-tools-change-input{
-                width: 80px;
-            }
             .exi{
                 display: block;
                 float: left;
@@ -381,9 +380,6 @@
                 margin-right: 8px;
                 margin-left: 8px;
                 margin-top: 5px;
-            }
-            .entry-tools-change-select{
-                width: 66px;
             }
         }
     }

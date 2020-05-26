@@ -92,6 +92,27 @@ router.get('/web/main', async (ctx:Context, next) => {
 
     }
 
+    if(from_action.keywords=="腾讯控股"){
+        data = {
+            a:{
+             IsSuccess:false
+            },
+            b:{
+             IsSuccess:false,
+             TotalPage:9158,
+             TotalCount:91566,
+             Keyword:"",
+             news:true
+            },
+            c:ctx.query.keywords
+         }
+         await ctx.render('web/main/a_stock/layout',{
+            layout: 'web/main/hk_stock/layout',
+            data:data
+        })
+
+    }
+
 })
 
 router.get('/', async (ctx:Context, next) => {

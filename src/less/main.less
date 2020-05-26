@@ -116,27 +116,25 @@
 /*end*/
 
 /*搜索结果条数*/
-.search-result-sum{
+.search-result-tips{
     padding-top: 10px;
     position: relative;
-    span{
+    .searchresult-time,.searchresult-sum{
         font-size: 12px;
-        vertical-align: middle
-    }
-    span em{
-        color: #ec5200;
-        margin-right: 7px;
-        font-style: normal;
-        letter-spacing: 1px;
+        margin-bottom: 5px;
+        color: #808080;
+        img{
+            vertical-align: bottom;
+        }
     }
 }
 /*end*/
 
 
-/*词条搜索结果*/
+/*搜索结果*/
 .search-result-list{
     position: relative;
-    margin: 10px auto 0px auto;
+    margin: 0 auto;
     .search-result-module-title{
         position: relative;
         span{
@@ -157,7 +155,7 @@
             margin-left: 10px;
             text-decoration: underline;
             margin-top: 6px;
-            color:#415973
+            color:#002c90
         }
         a.newsa2{
             color:#0040d2
@@ -211,13 +209,10 @@
 综合新闻列表
 */
 .search-result-module-zhnews{
-    margin-top:30px;
     position: relative;
 }
 
 .search-result-module-zhnews .module-zhnews-fl{
-    width: 640px;
-    float: left;
     position: relative;
 }
 
@@ -225,7 +220,7 @@
     color:#f00;
 }
 .search-result-module-zhnews .list{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .search-result-module-zhnews .list .acrt{
@@ -387,6 +382,13 @@
 }
 /*综合新闻列表end*/
 
+.a-stock-cbbox {
+    background: #fff;
+    border: 1px solid #efefef;
+    padding: 10px;
+    position: relative;
+  }
+
 /*底部翻页*/
 .pageF{
     margin-top: 15px;
@@ -470,6 +472,31 @@
 
 }
 /*end股市视频直播*/
+
+/*table通用样式*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    thead tr{
+        border-bottom: 1px solid #eee;
+        th{
+            background: #e7f3ff;
+            font-size: 14px;
+            height: 30px;
+            line-height: 30px;
+            font-weight: normal;
+            text-align: center;
+            color: #000000;
+        }
+    }
+    tbody td{
+        font-size: 14px;
+        text-align: center;
+        padding: 5px 0;
+        position: relative;
+        vertical-align: middle;
+    }
+}
 
 
 

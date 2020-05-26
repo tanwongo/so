@@ -12,11 +12,11 @@ let options = {
         left:"50%",
         top:"35px",
         bottom: "0",
-        height:"100%",
+        height:"auto",
         padding: "10px",
         marginLeft: "100px",
-        background:" #f8f9fa",
-        border: "1px solid #ccc",
+        background:" #fff",
+        border: "1px solid #efefef",
         overflow:"auto"
     }
 }

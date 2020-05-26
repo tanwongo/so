@@ -1,26 +1,49 @@
 
 <div class="search-result-module-item clearfix">
     <div class="entry clearfix">
-        <div class="fl wd700">
-            <!-- 相关换算 -->
-            <%-include('./exchange.ejs')%>
+        <div class="fl wd700 mr5">
+            <!-- 百科 -->
+            <div class="clearfix">
+                <%-include('./baike.ejs')%>
+            </div>
+            <!-- 导读 -->
+            <div class="clearfix">
+                <%-include('./lead.ejs')%>
+            </div>
+            <div class="clearfix mt10">
+                   <!-- 相关换算 -->
+            <%-include('../exchange.ejs')%>
+            </div>
              <!-- 股票相关 -->
-            <%-include('./stock.ejs')%>
-             <!-- 股票相关 -->
-             <%-include('./talk.ejs')%>
-            <div class="mt20"><img src="https://g1.dfcfw.com/g4/202004/20200401173525.gif" width="100%"></div>
+            <div class="clearfix mt10">
+                <%-include('./stock.ejs')%>
+            </div>
+            <div class="mt10"><img src="https://g1.dfcfw.com/g4/202004/20200401173525.gif" width="100%"></div>
             <!--期货现货相关 -->
-            <%-include('./futures.ejs')%> 
+            <div class="clearfix mt10">
+                <%-include('./futures.ejs')%>
+            </div>
             <!--板块相关 -->
-            <%-include('./bk.ejs')%>
+            <div class="clearfix mt10">
+                <%-include('./bk.ejs')%>
+            </div>
             <!--基金相关 -->
-            <%-include('./fund.ejs')%> 
+            <div class="clearfix mt10">
+                <%-include('./fund.ejs')%>
+            </div>
             <!--其它相关 -->
-            <%-include('./others.ejs')%> 
+            <div class="clearfix mt10">
+                <%-include('./others.ejs')%>
+            </div>
+            <%-include('../newslist.ejs')%>
         </div>
         <div class="fl wd295"> 
-            <!--股票相关-->
-
+            <!--热门搜索-->
+            <%-include('../../../shared/hotsearch.ejs')%> 
+            <!--领涨概念-->
+            <%-include('../../../shared/hotconcept.ejs')%> 
+            <!--热门标签-->
+            <%-include('../../../shared/hotsotcktitle.ejs')%>
         </div>
     </div>
 </div>

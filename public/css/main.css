@@ -111,25 +111,25 @@
 }
 /*end*/
 /*搜索结果条数*/
-.search-result-sum {
+.search-result-tips {
   padding-top: 10px;
   position: relative;
 }
-.search-result-sum span {
+.search-result-tips .searchresult-time,
+.search-result-tips .searchresult-sum {
   font-size: 12px;
-  vertical-align: middle;
+  margin-bottom: 5px;
+  color: #808080;
 }
-.search-result-sum span em {
-  color: #ec5200;
-  margin-right: 7px;
-  font-style: normal;
-  letter-spacing: 1px;
+.search-result-tips .searchresult-time img,
+.search-result-tips .searchresult-sum img {
+  vertical-align: bottom;
 }
 /*end*/
-/*词条搜索结果*/
+/*搜索结果*/
 .search-result-list {
   position: relative;
-  margin: 10px auto 0px auto;
+  margin: 0 auto;
 }
 .search-result-list .search-result-module-title {
   position: relative;
@@ -152,7 +152,7 @@
   margin-left: 10px;
   text-decoration: underline;
   margin-top: 6px;
-  color: #415973;
+  color: #002c90;
 }
 .search-result-list .search-result-module-title a.newsa2 {
   color: #0040d2;
@@ -193,19 +193,16 @@
 综合新闻列表
 */
 .search-result-module-zhnews {
-  margin-top: 30px;
   position: relative;
 }
 .search-result-module-zhnews .module-zhnews-fl {
-  width: 640px;
-  float: left;
   position: relative;
 }
 .search-result-module-zhnews .module-zhnews-fl em {
   color: #f00;
 }
 .search-result-module-zhnews .list {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .search-result-module-zhnews .list .acrt {
   font-size: 12px;
@@ -332,6 +329,12 @@
   margin-bottom: 5px;
 }
 /*综合新闻列表end*/
+.a-stock-cbbox {
+  background: #fff;
+  border: 1px solid #efefef;
+  padding: 10px;
+  position: relative;
+}
 /*底部翻页*/
 .pageF {
   margin-top: 15px;
@@ -398,4 +401,28 @@
   font-size: 16px;
 }
 /*end股市视频直播*/
+/*table通用样式*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead tr {
+  border-bottom: 1px solid #eee;
+}
+table thead tr th {
+  background: #e7f3ff;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #000000;
+}
+table tbody td {
+  font-size: 14px;
+  text-align: center;
+  padding: 5px 0;
+  position: relative;
+  vertical-align: middle;
+}
 /* #004a99 00458f 003b7a ecf5ff 74b5fc */

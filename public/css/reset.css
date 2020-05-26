@@ -33,7 +33,7 @@ input {
   vertical-align: baseline;
 }
 body {
-  background: #fff;
+  background: #f5f5f5;
 }
 ul {
   list-style: none;
@@ -47,7 +47,7 @@ button {
   outline: 0 none;
 }
 table tbody tr:hover {
-  background: #fffef4;
+  background: #e1f2f3;
   transition: 0.3s;
 }
 a {
@@ -96,6 +96,9 @@ input[type='text']:focus {
 }
 input:focus:not(.side-bar-search)::-webkit-input-placeholder {
   color: #fff;
+}
+input.borderlight {
+  border: 1px solid #f44 !important;
 }
 .clearfix:after {
   clear: both;
@@ -401,6 +404,9 @@ a:hover {
 .down2 {
   color: #00ff00;
 }
+.down3 {
+  color: #00bb00;
+}
 .sz {
   color: #a70000;
 }
@@ -473,14 +479,26 @@ a:hover {
 .ff20 {
   color: #ff2020;
 }
-.bckup {
+.bckup,
+.bckopen {
   background: #f44;
+}
+.bckclose {
+  background: #000;
 }
 .bckdown {
   background: #00a725;
 }
 .res {
   background: #eee !important;
+}
+.speup {
+  background: #f44;
+  background: -webkit-linear-gradient(45deg, #000, #f00);
+}
+.spedown {
+  background: #00b30b;
+  background: -webkit-linear-gradient(45deg, #000, #00ff0f);
 }
 .y-number {
   color: #ec5200;
@@ -500,23 +518,17 @@ a:hover {
 .br-right {
   border-right: 1px solid #d7d7d7;
 }
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #bfbfbf;
-}
-::-webkit-scrollbar-thumb {
+div::-webkit-scrollbar-thumb {
   background: #c0c0c0;
 }
-::-webkit-scrollbar {
+div::-webkit-scrollbar {
   width: 10px;
 }
-:-webkit-scrollbar-track {
-  background: #d7d7d7;
+div::-webkit-scrollbar-track {
+  background: #a9a9a9;
 }
-::-webkit-scrollbar-thumb {
-  background: #808080;
+div::-webkit-scrollbar-thumb {
+  background: #000;
 }
 /* .scbar::-webkit-scrollbar{
   

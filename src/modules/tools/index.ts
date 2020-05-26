@@ -1,3 +1,5 @@
+import dialog from "../dialog"
+
 let tools = {
     init: function(){
     },
@@ -62,6 +64,93 @@ let tools = {
         arr.push(key + "=" + obj[key]);
     }
     return arr.join("&");
+    },
+    exInputNumber: function(dom:any,domval:any,domsel:any){
+
+        let $fdom = dom;
+        let $fdomval = domval;
+        let $fdomsel = domsel;
+
+
+		if(isNaN($fdomval)||$fdomval=="") {
+            dialog.bordfocus({
+               "domsym": $fdom
+            })
+
+            return false;
+        }
+        else{
+            $
+            console.log($fdomsel.select().val())
+            // http://push2.eastmoney.com/api/qt/stock/get?secid=121.USDCNYI&fltt=2&fields=f43,f57,f60&cb=jQuery18305642555869954946_1590395277408&_=1590395285391
+            // var x = $("c1")[$("c1").selectedIndex].value;
+            // var y = $("c2")[$("c2").selectedIndex].value;
+            // var url = "//hq.sinajs.cn/list=" + x + "," + y;
+            // return true
+        }
+		// $("res").value = "正在计算..";
+		// var x = $("c1")[$("c1").selectedIndex].value;
+		// var y = $("c2")[$("c2").selectedIndex].value;
+		// var url = "//hq.sinajs.cn/list=" + x + "," + y;
+
+		// var scriptLoader = new IO.Script();
+		// scriptLoader.load(url, this.deal.Bind(this, x, y, bsv));
+   
+    },
+    exchangeT: function(){
+        let _this = this;
+        let div_entry_tools  = $("[data-entry-tools]")
+
+
+        if(div_entry_tools){
+            div_entry_tools.find("[data-entry-tips='gold']").click(function(){
+                let gold_input:any = div_entry_tools.find("[data-entry-input='gold']")
+                
+                let gold_currency:any = div_entry_tools.find("[data-entry-select]")
+                console.log(gold_currency)
+
+                let gold_input_val:any = $.trim(gold_input.val())
+
+                if(isNaN(gold_input_val)||gold_input_val==""){
+                    dialog.bordfocus({
+                        "domsym": gold_input
+                     })
+                     return false;
+                }
+                else{
+                    $(".entry-tools-change-gold .entry-tools-change-result").show(200)
+                    // let gold_input
+                    // $.ajax({
+                    //     type:"get",
+                    //     url:"http://push2.eastmoney.com/api/qt/stock/get?secid=121.USDCNYI&fltt=2&fields=f43,f57,f60&cb=?"
+                    // })
+                }
+                
+            })
+            div_entry_tools.find("[data-entry-tips='rate']").click(function(){
+                let rate_input:any = div_entry_tools.find("[data-entry-input='rate']")
+                
+                let rate_currency:any = div_entry_tools.find("[data-entry-select]")
+
+                let rate_input_val:any = $.trim(rate_input.val())
+
+                if(isNaN(rate_input_val)||rate_input_val==""){
+                    dialog.bordfocus({
+                        "domsym": rate_input
+                     })
+                     return false;
+                }
+                else{
+                    $(".entry-tools-change-rate .entry-tools-change-result").show(200)
+                    // let gold_input
+                    // $.ajax({
+                    //     type:"get",
+                    //     url:"http://push2.eastmoney.com/api/qt/stock/get?secid=121.USDCNYI&fltt=2&fields=f43,f57,f60&cb=?"
+                    // })
+                }
+                
+            })
+        }
     }
 
     

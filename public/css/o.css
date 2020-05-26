@@ -1,0 +1,12 @@
+.o-stock-name {
+  position: relative;
+}
+.o-stock-name a.tit {
+  display: block;
+}
+.o-stock-name a.tit span.sp1 {
+  font-size: 14px;
+}
+.o-stock-name a.tit span.sp2 {
+  font-size: 12px;
+}

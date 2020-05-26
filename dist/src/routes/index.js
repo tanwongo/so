@@ -135,7 +135,29 @@ router.get('/web/main', function (ctx, next) { return __awaiter(void 0, void 0, 
             case 3:
                 _a.sent();
                 _a.label = 4;
-            case 4: return [2 /*return*/];
+            case 4:
+                if (!(from_action.keywords == "腾讯控股")) return [3 /*break*/, 6];
+                data = {
+                    a: {
+                        IsSuccess: false
+                    },
+                    b: {
+                        IsSuccess: false,
+                        TotalPage: 9158,
+                        TotalCount: 91566,
+                        Keyword: "",
+                        news: true
+                    },
+                    c: ctx.query.keywords
+                };
+                return [4 /*yield*/, ctx.render('web/main/a_stock/layout', {
+                        layout: 'web/main/hk_stock/layout',
+                        data: data
+                    })];
+            case 5:
+                _a.sent();
+                _a.label = 6;
+            case 6: return [2 /*return*/];
         }
     });
 }); });

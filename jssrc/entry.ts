@@ -1,9 +1,15 @@
 import tools from "../src/modules/tools"
 
-console.log(tools.getURLParamer())
+
+let geturlp:any =tools.getURLParamer()
+console.log(geturlp.keywords)
 let a  = $("[data-keywords-mark]")
-if($("[data-keywords-mark]")){
+if(a){
   a.each(function(i,k){
-      k.innerHTML = k.innerHTML.split("黄金").join("<em class='up'>黄金</em>")
+      k.innerHTML = k.innerHTML.split(geturlp.keywords).join("<em class='up'>"+geturlp.keywords+"</em>")
   })
 }
+
+tools.exchangeT()
+
+

@@ -1,0 +1,137 @@
+.o-stock-base {
+  position: relative;
+}
+.o-stock-base .o-stock-name {
+  position: relative;
+}
+.o-stock-base .o-stock-name .o-stock-name-a {
+  float: left;
+}
+.o-stock-base .o-stock-name .o-stock-name-a a.tit {
+  display: block;
+}
+.o-stock-base .o-stock-name .o-stock-name-a span {
+  color: #0040d2;
+}
+.o-stock-base .o-stock-name .o-stock-name-a span.sp1 {
+  font-size: 16px;
+}
+.o-stock-base .o-stock-name .o-stock-name-a span.sp2 {
+  font-size: 14px;
+}
+.o-stock-base .o-stock-name a:hover span {
+  color: #ec5200;
+  transition: 0.3s;
+}
+.o-stock-base .o-stock-name .o-stock-name-b {
+  margin-left: 10px;
+  float: left;
+}
+.o-stock-base .o-stock-name .o-stock-name-b span {
+  display: block;
+  color: #fff;
+  padding: 0px 10px;
+  font-size: 12px;
+  height: 21px;
+  line-height: 23px;
+}
+.o-stock-base .o-stock-name .o-stock-name-c,
+.o-stock-base .o-stock-name .o-stock-name-d,
+.o-stock-base .o-stock-name .o-stock-name-e,
+.o-stock-base .o-stock-name .o-stock-name-f {
+  margin-left: 10px;
+  float: left;
+}
+.o-stock-base .o-stock-name .o-stock-name-c span,
+.o-stock-base .o-stock-name .o-stock-name-d span,
+.o-stock-base .o-stock-name .o-stock-name-e span,
+.o-stock-base .o-stock-name .o-stock-name-f span,
+.o-stock-base .o-stock-name .o-stock-name-c a,
+.o-stock-base .o-stock-name .o-stock-name-d a,
+.o-stock-base .o-stock-name .o-stock-name-e a,
+.o-stock-base .o-stock-name .o-stock-name-f a {
+  display: block;
+  color: #fff;
+  padding: 0px 10px;
+  font-size: 12px;
+  height: 21px;
+  line-height: 23px;
+}
+.o-stock-base .o-stock-name .o-stock-name-c span,
+.o-stock-base .o-stock-name .o-stock-name-d span,
+.o-stock-base .o-stock-name .o-stock-name-e span,
+.o-stock-base .o-stock-name .o-stock-name-f span {
+  background: #d500fb;
+}
+.o-stock-base .o-stock-name .o-stock-name-c a,
+.o-stock-base .o-stock-name .o-stock-name-d a,
+.o-stock-base .o-stock-name .o-stock-name-e a,
+.o-stock-base .o-stock-name .o-stock-name-f a {
+  background: #2196F3;
+}
+.o-stock-base .o-stock-name .o-stock-name-c .ggt:hover,
+.o-stock-base .o-stock-name .o-stock-name-d .ggt:hover,
+.o-stock-base .o-stock-name .o-stock-name-e .ggt:hover,
+.o-stock-base .o-stock-name .o-stock-name-f .ggt:hover {
+  background: #ec5200;
+  transition: 0.3s;
+}
+.o-stock-base .o-stock-name .o-stock-name-c .addzx,
+.o-stock-base .o-stock-name .o-stock-name-d .addzx,
+.o-stock-base .o-stock-name .o-stock-name-e .addzx,
+.o-stock-base .o-stock-name .o-stock-name-f .addzx {
+  background: #607D8B;
+}
+.o-stock-base .o-stock-name .o-stock-name-c .addzx:hover,
+.o-stock-base .o-stock-name .o-stock-name-d .addzx:hover,
+.o-stock-base .o-stock-name .o-stock-name-e .addzx:hover,
+.o-stock-base .o-stock-name .o-stock-name-f .addzx:hover {
+  background: #ec5200;
+  transition: 0.3s;
+}
+.o-stock-base .o-stock-link {
+  margin-top: 10px;
+  position: relative;
+}
+.o-stock-base .o-stock-link a {
+  font-size: 12px;
+}
+.o-stock-base .o-stock-price {
+  margin-top: 10px;
+  position: relative;
+}
+.o-stock-base .o-stock-price h1,
+.o-stock-base .o-stock-price span,
+.o-stock-base .o-stock-price i,
+.o-stock-base .o-stock-price b {
+  display: block;
+  float: left;
+}
+.o-stock-base .o-stock-price h1 {
+  font-size: 24px;
+}
+.o-stock-base .o-stock-price i {
+  width: 20px;
+  height: 22px;
+  background: url(/images/ico/down2.png) no-repeat center 5px;
+}
+.o-stock-base .o-stock-price span {
+  font-size: 14px;
+  margin-top: 8px;
+  margin-left: 7px;
+}
+.o-stock-base .o-stock-price b {
+  font-size: 12px;
+  margin-top: 8px;
+  margin-left: 3px;
+}
+.o-stock-base .o-stock-info {
+  margin-top: 5px;
+  position: relative;
+}
+.o-stock-base .o-stock-info table td {
+  text-align: left;
+}
+.o-stock-base .o-stock-info table tr:hover {
+  background: none;
+}

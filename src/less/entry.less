@@ -1,9 +1,8 @@
 
+
 .entry-stock{
-    margin-top: 10px;
     position: relative;
     .entry-stock-table{
-        margin-top: 10px;
         text-align: center;
         a.stockmore{
             font-size: 12px;
@@ -12,28 +11,8 @@
         a:hover span{
             color:#ec5200
         }
-        table{
-            border-collapse: collapse;
-            width: 100%;
-            th{
-                background: #e7f3ff;
-                font-size: 14px;
-                height: 30px;
-                line-height: 30px;
-                font-weight: normal;
-                text-align: center;
-                color: #000000;
-            }
-            tr{
-                border-bottom: 1px solid #eee;
-            }
+
             td{
-                font-size: 12px;
-                text-align: center;
-                /* height: 35px; */
-                /* line-height: 35px; */
-                padding: 5px 0;
-                /* border-bottom: 1px solid #d6d6d6; */
                 position: relative;
                 vertical-align: middle;
                 i.zbg{
@@ -53,20 +32,41 @@
             }
             span{
                 display: block;
-                font-size: 12px;
                 color:#0040d2
             }
 
-        }
+        
     }
     
 }
 /*end*/
 
+/*百科*/
+.entry-baike{
+    margin-bottom: 10px;
+    position: relative;
+    a{
+        text-decoration: underline;
+    }
+    a.tit{
+        text-decoration: underline;
+    }
+    p{
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 20px;
+        word-break: break-all;
+        white-space: normal;
+        text-overflow: hidden;
+    }
+}
+/*导读*/
 .entry-talk{
     font-size: 14px;
-    margin-top: 10px;
     position: relative;
+    h1{
+        margin-bottom: 5px;
+    }
     div{
         margin-bottom: 7px;
     }
@@ -82,11 +82,9 @@
 
 /*词条搜索期货*/
 .entry-qh{
-    margin-top: 20px;
     position: relative;
     .entry-qh-inter,.entry-qh-china{
         position: relative;
-        margin-top: 10px;
     }
     h1.tit{
         font-size: 14px;
@@ -117,6 +115,7 @@
     }
     .entry-qh-item{
         width: 400px;
+        margin-right: 15px;
         float: left;
         position: relative;
         .qh-head{
@@ -252,8 +251,7 @@
         }
     }
     .entry-qh-draw{
-        float: right;
-        width: 280px;
+        float: left;
         position: relative;
         a{
             display: block;
@@ -269,14 +267,13 @@
 
 /*词条搜索板块*/
 .entry-bk{
-    margin-top: 20px;
     position: relative;
     .entry-bk-cont{
-        margin-top: 10px;
         position: relative;
         .entry-bk-cont-dv{
             width: 400px;
             float: left;
+            margin-right: 15px;
             position: relative;
             .dvname{
                 display: block;
@@ -333,29 +330,10 @@
                     border-bottom: 1px solid #eee;
                     padding: 3px 0px 3px 5px;
                 }
-                table{
-                   width: 100%;
-                   border-collapse: collapse; 
-                   th{
-                        background: #e7f3ff;
-                        font-size: 14px;
-                        height: 30px;
-                        line-height: 30px;
-                        font-weight: normal;
-                        text-align: center;
-                        color: #000000;
-                   }
-                   td{
-                        font-size: 14px;
-                        text-align: center;
-                        padding: 5px 0;
-                   }
-                }
             }
         }
         .entry-bk-cont-tx{
-            width: 280px;
-            float: right;
+            float: left;
             position: relative;
             .txtzjl{
                 margin-top:5px;
@@ -377,7 +355,6 @@
 
 /*词条搜索基金*/
 .entry-fund{
-    margin-top: 20px;
     position: relative;
     .entry-fund-cont{
         position: relative;
@@ -410,21 +387,50 @@
 
 /*词条搜索其它*/
 .entry-others{
-    margin-top: 20px;
     position: relative;
     .entry-others-special{
         position: relative;
-        margin: 10px 0 0 10px;
+        .middle{
+            margin: 10px 0;
+            position: relative;
+            li{
+                font-size: 14px;
+                /* margin-top: 10px; */
+                margin-bottom: 10px;
+                float: left;
+                width: 334px;
+                margin-right: 5px;
+                height: 60px;
+                div{
+                    margin-bottom: 5px;
+                    max-height: 36px;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+
+                    a{
+                        text-decoration: underline;
+                    }
+                    span{
+                        font-size: 12px;
+                        color: #808080;
+                    }
+                }
+                
+            }
+        }
         .item{
             position: relative;
             padding-bottom: 5px;
             background: #000;
             float: left;
-            margin-right: 10px;
+            margin-bottom: 1px;
+            width: 226px;
+            height: 90px;
             a{
                 font-size: 14px;
-                background: #3bb0ff;
-                background:-webkit-linear-gradient(45deg, #3bb0ff, #e935ff);
+                // background:-webkit-linear-gradient(45deg, #3bb0ff, #e935ff);
                 display: block;
                 padding: 5px 10px;
                 color:#fff;
@@ -432,8 +438,9 @@
             p{
                 font-size: 14px;
                 text-align: center;
-                margin-top: 5px;
+                margin-top: 10px;
                 position: relative;
+                padding-left: 10px;
                 span{
                     display:inline-block;
                 }
@@ -451,7 +458,6 @@
         }
     }
     .entry-others-normal{
-        margin: 10px 0 0 10px;
         position: relative;
         .item{
             margin-bottom: 10px;
@@ -459,19 +465,22 @@
             .title{
                 float: left;
                 margin-right: 10px;
-                /* text-align: right; */
-                width: 85px;
                 font-size: 14px;
-                background: #fff;
+                background: #0089ff;
                 text-align: center;
-                padding: 5px 0;
+                padding: 0px;
                 color: #fff;
-                border: 1px solid #cecece;
+                width: 85px;
+                /* border: 1px solid #0040d2; */
                 a{
                     display: block;
+                    /* color: #ffc107; */
+                    background: #fff;
+                    margin: 3px;
+                    padding: 3px 5px;
                 }
                 &:hover{
-                    background: #f7f7f7;
+                    background: #005ba9;
                 }
             }
             .cont{
@@ -484,27 +493,6 @@
                 }
                 .entry-others-normal-combe{
                     position: relative;
-                    table{
-                        width: 100%;
-                        border-collapse:collapse;
-                        th{
-                            font-size: 14px;
-                            text-align: center;
-                            background: #e7f3ff;
-                            font-size: 14px;
-                            height: 30px;
-                            line-height: 30px;
-                            font-weight: normal;
-                            text-align: center;
-                            color: #000000;
-                        }
-                        td{
-                            font-size: 14px;
-                            text-align: center;
-                            padding: 15px 0;
-                            vertical-align: middle;
-                        }
-                    }
                 }
             }
         }
@@ -672,6 +660,110 @@
                         background: url(/images/ico/down3.png) no-repeat center 8px;
                     }
                 }
+            }
+        }
+    }
+}
+
+/*特殊词条换算*/
+.entry-tools{
+    position: relative;
+    h1{
+        font-size: 14px;
+        /* margin-top: 5px; */
+        /* color: #fff; */
+        // background: #ffeac3;
+    }
+    h1.warn{
+        margin-top: 5px;
+        font-size: 12px;
+        font-weight: normal;
+        color:#808080;
+    }
+    .entry-tools-change{
+        position: relative;
+        .entry-tools-change-gold{
+            float: left;
+            margin-right: 10px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        p.tit{
+            font-weight: normal;
+        }
+        .entry-tools-change-input{
+            width: 107px;
+            display: block;
+            float: left;
+            height: 25px;
+            font-size: 12px;
+            margin-right: 10px;
+            padding-left: 10px;
+            border: 1px solid #aaa;
+            line-height: 25px;
+            &:focus{
+                border: 1px solid #ec5200;
+            }
+        }
+        .entry-tools-change-select{
+            font-size: 12px;
+            display: block;
+            float: left;
+            width: 90px;
+            height: 27px;
+        }
+        .entry-tools-change-button{
+            position: relative;
+            float: left;
+            margin-left: 10px;
+            button{
+                width: 45px;
+                height: 27px;
+                border: 1px solid #0070e4;
+                background: #0062c7;
+                font-size: 12px;
+                color: #fff;
+                cursor: pointer;
+                &:hover{
+                    border: 1px solid #c74500;
+                    background: #ec5200;
+                }
+            }
+        }
+        .entry-tools-change-result{
+            position: relative;
+            /* margin-left: 10px; */
+            /* height: 31px; */
+            line-height: 30px;
+            /* border-bottom: 1px solid #cccccc; */
+            margin-top: 10px;
+            p{
+                span{
+                    font-size: 18px;
+                    display: block;
+                    float: left;
+                    /* margin-right: 10px; */
+                    padding-right: 5px;
+                }
+                .sp1{
+                    color: #ec5200;
+                }
+            }
+        }
+        .entry-tools-change-rate{
+            float: left;
+            position: relative;
+            .exi{
+                display: block;
+                float: left;
+                width: 14px;
+                height: 14px;
+                background: url(/images/ico/entry-exi.png) no-repeat center top;
+                margin-right: 8px;
+                margin-left: 8px;
+                margin-top: 5px;
             }
         }
     }

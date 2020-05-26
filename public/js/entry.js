@@ -100,13 +100,49 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 exports.__esModule = true;
 var tools_1 = __importDefault(__webpack_require__(/*! ../src/modules/tools */ "./src/modules/tools/index.ts"));
-console.log(tools_1["default"].getURLParamer());
+var geturlp = tools_1["default"].getURLParamer();
+console.log(geturlp.keywords);
 var a = $("[data-keywords-mark]");
-if ($("[data-keywords-mark]")) {
+if (a) {
     a.each(function (i, k) {
-        k.innerHTML = k.innerHTML.split("黄金").join("<em class='up'>黄金</em>");
+        k.innerHTML = k.innerHTML.split(geturlp.keywords).join("<em class='up'>" + geturlp.keywords + "</em>");
     });
 }
+tools_1["default"].exchangeT();
+
+
+/***/ }),
+
+/***/ "./src/modules/dialog/index.ts":
+/*!*************************************!*\
+  !*** ./src/modules/dialog/index.ts ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+exports.__esModule = true;
+var alert_dialog = {
+    init: function () {
+    },
+    warn: function (options) {
+        var opts = options;
+        $("body").append("<div></div>");
+    },
+    /**
+     * input为空提示---边框变红
+     * @param options 标识，样式
+     */
+    bordfocus: function (options) {
+        var $opt = options;
+        $opt.domsym.addClass("borderlight");
+        var relight = setTimeout(function () {
+            $opt.domsym.removeClass("borderlight");
+        }, 1000);
+    }
+};
+exports["default"] = alert_dialog;
 
 
 /***/ }),
@@ -120,7 +156,11 @@ if ($("[data-keywords-mark]")) {
 
 "use strict";
 
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 exports.__esModule = true;
+var dialog_1 = __importDefault(__webpack_require__(/*! ../dialog */ "./src/modules/dialog/index.ts"));
 var tools = {
     init: function () {
     },
@@ -183,6 +223,77 @@ var tools = {
             arr.push(key + "=" + obj[key]);
         }
         return arr.join("&");
+    },
+    exInputNumber: function (dom, domval, domsel) {
+        var $fdom = dom;
+        var $fdomval = domval;
+        var $fdomsel = domsel;
+        if (isNaN($fdomval) || $fdomval == "") {
+            dialog_1["default"].bordfocus({
+                "domsym": $fdom
+            });
+            return false;
+        }
+        else {
+            $;
+            console.log($fdomsel.select().val());
+            // http://push2.eastmoney.com/api/qt/stock/get?secid=121.USDCNYI&fltt=2&fields=f43,f57,f60&cb=jQuery18305642555869954946_1590395277408&_=1590395285391
+            // var x = $("c1")[$("c1").selectedIndex].value;
+            // var y = $("c2")[$("c2").selectedIndex].value;
+            // var url = "//hq.sinajs.cn/list=" + x + "," + y;
+            // return true
+        }
+        // $("res").value = "正在计算..";
+        // var x = $("c1")[$("c1").selectedIndex].value;
+        // var y = $("c2")[$("c2").selectedIndex].value;
+        // var url = "//hq.sinajs.cn/list=" + x + "," + y;
+        // var scriptLoader = new IO.Script();
+        // scriptLoader.load(url, this.deal.Bind(this, x, y, bsv));
+    },
+    exchangeT: function () {
+        var _this = this;
+        var div_entry_tools = $("[data-entry-tools]");
+        if (div_entry_tools) {
+            div_entry_tools.find("[data-entry-tips='gold']").click(function () {
+                var gold_input = div_entry_tools.find("[data-entry-input='gold']");
+                var gold_currency = div_entry_tools.find("[data-entry-select]");
+                console.log(gold_currency);
+                var gold_input_val = $.trim(gold_input.val());
+                if (isNaN(gold_input_val) || gold_input_val == "") {
+                    dialog_1["default"].bordfocus({
+                        "domsym": gold_input
+                    });
+                    return false;
+                }
+                else {
+                    $(".entry-tools-change-gold .entry-tools-change-result").show(200);
+                    // let gold_input
+                    // $.ajax({
+                    //     type:"get",
+                    //     url:"http://push2.eastmoney.com/api/qt/stock/get?secid=121.USDCNYI&fltt=2&fields=f43,f57,f60&cb=?"
+                    // })
+                }
+            });
+            div_entry_tools.find("[data-entry-tips='rate']").click(function () {
+                var rate_input = div_entry_tools.find("[data-entry-input='rate']");
+                var rate_currency = div_entry_tools.find("[data-entry-select]");
+                var rate_input_val = $.trim(rate_input.val());
+                if (isNaN(rate_input_val) || rate_input_val == "") {
+                    dialog_1["default"].bordfocus({
+                        "domsym": rate_input
+                    });
+                    return false;
+                }
+                else {
+                    $(".entry-tools-change-rate .entry-tools-change-result").show(200);
+                    // let gold_input
+                    // $.ajax({
+                    //     type:"get",
+                    //     url:"http://push2.eastmoney.com/api/qt/stock/get?secid=121.USDCNYI&fltt=2&fields=f43,f57,f60&cb=?"
+                    // })
+                }
+            });
+        }
     }
 };
 exports["default"] = tools;

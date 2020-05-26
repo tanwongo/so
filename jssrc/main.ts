@@ -43,6 +43,7 @@ $(document).on("click",async function(e:any){
     }
     
 })
+$('.nav-div li[data-nav-id="main"]').addClass("active").siblings().removeClass("active")
 
 
 
